@@ -15,7 +15,7 @@ variables:
     -DENABLE_UTILS=OFF
 
 depends:
-- kde/qt6/qtbase.bst
+- kde/qt6/qt6-qtbase.bst
 
 sources:
 - kind: git_repo

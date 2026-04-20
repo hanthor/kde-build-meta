@@ -3,7 +3,7 @@ description: qcoro - C++ coroutines for Qt
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- kde/qt6/qtbase.bst
+- kde/qt6/qt6-qtbase.bst
 
 variables:
   cmake-options: >-
