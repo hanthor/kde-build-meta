@@ -33,3 +33,13 @@ depends:
 - kde/plasma/qqc2-breeze-style.bst
 - kde/plasma/spectacle.bst
 - kde/plasma/systemsettings.bst
+- kde/plasma/sddm.bst
+- kde/plasma/bluedevil.bst
+- kde/plasma/plasma-pa.bst
+- kde/plasma/kscreen.bst
+- kde/plasma/drkonqi.bst
+- kde/plasma/ksshaskpass.bst
+- kde/plasma/kmenuedit.bst
+- kde/plasma/plasma-systemmonitor.bst
+- kde/plasma/xdg-desktop-portal-kde.bst
+- kde/plasma/kio-admin.bst

@@ -1,0 +1,17 @@
+kind: cmake
+description: qtkeychain - Qt API to store passwords securely
+
+build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- kde/qt6/qtbase.bst
+
+variables:
+  cmake-options: >-
+    -DBUILD_TESTING=OFF
+    -DBUILD_WITH_QT6=ON
+
+sources:
+- kind: git_repo
+  url: github:frankosterfeld/qtkeychain.git
+  track: main
+  ref: 53a8e6a31f7d24bc58d91515cc7fcbb34af554db

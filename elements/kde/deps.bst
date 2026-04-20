@@ -29,6 +29,14 @@ depends:
 - kde/org.kde.plasma.desktop.bst
 - kde/config/plasma.bst
 
+# KDE Applications
+- kde/org.kde.apps.bst
+
+# KDE Qt-adjacent libraries
+- kde/libs/qcoro.bst
+- kde/libs/qtkeychain-qt6.bst
+- kde/libs/poppler-qt6.bst
+
 # bootc for image-based updates
 - gnomeos-deps/bootc.bst
 
