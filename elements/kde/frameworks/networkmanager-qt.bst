@@ -7,7 +7,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DWITH_NMQT_STATIC=OFF
 
 sources:
 - kind: git_repo

@@ -8,7 +8,7 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DWITH_X11=OFF
 
 sources:
 - kind: git_repo

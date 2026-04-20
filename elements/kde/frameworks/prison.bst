@@ -5,6 +5,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtmultimedia.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
