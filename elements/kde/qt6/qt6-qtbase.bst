@@ -15,6 +15,18 @@ variables:
     -DQT_FEATURE_openssl_linked=ON
     -DQT_FEATURE_system_sqlite=ON
 
+config:
+  install-commands:
+    (>):
+    - |
+      # Break hardlinks that confuse freedesktop-sdk-stripper
+      for f in "%{install-root}"/usr/bin/qtpaths6 \
+                "%{install-root}"/usr/bin/androiddeployqt6 \
+                "%{install-root}"/usr/bin/qmake6; do
+        [ -f "$f" ] && cp --remove-destination "$f" "${f%6}"
+        [ -f "$f" ] && cp --remove-destination "$f" "$f"
+      done
+
 sources:
 - kind: tar
   url: qt:6.9/6.9.3/submodules/qtbase-everywhere-src-6.9.3.tar.xz
