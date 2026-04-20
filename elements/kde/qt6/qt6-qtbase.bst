@@ -19,12 +19,17 @@ config:
   install-commands:
     (>):
     - |
-      # Break hardlinks that confuse freedesktop-sdk-stripper
+      # Break hardlinks that confuse freedesktop-sdk-stripper.
+      # Qt installs e.g. qtpaths and qtpaths6 as hardlinks to the same inode.
+      # Re-copy each file through a temp to give it a unique inode.
       for f in "%{install-root}"/usr/bin/qtpaths6 \
                 "%{install-root}"/usr/bin/androiddeployqt6 \
                 "%{install-root}"/usr/bin/qmake6; do
-        [ -f "$f" ] && cp --remove-destination "$f" "${f%6}"
-        [ -f "$f" ] && cp --remove-destination "$f" "$f"
+        base="${f%6}"
+        if [ -f "$f" ] && [ -f "$base" ]; then
+          cp "$f" "${f}.tmp" && mv "${f}.tmp" "$f"
+          cp "$base" "${base}.tmp" && mv "${base}.tmp" "$base"
+        fi
       done
 
 sources:
