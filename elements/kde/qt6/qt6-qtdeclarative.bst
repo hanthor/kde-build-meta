@@ -3,6 +3,7 @@ description: Qt6 declarative (QML) module
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-python3.bst
 - kde/qt6/qt6-qtbase.bst
 
 sources:
