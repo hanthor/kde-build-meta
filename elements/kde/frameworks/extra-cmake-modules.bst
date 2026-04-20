@@ -3,6 +3,8 @@ description: extra-cmake-modules
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+
+depends:
 - kde/qt6/qt6-qtbase.bst
 
 variables:
