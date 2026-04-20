@@ -9,6 +9,7 @@ variables:
     -DBUILD_TESTING=OFF
     -DENABLE_JOURNALD=ON
     -DNO_SYSTEMD=OFF
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 sources:
 - kind: git_repo
