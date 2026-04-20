@@ -5,7 +5,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:components/openssl.bst
 - freedesktop-sdk.bst:components/sqlite.bst
-- freedesktop-sdk.bst:components/mesa.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
   cmake-options: >-
