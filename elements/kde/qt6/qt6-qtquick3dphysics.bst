@@ -2,6 +2,7 @@ kind: cmake
 description: qt6-qtquick3dphysics
 
 build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
 
 sources:

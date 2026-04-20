@@ -2,6 +2,7 @@ kind: cmake
 description: Qt6 Wayland module
 
 build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtdeclarative.bst
 

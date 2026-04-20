@@ -2,6 +2,7 @@ kind: cmake
 description: kirigami
 
 build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 
 variables:

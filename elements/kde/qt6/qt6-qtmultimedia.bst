@@ -2,6 +2,7 @@ kind: cmake
 description: Qt6 multimedia module
 
 build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtshadertools.bst
 
