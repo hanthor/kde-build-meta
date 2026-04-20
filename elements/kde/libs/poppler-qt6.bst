@@ -6,7 +6,7 @@ build-depends:
 - freedesktop-sdk.bst:components/poppler.bst
 
 variables:
-  cmake-options: >-
+  cmake-local: >-
     -DBUILD_TESTING=OFF
     -DENABLE_QT5=OFF
     -DENABLE_QT6=ON

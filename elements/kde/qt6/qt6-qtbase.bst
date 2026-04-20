@@ -8,7 +8,7 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
-  cmake-options: >-
+  cmake-local: >-
     -DINSTALL_ARCHDATADIR=lib
     -DQT_DISABLE_RPATH=ON
     -DBUILD_WITH_PCH=FALSE

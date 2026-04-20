@@ -6,7 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 
 variables:
-  cmake-options: >-
+  cmake-local: >-
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
 

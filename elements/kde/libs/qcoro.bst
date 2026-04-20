@@ -6,7 +6,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 
 variables:
-  cmake-options: >-
+  cmake-local: >-
     -DBUILD_TESTING=OFF
     -DQCORO_BUILD_EXAMPLES=OFF
 

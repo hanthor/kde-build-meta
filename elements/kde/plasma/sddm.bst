@@ -5,7 +5,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 
 variables:
-  cmake-options: >-
+  cmake-local: >-
     -DBUILD_TESTING=OFF
     -DENABLE_JOURNALD=ON
     -DNO_SYSTEMD=OFF

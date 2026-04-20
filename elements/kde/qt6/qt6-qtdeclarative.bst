@@ -6,7 +6,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 
 variables:
-  cmake-options: >-
+  cmake-local: >-
     -DQT_TOOL_COMMAND_WRAPPER_PATH=env
 
 sources:
