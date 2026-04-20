@@ -4,6 +4,7 @@ description: plasma-pa - Plasma PulseAudio integration
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
+- kde/qt6/qt6-qtbase.bst
 
 variables:
   cmake-local: >-
