@@ -7,4 +7,4 @@ build-depends:
 sources:
 - kind: tar
   url: qt:6.9/6.9.3/submodules/qtshadertools-everywhere-src-6.9.3.tar.xz
-  ref: sha256:629804ee86a35503e4b616f9ab5175caef3da07bd771cf88a24da3b5d4284567
+  ref: 629804ee86a35503e4b616f9ab5175caef3da07bd771cf88a24da3b5d4284567

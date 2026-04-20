@@ -7,4 +7,4 @@ build-depends:
 sources:
 - kind: tar
   url: qt:6.9/6.9.3/submodules/qtimageformats-everywhere-src-6.9.3.tar.xz
-  ref: sha256:4fb26bdbfbd4b8e480087896514e11c33aba7b6b39246547355ea340c4572ffe
+  ref: 4fb26bdbfbd4b8e480087896514e11c33aba7b6b39246547355ea340c4572ffe

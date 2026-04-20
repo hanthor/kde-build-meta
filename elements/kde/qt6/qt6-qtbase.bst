@@ -16,4 +16,4 @@ variables:
 sources:
 - kind: tar
   url: qt:6.9/6.9.3/submodules/qtbase-everywhere-src-6.9.3.tar.xz
-  ref: sha256:c5a1a2f660356ec081febfa782998ae5ddbc5925117e64f50e4be9cd45b8dc6e
+  ref: c5a1a2f660356ec081febfa782998ae5ddbc5925117e64f50e4be9cd45b8dc6e
