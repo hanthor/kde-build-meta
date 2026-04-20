@@ -5,10 +5,6 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
 
-variables:
-  cmake-local: >-
-    -DQT_TOOL_COMMAND_WRAPPER_PATH=env
-
 sources:
 - kind: tar
   url: qt:6.9/6.9.3/submodules/qtdeclarative-everywhere-src-6.9.3.tar.xz
