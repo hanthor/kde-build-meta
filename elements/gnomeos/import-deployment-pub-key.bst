@@ -1,16 +1,3 @@
-kind: import
-
-sources:
-- kind: local
-  path: files/boot-keys/import-pubring.pgp
-
-runtime-depends:
-- freedesktop-sdk.bst:components/systemd.bst
-
-config:
-  target: /usr/lib/systemd
-
-public:
-  bst:
-    overlap-whitelist:
-    - /usr/lib/systemd/import-pubring.pgp
+kind: stack
+# Aurora: deployment public key import disabled (no import-pubring.pgp for dev builds)
+description: "Import deployment public key (disabled)"
