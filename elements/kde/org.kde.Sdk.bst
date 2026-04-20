@@ -28,7 +28,6 @@ depends:
 - kde/qt6/qt6-qtsvg.bst
 - kde/qt6/qt6-qttools.bst
 - kde/qt6/qt6-qttranslations.bst
-- kde/qt6/qt6-qtvirtualkeyboard.bst
 - kde/qt6/qt6-qtwayland.bst
 - kde/qt6/qt6-qtwebsockets.bst
 - kde/qt6/qt6-webchannel.bst
