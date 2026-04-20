@@ -71,3 +71,8 @@ aliases:
   samba: https://git.samba.org/
   savannah: https://git.savannah.gnu.org/git/
   xiph: https://gitlab.xiph.org/xiph/
+
+  # KDE aliases
+  kde: https://invent.kde.org/
+  qt: https://download.qt.io/official_releases/qt/
+  kde_cdn: https://download.kde.org/stable/
