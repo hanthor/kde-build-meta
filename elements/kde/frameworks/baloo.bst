@@ -3,11 +3,8 @@ description: baloo
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/libdrm.bst
-- freedesktop-sdk.bst:components/libepoxy.bst
-- freedesktop-sdk.bst:components/libglvnd.bst
-- freedesktop-sdk.bst:components/mesa.bst
 - kde/frameworks/extra-cmake-modules.bst
+- kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtdeclarative.bst
 
 depends:
