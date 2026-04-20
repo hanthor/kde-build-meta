@@ -5,6 +5,45 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kcodecs.bst
+
+depends:
+- kde/qt6/qt6-qtbase.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kcodecs.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF

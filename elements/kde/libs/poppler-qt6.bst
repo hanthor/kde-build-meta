@@ -4,6 +4,7 @@ description: poppler Qt6 bindings
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - freedesktop-sdk.bst:components/poppler.bst
+- kde/qt6/qt6-qtbase.bst
 
 variables:
   cmake-local: >-

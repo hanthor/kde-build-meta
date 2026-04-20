@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtdeclarative.bst
+- kde/frameworks/kio.bst
 
 depends:
 - kde/qt6/qt6-qtbase.bst
