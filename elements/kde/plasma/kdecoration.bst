@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kdecoration.git
   track: Plasma/6.6
+  ref: 9dcde1352027ca1f56f34c3bce178fbb208064d7

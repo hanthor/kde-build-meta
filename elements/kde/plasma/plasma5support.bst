@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma5support.git
   track: Plasma/6.6
+  ref: f1f6ee27dd0175804e53cc322a8d4f0073b360a5

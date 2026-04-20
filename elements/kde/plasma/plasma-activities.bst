@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-activities.git
   track: Plasma/6.6
+  ref: 7ebb07fd52f8241a08d3cfabd7d270aace5de528

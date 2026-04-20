@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/powerdevil.git
   track: Plasma/6.6
+  ref: c3a1709c69f1773e158a08121360fd53b378e789

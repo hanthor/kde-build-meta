@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/aurorae.git
   track: Plasma/6.6
+  ref: c4b856bed1417aad7bfbd19352a81fa176359d80

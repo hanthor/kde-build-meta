@@ -11,3 +11,4 @@ sources:
 - kind: git_repo
   url: kde:libraries/phonon.git
   track: master
+  ref: fac676a3699a7c82c8b703d75fa7ee133e0046e1

@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kscreenlocker.git
   track: Plasma/6.6
+  ref: 093598fdf00d069e251cd891e26998df933cbfed

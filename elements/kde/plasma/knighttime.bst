@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/knighttime.git
   track: Plasma/6.6
+  ref: 918af6b8226622e6bfebec37139cffbb50518fe6

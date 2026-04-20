@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/spectacle.git
   track: Plasma/6.6
+  ref: ae396f5aab0c0ed39be30595759651a87657b44a

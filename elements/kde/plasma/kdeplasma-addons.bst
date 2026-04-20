@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kdeplasma-addons.git
   track: Plasma/6.6
+  ref: 2835b9511c8eb395c0e4f941c59184ea9e56b737

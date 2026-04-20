@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/systemsettings.git
   track: Plasma/6.6
+  ref: b09d6950b8a2210c3fc2cec346521bb924f1810a

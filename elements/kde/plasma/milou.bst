@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/milou.git
   track: Plasma/6.6
+  ref: 0db244db885d51b16fd6e19eef9c9685f054d0d5

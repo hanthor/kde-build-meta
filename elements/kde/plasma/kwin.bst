@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kwin.git
   track: Plasma/6.6
+  ref: c37c08841aa187a995bcba0fc7352da19238bf87

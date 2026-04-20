@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kpipewire.git
   track: Plasma/6.6
+  ref: fb7a5aa740ffef82c57c482546aea9ec3b2c15ef

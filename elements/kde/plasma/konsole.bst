@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:kde/konsole.git
   track: master
+  ref: 915a038217b2acdb167fb2a7178c42c919ce6325

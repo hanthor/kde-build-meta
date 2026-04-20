@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kwayland.git
   track: Plasma/6.6
+  ref: e6faf9e5a0911fd4a042dc2ecbcbcf6bca9bcfc0

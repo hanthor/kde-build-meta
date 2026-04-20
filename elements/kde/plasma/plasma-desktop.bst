@@ -25,3 +25,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-desktop.git
   track: Plasma/6.6
+  ref: 304d1725320facc693f6e102c730a0e8e40c757b

@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-nm.git
   track: Plasma/6.6
+  ref: c025b3882ff0527bf264706d8252780762fe749c

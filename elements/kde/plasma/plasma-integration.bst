@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-integration.git
   track: Plasma/6.6
+  ref: 9588bd0ea75a7a166352cb27f9e284f5902adcfa

@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kactivitymanagerd.git
   track: Plasma/6.6
+  ref: 41b7e1425a57e889de4333022588638e2dccfd42

@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kglobalacceld.git
   track: Plasma/6.6
+  ref: c22691b3202386a949a95a830ab18531226c68e3

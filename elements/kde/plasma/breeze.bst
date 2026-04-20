@@ -21,3 +21,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/breeze.git
   track: Plasma/6.6
+  ref: eb4c6c68728fcf8392c105389e4723d946d97fd0

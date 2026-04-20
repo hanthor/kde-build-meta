@@ -11,3 +11,4 @@ sources:
 - kind: git_repo
   url: kde:libraries/polkit-qt-1.git
   track: master
+  ref: 328a4c8615c7207e1297b776026657a77c6a71b6
