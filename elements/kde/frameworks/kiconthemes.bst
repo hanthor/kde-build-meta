@@ -10,6 +10,7 @@ build-depends:
 - kde/qt6/qt6-qttools.bst
 - kde/qt6/qt6-qtsvg.bst
 - kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kguiaddons.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/karchive.bst
 - kde/frameworks/ki18n.bst
