@@ -19,6 +19,7 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/knotifications.bst
+- kde/libs/libcanberra.bst
 - kde/frameworks/kcrash.bst
 - kde/frameworks/kcolorscheme.bst
 - sdk/libsecret.bst
