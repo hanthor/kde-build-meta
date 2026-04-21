@@ -1,6 +1,7 @@
 --- a/src/libdpms/CMakeLists.txt
 +++ b/src/libdpms/CMakeLists.txt
-@@ -3,10 +3,15 @@
+@@ -2,11 +2,17 @@
+ # SPDX-FileCopyrightText: 2022 Aleix Pol Gonzalez <aleixpol@kde.org>
  
  add_library(KF6ScreenDpms SHARED)
 -target_sources(KF6ScreenDpms PRIVATE dpms.cpp dpms.h abstractdpmshelper.cpp waylanddpmshelper.cpp xcbdpmshelper.cpp waylanddpmshelper.cpp)
@@ -19,29 +20,32 @@
 +endif()
  
  if (Qt6_VERSION VERSION_GREATER_EQUAL "6.8.0")
+     set(private_code_option  "PRIVATE_CODE")
 --- a/src/libdpms/dpms.cpp
 +++ b/src/libdpms/dpms.cpp
-@@ -5,13 +5,16 @@
+@@ -5,18 +5,21 @@
  #include "dpms.h"
  #include "kscreendpms_debug.h"
  #include "waylanddpmshelper_p.h"
--#include "xcbdpmshelper_p.h"
++#if HAVE_XCB
+ #include "xcbdpmshelper_p.h"
++#endif
  
  #include <QGuiApplication>
 -#include <QtGui/private/qtx11extras_p.h>
-+#if HAVE_XCB
-+#include "xcbdpmshelper_p.h"
-+#endif
  
  KScreen::Dpms::Dpms(QObject *parent)
      : QObject(parent)
  {
 -    if (QX11Info::isPlatformX11()) {
--        m_helper.reset(new XcbDpmsHelper);
--    } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
 +    if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
++        m_helper.reset(new WaylandDpmsHelper);
 +#if HAVE_XCB
 +    } else if (QGuiApplication::platformName() == QLatin1String("xcb")) {
-+        m_helper.reset(new XcbDpmsHelper);
+         m_helper.reset(new XcbDpmsHelper);
+-    } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
+-        m_helper.reset(new WaylandDpmsHelper);
 +#endif
      } else {
+         qCWarning(KSCREEN_DPMS) << "Platform is not Wayland or X11, this doesn't make sense. Platform name is" << QGuiApplication::platformName();
+         Q_ASSERT(false);
