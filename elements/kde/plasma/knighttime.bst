@@ -7,6 +7,7 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qttools.bst
+- kde/qt6/qt6-qtpositioning.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst
