@@ -15,9 +15,14 @@ build-depends:
 - freedesktop-sdk.bst:components/docbook-xsl.bst
 - freedesktop-sdk.bst:components/libxslt.bst
 - freedesktop-sdk.bst:components/perl.bst
+- kde/libs/perl-uri.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
+  cmake-local: >-
+    -DBUILD_TESTING=OFF
+    -DBUILD_PYTHON_BINDINGS=OFF
+    -DDocBookXML4_DTD_DIR=/usr/share/xml/docbook/xml-dtd/4.5
+    -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets
 
 sources:
 - kind: git_repo
