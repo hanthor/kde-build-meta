@@ -2,7 +2,7 @@ kind: cmake
 description: kactivitymanagerd
 
 build-depends:
-- freedesktop-sdk.bst:components/boost.bst
+- kde/libs/boost.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst

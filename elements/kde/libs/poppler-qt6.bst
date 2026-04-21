@@ -2,7 +2,6 @@ kind: cmake
 description: poppler Qt6 bindings
 
 build-depends:
-- freedesktop-sdk.bst:components/boost.bst
 - freedesktop-sdk.bst:components/fontconfig.bst
 - freedesktop-sdk.bst:components/icu.bst
 - freedesktop-sdk.bst:components/lcms2.bst
