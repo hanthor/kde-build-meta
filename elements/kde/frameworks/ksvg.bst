@@ -11,6 +11,10 @@ build-depends:
 - kde/qt6/qt6-qtsvg.bst
 - kde/frameworks/karchive.bst
 - kde/frameworks/ki18n.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kguiaddons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/kirigami.bst
 
