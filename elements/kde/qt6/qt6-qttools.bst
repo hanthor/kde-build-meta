@@ -7,6 +7,18 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/qt6/qt6-qtdeclarative.bst
 
+config:
+  # qtdiag/qtdiag6 are hard-linked; break them before the freedesktop-sdk
+  # stripper runs (it refuses to process files with multiple hard links)
+  install-commands:
+    (after: install-commands)
+    - |
+      find /buildstream-install/usr/bin -type f -links +1 | while IFS= read -r f; do
+        tmp=$(mktemp "${f}.XXXXXX")
+        cp -a "$f" "$tmp"
+        mv -f "$tmp" "$f"
+      done
+
 sources:
 - kind: tar
   url: qt:6.9/6.9.3/submodules/qttools-everywhere-src-6.9.3.tar.xz
