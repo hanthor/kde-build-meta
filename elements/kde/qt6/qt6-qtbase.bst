@@ -6,6 +6,7 @@ build-depends:
 - freedesktop-sdk.bst:components/openssl.bst
 - freedesktop-sdk.bst:components/sqlite.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/wayland.bst
 
 variables:
   cmake-local: >-

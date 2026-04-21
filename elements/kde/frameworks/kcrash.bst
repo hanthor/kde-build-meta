@@ -9,6 +9,7 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qttools.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/qt6/qt6-qtwayland.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
