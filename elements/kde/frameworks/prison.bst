@@ -10,6 +10,7 @@ build-depends:
 - kde/qt6/qt6-qttools.bst
 - kde/qt6/qt6-qtmultimedia.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/libs/qrencode.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
