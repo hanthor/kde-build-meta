@@ -30,6 +30,8 @@ build-depends:
 - kde/frameworks/kauth.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kdoctools.bst
+- kde/frameworks/kded.bst
+- kde/frameworks/kwallet.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON -DWITH_X11=OFF
