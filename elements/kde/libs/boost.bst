@@ -1,14 +1,12 @@
-kind: cmake
-description: Boost C++ Libraries (headers)
-
-build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+kind: manual
+description: Boost C++ Libraries (headers-only install)
 
 variables:
-  cmake-local: >-
-    -DBUILD_TESTING=OFF
-    -DBOOST_INCLUDE_LIBRARIES=""
-    -DBOOST_ENABLE_PYTHON=OFF
+  conf-cmd: ""
+  build-cmd: ""
+  install-cmd: |
+    install -d "%{install-root}/usr/include"
+    cp -r boost "%{install-root}/usr/include/"
 
 sources:
 - kind: tar
