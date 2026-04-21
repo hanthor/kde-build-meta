@@ -12,7 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_WITH_PYTHON_BINDINGS=OFF
 
 sources:
 - kind: git_repo
