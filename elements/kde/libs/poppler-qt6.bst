@@ -15,6 +15,7 @@ variables:
     -DENABLE_GLIB=OFF
     -DENABLE_CPP=OFF
     -DENABLE_UTILS=OFF
+    -DENABLE_BOOST=OFF
 
 depends:
 - kde/qt6/qt6-qtbase.bst
