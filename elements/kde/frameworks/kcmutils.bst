@@ -11,6 +11,7 @@ build-depends:
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kservice.bst
+- kde/frameworks/kio.bst
 - kde/frameworks/ki18n.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst

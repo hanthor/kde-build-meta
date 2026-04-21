@@ -28,8 +28,7 @@ build-depends:
 - kde/frameworks/kauth.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kdoctools.bst
-
-depends:
+- freedesktop-sdk.bst:components/util-linux.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst
