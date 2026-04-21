@@ -12,6 +12,7 @@ build-depends:
 - kde/frameworks/karchive.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcodecs.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
