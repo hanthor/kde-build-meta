@@ -9,6 +9,7 @@ variables:
     -DBUILD_SHARED_LIBS=ON
     -DWITH_TOOLS=OFF
     -DWITH_TEST=OFF
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 sources:
 - kind: tar
