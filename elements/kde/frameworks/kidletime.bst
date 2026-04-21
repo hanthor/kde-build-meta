@@ -11,6 +11,7 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - kde/frameworks/plasma-wayland-protocols.bst
+- kde/qt6/qt6-qtwayland.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=OFF
