@@ -4,6 +4,7 @@ description: Qt6 image formats module
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
 - kind: tar
