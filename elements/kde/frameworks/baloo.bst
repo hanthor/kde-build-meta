@@ -8,6 +8,7 @@ build-depends:
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtshadertools.bst
 - kde/frameworks/kio.bst
 
 depends:
@@ -15,6 +16,7 @@ depends:
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtshadertools.bst
 - kde/frameworks/kio.bst
 
 variables:
