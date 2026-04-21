@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtpositioning-everywhere-src-6.9.3.tar.xz
-  ref: 0c87c980f704c17aadaf0bf8a03845dd0a60cc0313be24bd7b5b90685d5835b4
+  url: qt:6.10/6.10.3/submodules/qtpositioning-everywhere-src-6.10.3.tar.xz
+  ref: 64cf6c5d1137378ec6a276d3f6e5be7b9d299436d66cea36ebd31035314287a2

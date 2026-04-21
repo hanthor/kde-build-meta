@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtconnectivity-everywhere-src-6.9.3.tar.xz
-  ref: e21bba5efb174c4456c5e5a7b4d52bba1ee62dfb4509bcff73fdfad9cb1dd7f5
+  url: qt:6.10/6.10.3/submodules/qtconnectivity-everywhere-src-6.10.3.tar.xz
+  ref: 6f675f3165ca3d06ee7a7bd234e2d58fe72f02e68c1e9c4ccb21fe8b1a93d478

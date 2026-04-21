@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtmultimedia-everywhere-src-6.9.3.tar.xz
-  ref: a275bee7ea60c91851236acdf99d76b891da90f428b68f51fe332354f19b86f5
+  url: qt:6.10/6.10.3/submodules/qtmultimedia-everywhere-src-6.10.3.tar.xz
+  ref: dd228fe54051e8834ca53e558794742c8814f217849f9dfa8f9a9df80441903a

@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qthttpserver-everywhere-src-6.9.3.tar.xz
-  ref: 7aa78793dba5cfb81a1d1e4b840bf0faf1e31beea08945b5689f404160dd2e8f
+  url: qt:6.10/6.10.3/submodules/qthttpserver-everywhere-src-6.10.3.tar.xz
+  ref: cdc9ad1a5b7a3de58a46c065b015f88d4f8ebe7052a346a9aa5465e510ff0deb

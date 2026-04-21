@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtquicktimeline-everywhere-src-6.9.3.tar.xz
-  ref: 284f4ba65ea71fa32751525c845f540c99d2f86fed88387e8c3d5869cf6c11f7
+  url: qt:6.10/6.10.3/submodules/qtquicktimeline-everywhere-src-6.10.3.tar.xz
+  ref: ca3d32afdbfd01860e0d5ca3010e9d6928ca3d545077edb8f8ce8148f16f62ae

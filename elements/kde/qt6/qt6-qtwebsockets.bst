@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtwebsockets-everywhere-src-6.9.3.tar.xz
-  ref: e27dda8cf3cb31cc235f92e186340ba70a76c47aed7eb32b239d68feb94282c4
+  url: qt:6.10/6.10.3/submodules/qtwebsockets-everywhere-src-6.10.3.tar.xz
+  ref: 6ed8196002af15ca930b4ad111f1c19ed2941f4020759dbefb23e655ef6a33a1

@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtwebchannel-everywhere-src-6.9.3.tar.xz
-  ref: 9457bbc1e5a13d9cf277c1fc121cdeb0a21546abf7fba091779b7ce9806fa305
+  url: qt:6.10/6.10.3/submodules/qtwebchannel-everywhere-src-6.10.3.tar.xz
+  ref: 9797953a17220b24f531ef09d3f49aa69add369aa6c32b5b2e07f2916a8129b5

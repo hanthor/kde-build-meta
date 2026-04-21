@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtquickeffectmaker-everywhere-src-6.9.3.tar.xz
-  ref: 6bf0361d24a0865cba9d94ff169c64cd69ac5d90c85260c29ec84ee5c2a59912
+  url: qt:6.10/6.10.3/submodules/qtquickeffectmaker-everywhere-src-6.10.3.tar.xz
+  ref: 5cb68c1195d344f01bca031bbb826b18b66e13bcd8abd97cfa5f059f0cd1a4f6

@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qt5compat-everywhere-src-6.9.3.tar.xz
-  ref: 091dac2124c2291c3566408720f89b1796cd458897c6acabd11f03976ad04461
+  url: qt:6.10/6.10.3/submodules/qt5compat-everywhere-src-6.10.3.tar.xz
+  ref: 60e8980a8eaedd65a6e4092e8acbbec61aa50ce907d0a69a1e52ad256373d3f4

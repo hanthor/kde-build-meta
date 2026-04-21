@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtlanguageserver-everywhere-src-6.9.3.tar.xz
-  ref: c8e8a6c4f8cb25626922e78f398b13b02eea21c4cc5525ffc2a0da7469369d33
+  url: qt:6.10/6.10.3/submodules/qtlanguageserver-everywhere-src-6.10.3.tar.xz
+  ref: 94f90484be8e49d3eb3bfcf0ba6cb2d8a170fc831c78de138332feebdf193964

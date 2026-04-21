@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtscxml-everywhere-src-6.9.3.tar.xz
-  ref: f389c0c051df908eae392fbe94a8513e6fe15f88399d88fd33a763165f5b34b7
+  url: qt:6.10/6.10.3/submodules/qtscxml-everywhere-src-6.10.3.tar.xz
+  ref: 26d3e6ae104a762b4c957bf45a382efb1caec2e16333f8dfa88158a8f2620809

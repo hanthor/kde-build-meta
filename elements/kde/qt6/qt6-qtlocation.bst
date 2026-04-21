@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtlocation-everywhere-src-6.9.3.tar.xz
-  ref: 141227d1fdaf4e1574c99127b2eb91ab171107bf067121aecb03b618b2e71605
+  url: qt:6.10/6.10.3/submodules/qtlocation-everywhere-src-6.10.3.tar.xz
+  ref: 1d0abed99f2834a7c684d23c495c5f752611fee14726f286396cf7147376799e

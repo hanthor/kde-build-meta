@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtdeclarative-everywhere-src-6.9.3.tar.xz
-  ref: 5a071b227229afbf5c976b7b59a0d850818d06ae861fcdf6d690351ca3f8a260
+  url: qt:6.10/6.10.3/submodules/qtdeclarative-everywhere-src-6.10.3.tar.xz
+  ref: dadf80d43b8e08ca63aa65d46859a42b920a7777cf7e0ecfcb4c4537f9e65c76

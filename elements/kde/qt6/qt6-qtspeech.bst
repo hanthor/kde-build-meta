@@ -11,5 +11,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtspeech-everywhere-src-6.9.3.tar.xz
-  ref: f86f5a4c742fb86ccc6e90ee72a9213150986575c3d238829a4b48a28bc9ab3e
+  url: qt:6.10/6.10.3/submodules/qtspeech-everywhere-src-6.10.3.tar.xz
+  ref: 6616e435bd6069aac4357cd35f7cb6c01a77e804fa57c5f58d8b8031f2036c1d

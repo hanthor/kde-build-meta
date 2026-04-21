@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qt3d-everywhere-src-6.9.3.tar.xz
-  ref: 7e8664ddf21a79d4eeaebf76dddf017ed31142a2df005cf4ac784dff10627fff
+  url: qt:6.10/6.10.3/submodules/qt3d-everywhere-src-6.10.3.tar.xz
+  ref: f53e47187be2487d8a23ef6fe5ed72f7c3c5fab706de3b61e165b0124c09ecd7

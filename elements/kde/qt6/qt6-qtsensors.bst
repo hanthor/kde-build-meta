@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtsensors-everywhere-src-6.9.3.tar.xz
-  ref: a2db5168e5f37631a4ad087deaed69abdfa0be6d182f56e8604764658df92f68
+  url: qt:6.10/6.10.3/submodules/qtsensors-everywhere-src-6.10.3.tar.xz
+  ref: c821ca985040f2326923d1ca05f2e91f7a45a1bf8bb8c072b712dfe1f7cb8d6e

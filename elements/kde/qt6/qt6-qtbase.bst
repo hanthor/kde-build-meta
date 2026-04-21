@@ -35,5 +35,5 @@ config:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtbase-everywhere-src-6.9.3.tar.xz
-  ref: c5a1a2f660356ec081febfa782998ae5ddbc5925117e64f50e4be9cd45b8dc6e
+  url: qt:6.10/6.10.3/submodules/qtbase-everywhere-src-6.10.3.tar.xz
+  ref: 383dc907816338f0cba72088a524c07458dfc69ce684ca9132fcc4fe91c24b0b

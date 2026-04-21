@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtremoteobjects-everywhere-src-6.9.3.tar.xz
-  ref: 98987c0055d4e1a6d31dac85c3445d99ed8142c21995f70b391ef0ebafaad85b
+  url: qt:6.10/6.10.3/submodules/qtremoteobjects-everywhere-src-6.10.3.tar.xz
+  ref: fa8faa42fbc4c97ef087cd7e0e7b6f21288d66498113a3f5bc3681cf798d5968

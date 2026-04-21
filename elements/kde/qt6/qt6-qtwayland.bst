@@ -12,5 +12,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtwayland-everywhere-src-6.9.3.tar.xz
-  ref: e413d4bc9263e80a465761debf8cb8317aa6b01e814b20046a05258e6573dadd
+  url: qt:6.10/6.10.3/submodules/qtwayland-everywhere-src-6.10.3.tar.xz
+  ref: 2e93322a86b562113cfa3a5f0aa8b1e4e185d6284af49b529578d27d52ca85d3

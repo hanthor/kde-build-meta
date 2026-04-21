@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtnetworkauth-everywhere-src-6.9.3.tar.xz
-  ref: 67d9dc47ed133e22aa78bedef53963bee3761318e5e74dc98f82ad9814cc7ec7
+  url: qt:6.10/6.10.3/submodules/qtnetworkauth-everywhere-src-6.10.3.tar.xz
+  ref: d88fe0cbce2b336bd34d81b3317732051115b874e9b958961b4b268ccccad594

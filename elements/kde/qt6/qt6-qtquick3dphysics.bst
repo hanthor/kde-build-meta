@@ -10,5 +10,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtquick3dphysics-everywhere-src-6.9.3.tar.xz
-  ref: dcd7b22d745d249eb602c5d4d8af8a8e9d11217ccb42b3dd611bb047153b5a6e
+  url: qt:6.10/6.10.3/submodules/qtquick3dphysics-everywhere-src-6.10.3.tar.xz
+  ref: 2abbc8e32df6d8f7e7ba5341c8032054459b95ff3b0c9601f61666931a10f5f6

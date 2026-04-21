@@ -8,5 +8,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtimageformats-everywhere-src-6.9.3.tar.xz
-  ref: 4fb26bdbfbd4b8e480087896514e11c33aba7b6b39246547355ea340c4572ffe
+  url: qt:6.10/6.10.3/submodules/qtimageformats-everywhere-src-6.10.3.tar.xz
+  ref: 84605dd91037482b5b7c7ecc5c27aee8acc1cd7f1fe77bc564777ddf365d7d28

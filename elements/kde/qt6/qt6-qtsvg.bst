@@ -8,5 +8,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtsvg-everywhere-src-6.9.3.tar.xz
-  ref: db76aa3358cbbe6fce7da576ff4669cb9801920188c750d3b12783bbe97026e2
+  url: qt:6.10/6.10.3/submodules/qtsvg-everywhere-src-6.10.3.tar.xz
+  ref: b3223fe005f6a4c7f21f34e4ee6ce0094737cff9503ba15bbb171ac18794f76d

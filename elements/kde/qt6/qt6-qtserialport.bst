@@ -8,5 +8,5 @@ build-depends:
 
 sources:
 - kind: tar
-  url: qt:6.9/6.9.3/submodules/qtserialport-everywhere-src-6.9.3.tar.xz
-  ref: 4b18ec030ff2644698c3f5c776894d8ffe5d3174c964d9bd8668429c943e8298
+  url: qt:6.10/6.10.3/submodules/qtserialport-everywhere-src-6.10.3.tar.xz
+  ref: 3fb30bec133316b6f65b6e03a38087a59c7d337cd9b021486a814a9bc10a31ef
