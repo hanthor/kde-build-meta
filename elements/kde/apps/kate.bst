@@ -4,6 +4,8 @@ description: kate - Advanced text editor
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
+- kde/frameworks/kdoctools.bst
+- kde/libs/qtkeychain-qt6.bst
 - kde/qt6/qt6-qtbase.bst
 
 variables:

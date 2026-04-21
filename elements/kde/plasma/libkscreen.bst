@@ -4,8 +4,9 @@ description: libkscreen
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
-- kde/qt6/qt6-qtbase.bst
 - kde/frameworks/plasma-wayland-protocols.bst
+- kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qttools.bst
 
 variables:
   cmake-local: >-

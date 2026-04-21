@@ -2,9 +2,14 @@ kind: cmake
 description: poppler Qt6 bindings
 
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- freedesktop-sdk.bst:components/poppler.bst
+- freedesktop-sdk.bst:components/boost.bst
+- freedesktop-sdk.bst:components/fontconfig.bst
+- freedesktop-sdk.bst:components/icu.bst
+- freedesktop-sdk.bst:components/lcms2.bst
+- freedesktop-sdk.bst:components/libjpeg.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/poppler.bst
+- freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
 
 variables:

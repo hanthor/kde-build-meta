@@ -3,12 +3,32 @@ description: plasma-workspace
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
-- kde/frameworks/extra-cmake-modules.bst
-- kde/qt6/qt6-qtbase.bst
 - kde/frameworks/baloo.bst
+- kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/networkmanager-qt.bst
 - kde/frameworks/plasma-wayland-protocols.bst
+- kde/libs/qcoro.bst
+- kde/qt6/qt6-qtbase.bst
+# System libs
+- freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/pipewire-daemon.bst
+- freedesktop-sdk.bst:components/linux-pam-base.bst
+- freedesktop-sdk.bst:components/libxkbcommon.bst
+# Plasma inter-deps
+- kde/plasma/kwin.bst
+- kde/plasma/kscreenlocker.bst
+- kde/plasma/layer-shell-qt.bst
+- kde/plasma/libkscreen.bst
+- kde/plasma/libplasma.bst
+- kde/plasma/kwayland.bst
+- kde/plasma/plasma-activities.bst
+- kde/plasma/plasma-activities-stats.bst
+- kde/plasma/plasma5support.bst
+- kde/plasma/libksysguard.bst
+- kde/plasma/kpipewire.bst
+- kde/plasma/knighttime.bst
+- kde/libs/libcanberra.bst
 
 variables:
   cmake-local: >-

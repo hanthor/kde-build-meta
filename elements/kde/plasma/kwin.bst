@@ -9,6 +9,22 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/krunner.bst
 - kde/frameworks/plasma-wayland-protocols.bst
+# Wayland / graphics / input
+- freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/libxkbcommon.bst
+- freedesktop-sdk.bst:components/libinput.bst
+- freedesktop-sdk.bst:components/libdrm.bst
+- freedesktop-sdk.bst:components/libcap.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
+- freedesktop-sdk.bst:components/pipewire-daemon.bst
+# Plasma inter-deps
+- kde/plasma/kdecoration.bst
+- kde/plasma/kscreenlocker.bst
+- kde/plasma/kwayland.bst
+- kde/plasma/libplasma.bst
+- kde/plasma/plasma-activities.bst
+- kde/plasma/kglobalacceld.bst
 
 variables:
   cmake-local: >-
