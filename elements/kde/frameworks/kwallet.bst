@@ -20,9 +20,8 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kcrash.bst
+- kde/frameworks/kcolorscheme.bst
 - sdk/libsecret.bst
-- kde/frameworks/knotifications.bst
-- freedesktop-sdk.bst:components/libgcrypt.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
