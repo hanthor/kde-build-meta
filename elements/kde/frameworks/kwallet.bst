@@ -14,9 +14,13 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kcoreaddons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/libgcrypt.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kwindowsystem.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kcrash.bst
+- sdk/libsecret.bst
 - kde/frameworks/knotifications.bst
 - freedesktop-sdk.bst:components/libgcrypt.bst
 
