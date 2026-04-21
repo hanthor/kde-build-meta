@@ -6,6 +6,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/qt6/qt6-qttools.bst
+- freedesktop-sdk.bst:components/libsecret.bst
 
 variables:
   cmake-local: >-
