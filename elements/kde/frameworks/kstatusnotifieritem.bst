@@ -15,7 +15,7 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITHOUT_X11=ON -DWITHOUT_X11=ON
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITHOUT_X11=ON
 
 sources:
 - kind: git_repo
