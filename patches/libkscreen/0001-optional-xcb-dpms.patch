@@ -49,3 +49,22 @@
      } else {
          qCWarning(KSCREEN_DPMS) << "Platform is not Wayland or X11, this doesn't make sense. Platform name is" << QGuiApplication::platformName();
          Q_ASSERT(false);
+--- a/src/backendmanager.cpp
++++ b/src/backendmanager.cpp
+@@ -24,7 +24,6 @@
+ #include <QGuiApplication>
+ #include <QStandardPaths>
+ #include <QThread>
+-#include <QtGui/private/qtx11extras_p.h>
+ 
+ #include <memory>
+ 
+@@ -130,7 +129,7 @@
+     } else if (!env_kscreen_backend.isEmpty()) {
+         backendFilter = env_kscreen_backend;
+     } else {
+-        if (QX11Info::isPlatformX11()) {
++        if (QGuiApplication::platformName() == QLatin1String("xcb")) {
+             backendFilter = QStringLiteral("XRandR");
+         } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"))) {
+             backendFilter = QStringLiteral("KWayland");
