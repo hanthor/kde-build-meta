@@ -8,6 +8,7 @@ build-depends:
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qttools.bst
+- kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kconfig.bst

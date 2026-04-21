@@ -13,6 +13,9 @@ build-depends:
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kxmlgui.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:

@@ -10,6 +10,14 @@ build-depends:
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kfilemetadata.bst
+- kde/frameworks/kcrash.bst
 
 depends:
 - kde/qt6/qt6-qtbase.bst

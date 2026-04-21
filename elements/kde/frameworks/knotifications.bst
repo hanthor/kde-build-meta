@@ -11,6 +11,7 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kconfig.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
