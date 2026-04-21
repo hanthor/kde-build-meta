@@ -14,6 +14,22 @@ build-depends:
 - kde/plasma/libplasma.bst
 - kde/plasma/libkscreen.bst
 - kde/plasma/plasma-activities.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/krunner.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kwindowsystem.bst
 
 variables:
   cmake-local: >-

@@ -11,6 +11,7 @@ build-depends:
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kiconthemes.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

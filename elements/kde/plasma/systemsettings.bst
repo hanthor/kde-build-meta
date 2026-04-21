@@ -6,6 +6,23 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kcoreaddons.bst
 
 variables:
   cmake-local: >-

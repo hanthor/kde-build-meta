@@ -12,6 +12,14 @@ build-depends:
 - kde/plasma/libplasma.bst
 
 - kde/frameworks/kimageformats.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kcrash.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

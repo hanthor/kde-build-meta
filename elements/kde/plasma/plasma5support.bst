@@ -7,6 +7,16 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/networkmanager-qt.bst
 - kde/plasma/plasma-activities.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/kio.bst
 
 variables:
   cmake-local: >-

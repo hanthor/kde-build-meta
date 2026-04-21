@@ -11,6 +11,22 @@ build-depends:
 - kde/frameworks/kirigami.bst
 - kde/frameworks/prison.bst
 - kde/frameworks/kquickcharts.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/networkmanager-qt.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kwallet.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kcmutils.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

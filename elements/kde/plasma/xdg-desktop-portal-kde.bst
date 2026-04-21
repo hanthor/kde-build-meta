@@ -9,6 +9,18 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland.bst
 - kde/plasma/kwayland.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/qt6/qt6-qtdeclarative.bst
 
 variables:
   cmake-local: >-

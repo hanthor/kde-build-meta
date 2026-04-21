@@ -9,6 +9,17 @@ build-depends:
 - kde/plasma/libplasma.bst
 
 - kde/frameworks/kirigami.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/bluez-qt.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/ksvg.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

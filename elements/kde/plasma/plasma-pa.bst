@@ -12,6 +12,16 @@ build-depends:
 
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kitemmodels.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdeclarative.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kstatusnotifieritem.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/kdbusaddons.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

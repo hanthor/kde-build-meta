@@ -7,6 +7,18 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 
 - kde/frameworks/kirigami.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/knewstuff.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kpackage.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
