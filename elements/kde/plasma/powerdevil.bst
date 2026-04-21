@@ -9,7 +9,7 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 
 variables:
-  cmake-local: >-
+  cmake-local: >- -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
