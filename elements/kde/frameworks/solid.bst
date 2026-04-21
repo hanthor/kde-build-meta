@@ -11,6 +11,8 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/flex.bst
 - freedesktop-sdk.bst:components/bison.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
+- freedesktop-sdk.bst:components/util-linux.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
