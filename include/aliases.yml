@@ -74,5 +74,6 @@ aliases:
 
   # KDE aliases
   kde: https://invent.kde.org/
+  boost_io: https://archives.boost.io/
   qt: https://download.qt.io/official_releases/qt/
   kde_cdn: https://download.kde.org/stable/
