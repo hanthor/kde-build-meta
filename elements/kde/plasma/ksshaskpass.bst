@@ -8,7 +8,8 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 
 variables:
-  cmake-local: >- -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
+  cmake-local: >-
+    -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
 
