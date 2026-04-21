@@ -12,6 +12,7 @@ build-depends:
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kdoctools.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF

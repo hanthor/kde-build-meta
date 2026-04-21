@@ -27,6 +27,7 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kauth.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/kdoctools.bst
 
 depends:
 - kde/qt6/qt6-qtbase.bst

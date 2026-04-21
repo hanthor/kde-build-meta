@@ -14,6 +14,8 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kcoreaddons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kdoctools.bst
+- kde/frameworks/kservice.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF

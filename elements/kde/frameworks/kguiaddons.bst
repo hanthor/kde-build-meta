@@ -10,7 +10,7 @@ build-depends:
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
-- kde/frameworks/plasma-wayland-protocols.bst
+- kde/qt6/qt6-qtwayland.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 
 variables:

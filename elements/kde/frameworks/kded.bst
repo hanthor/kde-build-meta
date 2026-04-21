@@ -13,6 +13,7 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdoctools.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF

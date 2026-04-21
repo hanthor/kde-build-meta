@@ -18,6 +18,7 @@ build-depends:
 - kde/frameworks/solid.bst
 - kde/frameworks/kfilemetadata.bst
 - kde/frameworks/kcrash.bst
+- kde/frameworks/kdoctools.bst
 
 depends:
 - kde/qt6/qt6-qtbase.bst

@@ -12,6 +12,7 @@ build-depends:
 - kde/frameworks/karchive.bst
 - kde/frameworks/ki18n.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kirigami.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
