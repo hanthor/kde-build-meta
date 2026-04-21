@@ -12,7 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/python3.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DCMAKE_DISABLE_FIND_PACKAGE_Python3=TRUE
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
 
 sources:
 - kind: git_repo
