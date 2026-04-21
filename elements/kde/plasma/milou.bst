@@ -7,6 +7,10 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
 
+- kde/frameworks/ki18n.bst
+- kde/frameworks/krunner.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/kconfig.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

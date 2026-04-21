@@ -7,6 +7,13 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/plasma-wayland-protocols.bst
+- freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
+- kde/plasma/plasma-workspace.bst
+- kde/plasma/layer-shell-qt.bst
+- kde/plasma/libplasma.bst
+- kde/plasma/libkscreen.bst
+- kde/plasma/plasma-activities.bst
 
 variables:
   cmake-local: >-

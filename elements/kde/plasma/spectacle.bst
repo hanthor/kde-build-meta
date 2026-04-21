@@ -8,6 +8,7 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 
+- kde/frameworks/purpose.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

@@ -5,7 +5,12 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- freedesktop-sdk.bst:components/networkmanager.bst
+- kde/plasma/libplasma.bst
 
+- kde/frameworks/kirigami.bst
+- kde/frameworks/prison.bst
+- kde/frameworks/kquickcharts.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

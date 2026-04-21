@@ -7,6 +7,8 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/networkmanager-qt.bst
 
+- kde/frameworks/purpose.bst
+- kde/frameworks/kitemmodels.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

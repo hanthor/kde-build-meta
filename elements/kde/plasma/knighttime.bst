@@ -7,6 +7,11 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qttools.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kholidays.bst
 
 variables:
   cmake-local: >-

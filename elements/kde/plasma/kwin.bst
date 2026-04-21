@@ -26,6 +26,30 @@ build-depends:
 - kde/plasma/plasma-activities.bst
 - kde/plasma/kglobalacceld.bst
 
+- kde/frameworks/kirigami.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtwayland.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kdeclarative.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/knewstuff.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/knotifications.bst
+- kde/plasma/libkscreen.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

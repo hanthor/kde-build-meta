@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 
+- kde/frameworks/ksvg.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

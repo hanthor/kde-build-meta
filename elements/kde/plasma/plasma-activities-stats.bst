@@ -6,6 +6,9 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qttools.bst
+- kde/plasma/plasma-activities.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
 
 variables:
   cmake-local: >-

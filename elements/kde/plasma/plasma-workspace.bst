@@ -30,6 +30,45 @@ build-depends:
 - kde/plasma/knighttime.bst
 - kde/libs/libcanberra.bst
 
+- kde/frameworks/kirigami.bst
+- kde/frameworks/kquickcharts.bst
+- kde/frameworks/kuserfeedback.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtshadertools.bst
+- kde/qt6/qt6-qtwayland.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kdeclarative.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kholidays.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/kded.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/knewstuff.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kparts.bst
+- kde/frameworks/prison.bst
+- kde/frameworks/krunner.bst
+- kde/frameworks/kstatusnotifieritem.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/ktextwidgets.bst
+- kde/frameworks/kwallet.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kxmlgui.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

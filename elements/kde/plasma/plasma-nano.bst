@@ -6,6 +6,10 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kitemmodels.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

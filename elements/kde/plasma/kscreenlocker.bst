@@ -7,6 +7,24 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kdoctools.bst
+- freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/linux-pam-base.bst
+- kde/plasma/layer-shell-qt.bst
+- kde/plasma/libkscreen.bst
+- kde/plasma/libplasma.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/ksvg.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtwayland.bst
 
 variables:
   cmake-local: >-

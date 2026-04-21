@@ -6,7 +6,12 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
+- freedesktop-sdk.bst:components/wayland.bst
+- kde/plasma/layer-shell-qt.bst
+- kde/plasma/libkscreen.bst
+- kde/plasma/libplasma.bst
 
+- kde/frameworks/kimageformats.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

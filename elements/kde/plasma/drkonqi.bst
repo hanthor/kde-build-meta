@@ -5,6 +5,22 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kwallet.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kidletime.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/syntax-highlighting.bst
+- kde/frameworks/kstatusnotifieritem.bst
 
 variables:
   cmake-local: >-

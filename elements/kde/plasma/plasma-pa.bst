@@ -6,7 +6,12 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
+- freedesktop-sdk.bst:components/libpulse.bst
+- kde/plasma/libplasma.bst
+- kde/libs/libcanberra.bst
 
+- kde/frameworks/kirigami.bst
+- kde/frameworks/kitemmodels.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

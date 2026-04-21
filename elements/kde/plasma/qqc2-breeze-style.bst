@@ -6,6 +6,11 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kiconthemes.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

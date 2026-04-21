@@ -10,6 +10,7 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:components/linux-pam-base.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtdeclarative.bst
 

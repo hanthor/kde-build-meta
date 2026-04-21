@@ -7,6 +7,7 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qttools.bst
+- freedesktop-sdk.bst:components/wayland.bst
 
 variables:
   cmake-local: >-

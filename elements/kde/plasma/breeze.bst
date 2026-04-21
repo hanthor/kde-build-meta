@@ -6,7 +6,17 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kirigami.bst
+- freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kcmutils.bst
 
+- kde/frameworks/frameworkintegration.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
