@@ -11,7 +11,7 @@ config:
   # qtdiag/qtdiag6 are hard-linked; break them before the freedesktop-sdk
   # stripper runs (it refuses to process files with multiple hard links)
   install-commands:
-    (after: install-commands)
+    (>):
     - |
       find /buildstream-install/usr/bin -type f -links +1 | while IFS= read -r f; do
         tmp=$(mktemp "${f}.XXXXXX")
