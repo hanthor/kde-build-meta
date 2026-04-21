@@ -4,8 +4,8 @@ description: poppler Qt6 bindings
 build-depends:
 - freedesktop-sdk.bst:components/fontconfig.bst
 - freedesktop-sdk.bst:components/icu.bst
-- freedesktop-sdk.bst:components/lcms2.bst
-- freedesktop-sdk.bst:components/libjpeg.bst
+- freedesktop-sdk.bst:components/lcms.bst
+- freedesktop-sdk.bst:components/jpeg.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/poppler.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
