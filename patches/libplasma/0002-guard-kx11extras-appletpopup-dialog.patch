@@ -1,0 +1,118 @@
+From 0000000000000000000000000000000000000002 Mon Sep 17 00:00:00 2001
+From: Aurora Build <aurora@tromso>
+Date: Mon, 01 Jan 2024 00:00:00 +0000
+Subject: [PATCH 2/2] Guard KX11Extras/KWindowInfo includes and usages in appletpopup.cpp and dialog.cpp
+
+When building without X11 (HAVE_X11=0), KX11Extras and KWindowInfo are
+not installed by kwindowsystem. Guard all unconditional includes and
+usages of these classes with #if HAVE_X11.
+
+diff --git a/src/plasmaquick/appletpopup.cpp b/src/plasmaquick/appletpopup.cpp
+--- a/src/plasmaquick/appletpopup.cpp
++++ b/src/plasmaquick/appletpopup.cpp
+@@ -7,6 +7,7 @@
+ #include "appletpopup.h"
+ 
++#include "config-plasma.h"
+ #include <QGuiApplication>
+ #include <QQmlProperty>
+ #include <QSize>
+@@ -14,7 +15,9 @@
+ #include <KConfigGroup>
+ #include <KWindowSystem>
++#if HAVE_X11
+ #include <KX11Extras>
++#endif
+ 
+ #include "applet.h"
+ #include "appletquickitem.h"
+@@ -63,8 +66,10 @@ AppletPopup::AppletPopup()
+ 
+     if (KWindowSystem::isPlatformX11()) {
++#if HAVE_X11
+         KX11Extras::setType(winId(), NET::AppletPopup);
++#endif
+     } else {
+         PlasmaShellWaylandIntegration::get(this)->setRole(QtWayland::org_kde_plasma_surface::role::role_appletpopup);
+         PlasmaShellWaylandIntegration::get(this)->setTakesFocus(true);
+diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
+--- a/src/plasmaquick/dialog.cpp
++++ b/src/plasmaquick/dialog.cpp
+@@ -24,9 +24,11 @@
+ #include <QScreen>
+ 
++#if HAVE_X11
+ #include <KWindowInfo>
++#endif
+ #include <KWindowSystem>
++#if HAVE_X11
+ #include <KX11Extras>
++#endif
+ 
+ #include <KWindowEffects>
+@@ -253,7 +257,11 @@ void DialogPrivate::updateVisibility(bool visible)
+                                                  theme.backgroundSaturation(),
+                                                  mask);
+ 
++#if HAVE_X11
+         if (!KWindowSystem::isPlatformX11() || KX11Extras::compositingActive()) {
++#else
++        if (true) {
++#endif
+             if (hasMask) {
+                 hasMask = false;
+                 q->setMask(QRegion());
+@@ -749,9 +757,11 @@ void DialogPrivate::applyType()
+     }
+ #endif
+ 
++#if HAVE_X11
+     if (!wmType && type != Dialog::Normal && KWindowSystem::isPlatformX11()) {
+         KX11Extras::setType(q->winId(), static_cast<NET::WindowType>(type));
+     }
++#endif
+     if (q->flags() & Qt::WindowStaysOnTopHint) {
+         // If the AppletPopup type is not explicitly requested, then use the Dock type in this case
+         // to avoid bug #454635.
+@@ -812,12 +822,14 @@ void DialogPrivate::applyType()
+         }
+     }
+ 
++#if HAVE_X11
+     if (KWindowSystem::isPlatformX11()) {
+         if (type == Dialog::Dock || type == Dialog::Notification || type == Dialog::OnScreenDisplay || type == Dialog::CriticalNotification) {
+             KX11Extras::setOnAllDesktops(q->winId(), true);
+         } else {
+             KX11Extras::setOnAllDesktops(q->winId(), false);
+         }
+     }
++#endif
+ 
+     PlasmaShellWaylandIntegration::get(q)->setTakesFocus(!q->flags().testFlag(Qt::WindowDoesNotAcceptFocus));
+ }
+@@ -1081,10 +1093,12 @@ QPoint DialogPrivate::popupPosition(QQuickItem *item, const QSize &size)
+     // if the item is in a window that ignores WM we want to position the popups outside
+     bool outsideParentWindow = (item->window()->flags() & Qt::X11BypassWindowManagerHint) && item->window()->mask().isNull();
+ 
++#if HAVE_X11
+     if (KWindowSystem::isPlatformX11()) {
+         // on X11 we also consider windows with the type Dock
+         const KWindowInfo winInfo(item->window()->winId(), NET::WMWindowType);
+         outsideParentWindow = outsideParentWindow || (winInfo.windowType(NET::AllTypesMask) == NET::Dock && item->window()->mask().isNull());
+     }
++#endif
+ 
+     QRect parentGeometryBounds;
+     if (outsideParentWindow) {
+@@ -1361,9 +1375,11 @@ void Dialog::showEvent(QShowEvent *event)
+     if (d->backgroundHints != Dialog::NoBackground) {
+         DialogShadows::instance()->addWindow(this, d->dialogBackground->enabledBorders());
+     }
+ 
++#if HAVE_X11
+     if (KWindowSystem::isPlatformX11()) {
+         KX11Extras::setState(winId(), NET::SkipTaskbar | NET::SkipPager | NET::SkipSwitcher);
+     }
++#endif
+     QQuickWindow::showEvent(event);
+ }

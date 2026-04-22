@@ -8,17 +8,6 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland.bst
 
-depends:
-- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
-- freedesktop-sdk.bst:components/xorg-lib-x11.bst
-- freedesktop-sdk.bst:components/xcb-util.bst
-- freedesktop-sdk.bst:components/xcb-util-image.bst
-- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
-- freedesktop-sdk.bst:components/xcb-util-wm.bst
-- freedesktop-sdk.bst:components/xcb-util-renderutil.bst
-- freedesktop-sdk.bst:components/xcb-util-cursor.bst
-- freedesktop-sdk.bst:components/libxkbcommon.bst
-
 variables:
   cmake-local: >-
     -DINSTALL_ARCHDATADIR=lib
@@ -26,8 +15,6 @@ variables:
     -DBUILD_WITH_PCH=FALSE
     -DQT_FEATURE_openssl_linked=ON
     -DQT_FEATURE_system_sqlite=ON
-    -DQT_FEATURE_xcb=ON
-    -DQT_FEATURE_xcb_xlib=ON
 
 config:
   install-commands:
