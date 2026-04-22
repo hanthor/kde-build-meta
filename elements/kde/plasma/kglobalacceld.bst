@@ -31,7 +31,6 @@ build-depends:
 
 variables:
   cmake-local: >-
-    -DWITH_X11=OFF
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
