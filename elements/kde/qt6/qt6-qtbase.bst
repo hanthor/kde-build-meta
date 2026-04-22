@@ -7,6 +7,8 @@ build-depends:
 - freedesktop-sdk.bst:components/sqlite.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland.bst
+
+depends:
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xcb-util.bst
