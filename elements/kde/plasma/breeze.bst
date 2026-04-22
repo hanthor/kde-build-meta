@@ -19,7 +19,7 @@ build-depends:
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/kpackage.bst
-- kde/frameworks/kwayland.bst
+- kde/plasma/kwayland.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/plasma/kdecoration.bst
 - kde/qt6/qt6-qt5compat.bst
