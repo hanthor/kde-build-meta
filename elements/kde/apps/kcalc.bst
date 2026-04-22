@@ -16,6 +16,7 @@ build-depends:
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/kwidgetsaddons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
