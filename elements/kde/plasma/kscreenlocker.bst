@@ -13,6 +13,7 @@ build-depends:
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
+- kde/frameworks/plasma-wayland-protocols.bst
 - kde/plasma/libplasma.bst
 - kde/frameworks/kirigami.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
