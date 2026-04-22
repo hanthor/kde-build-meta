@@ -16,6 +16,22 @@ build-depends:
 - kde/frameworks/kjobwidgets.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/breeze-icons.bst
+- kde/frameworks/karchive.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:

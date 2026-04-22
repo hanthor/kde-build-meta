@@ -19,6 +19,19 @@ build-depends:
 - kde/frameworks/kfilemetadata.bst
 - kde/frameworks/kcrash.bst
 - kde/frameworks/kdoctools.bst
+- kde/libs/lmdb.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/breeze-icons.bst
+- kde/frameworks/karchive.bst
 
 depends:
 - kde/qt6/qt6-qtbase.bst
