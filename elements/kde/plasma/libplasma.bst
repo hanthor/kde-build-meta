@@ -28,6 +28,16 @@ build-depends:
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kauth.bst
 
 variables:
   cmake-local: >-

@@ -16,6 +16,21 @@ build-depends:
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kguiaddons.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
