@@ -59,3 +59,5 @@ sources:
   url: kde:plasma/libplasma.git
   track: Plasma/6.6
   ref: d8420e7dd6bd77ed121588318a6096df573df36a
+- kind: patch
+  path: patches/libplasma/0001-guard-kx11extras-with-have-x11.patch
