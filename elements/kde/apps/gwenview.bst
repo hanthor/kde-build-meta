@@ -36,12 +36,20 @@ build-depends:
 - kde/frameworks/kglobalaccel.bst
 - kde/plasma/plasma-activities.bst
 - kde/libs/phonon.bst
+- kde/frameworks/kdoctools.bst
+- freedesktop-sdk.bst:components/docbook-xml.bst
+- freedesktop-sdk.bst:components/docbook-xsl.bst
+- freedesktop-sdk.bst:components/libxslt.bst
+- kde/frameworks/purpose.bst
+- freedesktop-sdk.bst:components/jpeg.bst
+- freedesktop-sdk.bst:components/libpng.bst
+- freedesktop-sdk.bst:components/libtiff.bst
+- core-deps/exiv2.bst
 
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DGWENVIEW_SEMANTICINFO_BACKEND=None
 
 sources:

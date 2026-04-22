@@ -10,6 +10,7 @@ build-depends:
 - freedesktop-sdk.bst:components/docbook-xsl.bst
 - freedesktop-sdk.bst:components/libxslt.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- kde/libs/phonon.bst
 - kde/frameworks/baloo.bst
 - kde/frameworks/kbookmarks.bst
 - kde/frameworks/kcmutils.bst
