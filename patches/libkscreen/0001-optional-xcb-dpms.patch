@@ -30,3 +30,65 @@ index c674f4a..0428b4c 100644
              backendFilter = QStringLiteral("XRandR");
          } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"))) {
              backendFilter = QStringLiteral("KWayland");
+diff --git a/src/libdpms/dpms.cpp b/src/libdpms/dpms.cpp
+--- a/src/libdpms/dpms.cpp
++++ b/src/libdpms/dpms.cpp
+@@ -9,7 +9,6 @@
+ #include "waylanddpmshelper_p.h"
+ #include "xcbdpmshelper_p.h"
+ 
+-#include <QtGui/private/qtx11extras_p.h>
+ #include <QGuiApplication>
+ 
+ KScreen::Dpms::Dpms(QObject *parent)
+@@ -17,7 +16,7 @@ KScreen::Dpms::Dpms(QObject *parent)
+     : QObject(parent)
+ {
+-    if (QX11Info::isPlatformX11()) {
++    if (QGuiApplication::platformName() == QLatin1String("xcb")) {
+         m_helper.reset(new XcbDpmsHelper);
+     } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
+         m_helper.reset(new WaylandDpmsHelper);
+diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
+--- a/src/libdpms/xcbdpmshelper.cpp
++++ b/src/libdpms/xcbdpmshelper.cpp
+@@ -8,7 +8,7 @@
+ #include "xcbdpmshelper_p.h"
+ 
+ #include <QGuiApplication>
+-#include <QtGui/private/qtx11extras_p.h>
++#include <QNativeInterface>
+ 
+ #include <kscreendpms_debug.h>
+ 
+@@ -19,7 +19,11 @@ using ScopedCPointer = QScopedPointer<T, QScopedPointerPodDeleter>;
+ XcbDpmsHelper::XcbDpmsHelper()
+     : AbstractDpmsHelper()
+ {
+-    auto *c = QX11Info::connection();
++    auto *x11App = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
++    if (!x11App) {
++        setSupported(false);
++        return;
++    }
++    auto *c = x11App->connection();
+ 
+     xcb_prefetch_extension_data(c, &xcb_dpms_id);
+     auto *extension = xcb_get_extension_data(c, &xcb_dpms_id);
+@@ -31,7 +35,7 @@ XcbDpmsHelper::XcbDpmsHelper()
+     setSupported(capableReply && capableReply->capable);
+ 
+     // Disable a default timeout, if any
+-    xcb_dpms_set_timeouts(QX11Info::connection(), 0, 0, 0);
++    xcb_dpms_set_timeouts(c, 0, 0, 0);
+ }
+ 
+ XcbDpmsHelper::~XcbDpmsHelper() = default;
+@@ -40,7 +44,8 @@ void XcbDpmsHelper::trigger(KScreen::Dpms::Mode mode, const QList<QScreen *> &s
+ {
+     setHasPendingChanges(true);
+-    auto *c = QX11Info::connection();
++    auto *x11App = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
++    auto *c = x11App ? x11App->connection() : nullptr;
+ 
+     if (screens != qGuiApp->screens()) {
