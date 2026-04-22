@@ -17,6 +17,8 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/kidletime.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/kunitconversion.bst
+- kde/frameworks/kholidays.bst
 
 variables:
   cmake-local: >-
