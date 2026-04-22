@@ -18,17 +18,18 @@ diff --git a/src/plasma/private/blureffectwatcher_p.h b/src/plasma/private/blure
 index dd3d744..257d8ad 100644
 --- a/src/plasma/private/blureffectwatcher_p.h
 +++ b/src/plasma/private/blureffectwatcher_p.h
-@@ -12,7 +12,9 @@
+@@ -12,8 +12,9 @@
  
  #include <QAbstractNativeEventFilter>
  
+-#include <xcb/xcb.h>
+-
+ #include <config-plasma.h>
 +#if HAVE_X11
- #include <xcb/xcb.h>
++#include <xcb/xcb.h>
 +#endif
  
- #include <config-plasma.h>
- 
-@@ -30,9 +32,7 @@ public:
+@@ -30,9 +31,7 @@ public:
      bool isEffectActive() const;
  
  protected:
