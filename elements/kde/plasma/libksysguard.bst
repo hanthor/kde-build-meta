@@ -14,6 +14,7 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/kpackage.bst
 - kde/frameworks/knewstuff.bst
+- kde/frameworks/attica.bst
 - kde/frameworks/solid.bst
 variables:
   cmake-local: >-
