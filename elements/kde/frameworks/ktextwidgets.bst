@@ -15,6 +15,7 @@ build-depends:
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kcompletion.bst
 - kde/qt6/qt6-qtspeech.bst
+- kde/qt6/qt6-qtmultimedia.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
