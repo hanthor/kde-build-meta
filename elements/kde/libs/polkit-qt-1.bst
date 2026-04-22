@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/polkit.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DQT_MAJOR_VERSION=6
