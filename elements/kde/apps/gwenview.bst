@@ -35,6 +35,7 @@ build-depends:
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/kglobalaccel.bst
 - kde/plasma/plasma-activities.bst
+- kde/libs/phonon.bst
 
 variables:
   cmake-local: >-

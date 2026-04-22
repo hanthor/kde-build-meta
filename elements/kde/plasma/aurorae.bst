@@ -12,6 +12,7 @@ build-depends:
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/kpackage.bst
 variables:

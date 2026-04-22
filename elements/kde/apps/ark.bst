@@ -34,6 +34,8 @@ build-depends:
 - kde/frameworks/kauth.bst
 - kde/frameworks/solid.bst
 - kde/frameworks/breeze-icons.bst
+- kde/frameworks/kdoctools.bst
+- freedesktop-sdk.bst:components/libxslt.bst
 - kde/frameworks/karchive.bst
 - kde/frameworks/knotifications.bst
 
@@ -41,7 +43,6 @@ variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
 
 sources:
 - kind: git_repo
