@@ -61,6 +61,7 @@ build-depends:
 # GPU buffer management and mode computation
 - freedesktop-sdk.bst:components/dummy-gbm.bst
 - kde/libs/libxcvt.bst
+- freedesktop-sdk.bst:components/xwayland.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
@@ -74,7 +75,6 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
-    -DKWIN_BUILD_XWAYLAND=OFF
 
 sources:
 - kind: git_repo
