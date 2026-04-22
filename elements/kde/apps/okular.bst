@@ -40,6 +40,7 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kpty.bst
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/threadweaver.bst
 - kde/frameworks/sonnet.bst

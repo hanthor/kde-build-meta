@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 
+- kde/plasma/kdecoration.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kconfig.bst

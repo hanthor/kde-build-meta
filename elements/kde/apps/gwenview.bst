@@ -65,3 +65,5 @@ sources:
   ref: 5c5fb0973378eeeb3a7bb075b69523e7d4504a8f
 - kind: patch
   path: patches/gwenview/0001-make-kimageannotator-optional.patch
+- kind: patch
+  path: patches/gwenview/0002-use-libjpeg62-with-turbo.patch
