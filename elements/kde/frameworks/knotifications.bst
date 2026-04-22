@@ -1,6 +1,9 @@
 kind: cmake
 description: knotifications
 
+depends:
+- kde/libs/libcanberra.bst
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
@@ -12,7 +15,6 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kconfig.bst
-- kde/libs/libcanberra.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
