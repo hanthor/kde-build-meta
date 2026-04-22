@@ -16,7 +16,9 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=OFFsources:
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
+
+sources:
 - kind: git_repo
   url: kde:frameworks/knotifications.git
   track: v6.22.0
