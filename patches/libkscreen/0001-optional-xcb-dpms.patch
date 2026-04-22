@@ -30,10 +30,10 @@ index c674f4a..0428b4c 100644
          } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"))) {
              backendFilter = QStringLiteral("KWayland");
 diff --git a/src/libdpms/CMakeLists.txt b/src/libdpms/CMakeLists.txt
+index 70d1393..67503b2 100644
 --- a/src/libdpms/CMakeLists.txt
 +++ b/src/libdpms/CMakeLists.txt
-@@ -1,9 +1,9 @@
- # SPDX-License-Identifier: BSD-3-Clause
+@@ -2,10 +2,9 @@
  # SPDX-FileCopyrightText: 2022 Aleix Pol Gonzalez <aleixpol@kde.org>
  
  add_library(KF6ScreenDpms SHARED)
@@ -44,10 +44,14 @@ diff --git a/src/libdpms/CMakeLists.txt b/src/libdpms/CMakeLists.txt
 -                                            Qt::GuiPrivate Qt::WaylandClient Wayland::Client
 +                                    PRIVATE Qt::WaylandClient Wayland::Client
  )
+ 
+ if (Qt6_VERSION VERSION_GREATER_EQUAL "6.8.0")
 diff --git a/src/libdpms/dpms.cpp b/src/libdpms/dpms.cpp
+index e2ea1c8..e863062 100644
 --- a/src/libdpms/dpms.cpp
 +++ b/src/libdpms/dpms.cpp
-@@ -6,14 +6,11 @@
+@@ -5,17 +5,13 @@
+ #include "dpms.h"
  #include "kscreendpms_debug.h"
  #include "waylanddpmshelper_p.h"
 -#include "xcbdpmshelper_p.h"
