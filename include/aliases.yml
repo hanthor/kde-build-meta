@@ -51,6 +51,7 @@ aliases:
   tcpdump: https://www.tcpdump.org/
   thekelleys: http://www.thekelleys.org.uk/
   videolan_pub: https://download.videolan.org/pub/
+  xorg: https://xorg.freedesktop.org/
   webkitgtk: https://webkitgtk.org/releases/
 
   # git aliases go here
