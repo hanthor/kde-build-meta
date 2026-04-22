@@ -55,5 +55,7 @@ sources:
   path: patches/kscreenlocker/0001-optional-x11.patch
 - kind: patch
   path: patches/kscreenlocker/0002-fix-x11info-ctor.patch
+- kind: patch
+  path: patches/kscreenlocker/0003-add-source-include-for-fixx11h.patch
 - kind: local
   path: patches/kscreenlocker/override

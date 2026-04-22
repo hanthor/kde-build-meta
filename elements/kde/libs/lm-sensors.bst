@@ -4,6 +4,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
 - freedesktop-sdk.bst:components/bison.bst
 - freedesktop-sdk.bst:components/flex.bst
+- freedesktop-sdk.bst:components/which.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

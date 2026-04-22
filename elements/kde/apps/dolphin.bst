@@ -45,6 +45,8 @@ build-depends:
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/sonnet.bst
+- kde/qt6/qt6-qtspeech.bst
+- kde/frameworks/kpackage.bst
 
 variables:
   cmake-local: >-

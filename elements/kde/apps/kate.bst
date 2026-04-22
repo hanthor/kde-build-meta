@@ -18,6 +18,27 @@ build-depends:
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/sonnet.bst
+- kde/frameworks/syntax-highlighting.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/breeze-icons.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kitemviews.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtmultimedia.bst
+- kde/qt6/qt6-qtspeech.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
