@@ -1,14 +1,6 @@
 kind: cmake
 description: kwin
 
-config:
-  overlap-whitelist:
-  - /usr/bin/cvt
-  - /usr/include/libxcvt/
-  - /usr/lib/x86_64-linux-gnu/pkgconfig/libxcvt.pc
-  - /usr/lib/x86_64-linux-gnu/libxcvt.so*
-  - /usr/share/man/man1/cvt.1*
-
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
@@ -83,6 +75,12 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+  overlap-whitelist:
+  - /usr/bin/cvt
+  - /usr/include/libxcvt/
+  - /usr/lib/x86_64-linux-gnu/pkgconfig/libxcvt.pc
+  - /usr/lib/x86_64-linux-gnu/libxcvt.so*
+  - /usr/share/man/man1/cvt.1*
 
 sources:
 - kind: git_repo
