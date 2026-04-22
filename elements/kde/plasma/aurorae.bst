@@ -7,6 +7,13 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 
 - kde/frameworks/ksvg.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/knewstuff.bst
+- kde/frameworks/kpackage.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

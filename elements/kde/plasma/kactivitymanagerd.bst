@@ -12,7 +12,7 @@ build-depends:
 - kde/frameworks/kcrash.bst
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst
-- kde/plasma/plasma-activities.bst
+- kde/frameworks/kio.bst
 
 variables:
   cmake-local: >-
