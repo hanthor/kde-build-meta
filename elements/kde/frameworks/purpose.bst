@@ -11,6 +11,8 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/knotifications.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtshadertools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
