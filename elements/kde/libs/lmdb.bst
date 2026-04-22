@@ -14,6 +14,6 @@ variables:
 
 sources:
 - kind: tar
-  url: https://github.com/LMDB/lmdb/archive/LMDB_0.9.35.tar.gz
+  url: github:LMDB/lmdb/archive/LMDB_0.9.35.tar.gz
   ref: 18b021fd589d30cc08860a9550a30ae51637117451385e9581616da751326632
   base-dir: lmdb-LMDB_0.9.35
