@@ -6,6 +6,9 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kdoctools.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtmultimedia.bst
+- kde/qt6/qt6-qtsvg.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/python3.bst
 

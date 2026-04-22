@@ -33,6 +33,7 @@ build-depends:
 
 variables:
   cmake-local: >-
+    -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
@@ -50,3 +51,5 @@ sources:
   url: kde:plasma/kscreenlocker.git
   track: Plasma/6.6
   ref: 093598fdf00d069e251cd891e26998df933cbfed
+- kind: patch
+  path: patches/kscreenlocker/0001-optional-x11.patch
