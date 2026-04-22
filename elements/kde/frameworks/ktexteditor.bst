@@ -9,6 +9,7 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qttools.bst
 - kde/qt6/qt6-qtspeech.bst
+- kde/qt6/qt6-qtmultimedia.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/sonnet.bst
