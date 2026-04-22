@@ -30,7 +30,7 @@ index c674f4a..0428b4c 100644
          } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"))) {
              backendFilter = QStringLiteral("KWayland");
 diff --git a/src/libdpms/CMakeLists.txt b/src/libdpms/CMakeLists.txt
-index 70d1393..67503b2 100644
+index 70d1393..6c2d13e 100644
 --- a/src/libdpms/CMakeLists.txt
 +++ b/src/libdpms/CMakeLists.txt
 @@ -2,10 +2,9 @@
@@ -42,7 +42,7 @@ index 70d1393..67503b2 100644
  target_link_libraries(KF6ScreenDpms PUBLIC Qt::Gui
 -                                    PRIVATE XCB::XCB XCB::DPMS XCB::RANDR
 -                                            Qt::GuiPrivate Qt::WaylandClient Wayland::Client
-+                                    PRIVATE Qt::WaylandClient Wayland::Client
++                                    PRIVATE Qt::GuiPrivate Qt::WaylandClient Wayland::Client
  )
  
  if (Qt6_VERSION VERSION_GREATER_EQUAL "6.8.0")
