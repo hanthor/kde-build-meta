@@ -7,6 +7,8 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/libdrm.bst
+- freedesktop-sdk.bst:components/libnl.bst
+- kde/libs/lm-sensors.bst
 
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kconfig.bst
