@@ -1,6 +1,10 @@
 kind: cmake
 description: kxmlgui
 
+depends:
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kiconwidgets.bst
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
@@ -12,6 +16,7 @@ build-depends:
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kiconthemes.bst
+- kde/frameworks/kiconwidgets.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kconfig.bst
