@@ -48,19 +48,18 @@ index e2ea1c8..532ba00 100644
      } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
          m_helper.reset(new WaylandDpmsHelper);
 diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
-index e6cab45..f36d4e0 100644
+index e6cab45..1c499b8 100644
 --- a/src/libdpms/xcbdpmshelper.cpp
 +++ b/src/libdpms/xcbdpmshelper.cpp
-@@ -8,7 +8,7 @@
+@@ -8,7 +8,6 @@
  #include "xcbdpmshelper_p.h"
  
  #include <QGuiApplication>
 -#include <QtGui/private/qtx11extras_p.h>
-+#include <QNativeInterface>
  
  #include <kscreendpms_debug.h>
  
-@@ -20,7 +20,12 @@ using ScopedCPointer = QScopedPointer<T, QScopedPointerPodDeleter>;
+@@ -20,7 +19,12 @@ using ScopedCPointer = QScopedPointer<T, QScopedPointerPodDeleter>;
  XcbDpmsHelper::XcbDpmsHelper()
      : AbstractDpmsHelper()
  {
@@ -74,7 +73,7 @@ index e6cab45..f36d4e0 100644
  
      xcb_prefetch_extension_data(c, &xcb_dpms_id);
      auto *extension = xcb_get_extension_data(c, &xcb_dpms_id);
-@@ -34,7 +39,7 @@ XcbDpmsHelper::XcbDpmsHelper()
+@@ -34,7 +38,7 @@ XcbDpmsHelper::XcbDpmsHelper()
      setSupported(capableReply && capableReply->capable);
  
      // Disable a default timeout, if any
@@ -83,7 +82,7 @@ index e6cab45..f36d4e0 100644
  }
  
  XcbDpmsHelper::~XcbDpmsHelper() = default;
-@@ -42,7 +47,8 @@ XcbDpmsHelper::~XcbDpmsHelper() = default;
+@@ -42,7 +46,8 @@ XcbDpmsHelper::~XcbDpmsHelper() = default;
  void XcbDpmsHelper::trigger(KScreen::Dpms::Mode mode, const QList<QScreen *> &screens)
  {
      setHasPendingChanges(true);

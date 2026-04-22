@@ -7,6 +7,7 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/python3.bst
 
 variables:
   cmake-local: >-
