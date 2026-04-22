@@ -7,6 +7,9 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
 - kde/libs/qtkeychain-qt6.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kwidgetsaddons.bst
 
 variables:
   cmake-local: >-

@@ -21,6 +21,9 @@ variables:
     -DNO_SYSTEMD=OFF
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     -DBUILD_WITH_QT6=ON
+    -DQt6_DIR=/usr/lib/cmake/Qt6
+    -DQt5_FIND_QUIETLY=ON
+    -DCMAKE_FIND_DEBUG_MODE=FALSE
 
 sources:
 - kind: git_repo

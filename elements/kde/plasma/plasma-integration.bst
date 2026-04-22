@@ -7,6 +7,16 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kstatusnotifieritem.bst
 
 variables:
   cmake-local: >-
