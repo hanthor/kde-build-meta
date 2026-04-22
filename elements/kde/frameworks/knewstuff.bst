@@ -12,7 +12,6 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/karchive.bst
-- kde/frameworks/attica.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kconfig.bst
 - kde/qt6/qt6-qtdeclarative.bst
@@ -33,6 +32,9 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kguiaddons.bst
+
+depends:
+- kde/frameworks/attica.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF

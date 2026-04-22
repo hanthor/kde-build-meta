@@ -9,8 +9,10 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
-- freedesktop-sdk.bst:components/networkmanager.bst
 - sdk/glib.bst
+
+depends:
+- freedesktop-sdk.bst:components/networkmanager.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_NMQT_STATIC=OFF
