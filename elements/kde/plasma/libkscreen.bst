@@ -31,3 +31,5 @@ sources:
   ref: 19a51032795e026cb5c3a04293242dcf364a9a77
 - kind: patch
   path: patches/libkscreen/0001-optional-xcb-dpms.patch
+- kind: patch
+  path: patches/libkscreen/0002-qt6-no-qtx11extras-private.patch

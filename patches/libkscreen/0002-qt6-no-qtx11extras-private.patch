@@ -1,0 +1,54 @@
+diff --git a/src/libdpms/dpms.cpp b/src/libdpms/dpms.cpp
+--- a/src/libdpms/dpms.cpp
++++ b/src/libdpms/dpms.cpp
+@@ -8,7 +8,6 @@
+ 
+ #include <QGuiApplication>
+-#include <QtGui/private/qtx11extras_p.h>
+ 
+ KScreen::Dpms::Dpms(QObject *parent)
+     : QObject(parent)
+ {
+-    if (QX11Info::isPlatformX11()) {
++    if (QGuiApplication::platformName() == QLatin1String("xcb")) {
+         m_helper.reset(new XcbDpmsHelper);
+     } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
+diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
+--- a/src/libdpms/xcbdpmshelper.cpp
++++ b/src/libdpms/xcbdpmshelper.cpp
+@@ -8,7 +8,7 @@
+ 
+ #include <QGuiApplication>
+-#include <QtGui/private/qtx11extras_p.h>
++#include <QtGui/qnativeinterface.h>
+ 
+ #include <kscreendpms_debug.h>
+ 
+@@ -19,7 +19,8 @@ using ScopedCPointer = QScopedPointer<T, QScopedPointerPodDeleter>;
+ XcbDpmsHelper::XcbDpmsHelper()
+     : AbstractDpmsHelper()
+ {
+-    auto *c = QX11Info::connection();
++    auto *x11 = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
++    auto *c = x11 ? x11->connection() : nullptr;
+ 
+     xcb_prefetch_extension_data(c, &xcb_dpms_id);
+     auto *extension = xcb_get_extension_data(c, &xcb_dpms_id);
+@@ -32,7 +33,7 @@ XcbDpmsHelper::XcbDpmsHelper()
+     setSupported(capableReply && capableReply->capable);
+ 
+     // Disable a default timeout, if any
+-    xcb_dpms_set_timeouts(QX11Info::connection(), 0, 0, 0);
++    xcb_dpms_set_timeouts(c, 0, 0, 0);
+ }
+ 
+ XcbDpmsHelper::~XcbDpmsHelper() = default;
+@@ -41,7 +42,8 @@ void XcbDpmsHelper::trigger(KScreen::Dpms::Mode mode, const QList<QScreen *> &s
+ {
+     setHasPendingChanges(true);
+-    auto *c = QX11Info::connection();
++    auto *x11 = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
++    auto *c = x11 ? x11->connection() : nullptr;
+ 
+     if (screens != qGuiApp->screens()) {
+         qCWarning(KSCREEN_DPMS) << "DPMS actions are applied to all screens on X11";

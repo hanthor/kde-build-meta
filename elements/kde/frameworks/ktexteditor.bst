@@ -16,6 +16,7 @@ build-depends:
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/sonnet.bst
 - kde/frameworks/kparts.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kconfig.bst
 - kde/frameworks/ki18n.bst
