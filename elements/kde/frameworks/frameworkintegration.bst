@@ -20,6 +20,7 @@ build-depends:
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/attica.bst
+- kde/frameworks/karchive.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
