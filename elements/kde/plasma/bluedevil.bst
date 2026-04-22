@@ -16,6 +16,7 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kjobwidgets.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kservice.bst
