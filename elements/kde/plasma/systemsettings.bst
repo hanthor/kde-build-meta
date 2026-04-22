@@ -12,6 +12,7 @@ build-depends:
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kservice.bst

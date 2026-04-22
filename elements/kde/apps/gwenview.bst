@@ -9,6 +9,7 @@ build-depends:
 - kde/qt6/qt6-qtsvg.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/baloo.bst
+- kde/frameworks/karchive.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kcompletion.bst
 - kde/frameworks/kconfig.bst

@@ -27,6 +27,7 @@ build-depends:
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

@@ -25,6 +25,7 @@ build-depends:
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
+    -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DKF_SKIP_PO_PROCESSING=ON
 
 sources:

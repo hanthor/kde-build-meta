@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/networkmanager-qt.bst
+- kde/plasma/libplasma.bst
 
 - kde/frameworks/purpose.bst
 - kde/frameworks/kitemmodels.bst

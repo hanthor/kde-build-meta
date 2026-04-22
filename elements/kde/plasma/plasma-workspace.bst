@@ -51,6 +51,7 @@ build-depends:
 - kde/frameworks/kidletime.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kded.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/knewstuff.bst

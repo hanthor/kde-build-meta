@@ -20,6 +20,7 @@ build-depends:
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kdbusaddons.bst
 variables:

@@ -16,6 +16,7 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kwidgetsaddons.bst
 - kde/plasma/kdecoration.bst
 - kde/qt6/qt6-qtsvg.bst
 - kde/frameworks/frameworkintegration.bst

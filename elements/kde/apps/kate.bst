@@ -5,6 +5,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kdoctools.bst
+- kde/frameworks/kuserfeedback.bst
 - kde/libs/qtkeychain-qt6.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/ki18n.bst

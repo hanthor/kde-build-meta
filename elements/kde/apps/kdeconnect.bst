@@ -23,6 +23,8 @@ variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
+    -DWITH_PULSEAUDIO=OFF
+    -DWITH_X11=OFF
 
 sources:
 - kind: git_repo

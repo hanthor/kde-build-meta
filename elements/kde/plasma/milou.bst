@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
+- kde/plasma/libplasma.bst
 
 - kde/frameworks/ki18n.bst
 - kde/frameworks/krunner.bst

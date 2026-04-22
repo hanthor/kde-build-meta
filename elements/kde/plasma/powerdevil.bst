@@ -26,6 +26,7 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/krunner.bst
 - kde/frameworks/solid.bst

@@ -21,6 +21,7 @@ build-depends:
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/ksvg.bst
+- kde/frameworks/kpackage.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

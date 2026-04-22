@@ -22,6 +22,8 @@ build-depends:
 - kde/frameworks/syntax-highlighting.bst
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/libs/polkit-qt-1.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/kitemmodels.bst
 
 variables:
   cmake-local: >-

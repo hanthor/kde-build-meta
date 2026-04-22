@@ -30,6 +30,7 @@ build-depends:
 - kde/frameworks/kconfig.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/knotifications.bst

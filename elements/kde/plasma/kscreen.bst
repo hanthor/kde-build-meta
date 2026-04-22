@@ -17,6 +17,7 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/kcrash.bst
