@@ -16,6 +16,7 @@ build-depends:
 - kde/plasma/libplasma.bst
 - kde/frameworks/kirigami.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 - kde/frameworks/kcrash.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kglobalaccel.bst
