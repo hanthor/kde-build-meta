@@ -18,6 +18,7 @@ build-depends:
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/knewstuff.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
