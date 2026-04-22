@@ -57,5 +57,7 @@ sources:
   path: patches/kscreenlocker/0002-fix-x11info-ctor.patch
 - kind: patch
   path: patches/kscreenlocker/0003-add-source-include-for-fixx11h.patch
+- kind: patch
+  path: patches/kscreenlocker/0004-guard-qx11application.patch
 - kind: local
   path: patches/kscreenlocker/override

@@ -11,6 +11,24 @@ build-depends:
 - kde/frameworks/krunner.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kitemviews.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 variables:
   cmake-local: >-

@@ -45,6 +45,7 @@ build-depends:
 - freedesktop-sdk.bst:components/libpng.bst
 - freedesktop-sdk.bst:components/libtiff.bst
 - core-deps/exiv2.bst
+- freedesktop-sdk.bst:components/lcms.bst
 
 variables:
   cmake-local: >-
@@ -57,3 +58,5 @@ sources:
   url: kde:graphics/gwenview.git
   track: release/25.04
   ref: 5c5fb0973378eeeb3a7bb075b69523e7d4504a8f
+- kind: patch
+  path: patches/gwenview/0001-make-kimageannotator-optional.patch
