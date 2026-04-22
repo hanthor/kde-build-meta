@@ -6,6 +6,15 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kdoctools.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kxmlgui.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:

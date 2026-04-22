@@ -45,6 +45,7 @@ build-depends:
 - kde/frameworks/kglobalaccel.bst
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/threadweaver.bst
+- kde/frameworks/sonnet.bst
 
 variables:
   cmake-local: >-
