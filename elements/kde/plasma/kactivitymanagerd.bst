@@ -13,6 +13,7 @@ build-depends:
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/kglobalaccel.bst
 
 variables:
   cmake-local: >-
