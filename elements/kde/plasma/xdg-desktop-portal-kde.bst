@@ -20,6 +20,8 @@ build-depends:
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kstatusnotifieritem.bst
+- kde/libs/polkit-qt-1.bst
 - kde/qt6/qt6-qtdeclarative.bst
 
 variables:
