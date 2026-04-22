@@ -53,3 +53,5 @@ sources:
   ref: 093598fdf00d069e251cd891e26998df933cbfed
 - kind: patch
   path: patches/kscreenlocker/0001-optional-x11.patch
+- kind: local
+  path: patches/kscreenlocker/override
