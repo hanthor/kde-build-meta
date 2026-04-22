@@ -20,6 +20,22 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kiconthemes.bst
 - kde/frameworks/kpty.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/breeze-icons.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/knotifications.bst
 
 variables:
   cmake-local: >-
