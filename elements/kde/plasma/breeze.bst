@@ -19,6 +19,7 @@ build-depends:
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/kpackage.bst
+- kde/frameworks/kxmlgui.bst
 - kde/plasma/kwayland.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/plasma/kdecoration.bst
@@ -37,7 +38,6 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
-    -DBUILD_BREEZE_KDECORATION_CONFIG=OFF
     -DCMAKE_EXE_LINKER_FLAGS="-Wl,--copy-dt-needed-entries"
 
 sources:
