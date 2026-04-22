@@ -18,6 +18,9 @@ build-depends:
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kwidgetsaddons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/gmp.bst
+- freedesktop-sdk.bst:components/mpfr.bst
+- core-deps/mpc.bst
 
 variables:
   cmake-local: >-

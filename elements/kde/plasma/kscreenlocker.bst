@@ -28,8 +28,12 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/ksvg.bst
+- kde/qt6/qt6-qtsvg.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtwayland.bst
+- kde/frameworks/karchive.bst
+- kde/plasma/plasma-activities.bst
+- kde/frameworks/breeze-icons.bst
 - kde/qt6/qt6-qtsvg.bst
 - kde/frameworks/karchive.bst
 - kde/plasma/plasma-activities.bst
