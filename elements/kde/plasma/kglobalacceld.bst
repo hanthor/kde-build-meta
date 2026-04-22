@@ -15,9 +15,23 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kcodecs.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/solid.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/breeze-icons.bst
+- kde/frameworks/karchive.bst
 
 variables:
   cmake-local: >-
+    -DWITH_X11=OFF
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
