@@ -41,6 +41,7 @@ variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
 
 sources:
 - kind: git_repo

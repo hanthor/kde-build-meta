@@ -160,6 +160,25 @@ index 058fbe3..52e4181 100644
      return false;
  }
  
+diff --git a/greeter/CMakeLists.txt b/greeter/CMakeLists.txt
+index 7c31624..79c4315 100644
+--- a/greeter/CMakeLists.txt
++++ b/greeter/CMakeLists.txt
+@@ -60,11 +60,13 @@ target_link_libraries(kscreenlocker_greet
+     Plasma::PlasmaQuick
+     Qt::Quick
+     Qt::Qml
+-    X11::X11
+     Wayland::Client
+     LayerShellQt::Interface
+     KF6::ScreenDpms
+ )
++if(X11_FOUND)
++    target_link_libraries(kscreenlocker_greet X11::X11)
++endif()
+ 
+ # KSCREENLOCKER_PAM_SERVICE, if defined, will already have been
+ # enclosed in double quotes by the define_pam_service macro.
 diff --git a/ksldapp.h b/ksldapp.h
 index e476019..34c5498 100644
 --- a/ksldapp.h
