@@ -30,6 +30,10 @@ build-depends:
 - kde/frameworks/ksvg.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - kde/qt6/qt6-qtwayland.bst
+- kde/qt6/qt6-qtsvg.bst
+- kde/frameworks/karchive.bst
+- kde/plasma/plasma-activities.bst
+- kde/frameworks/breeze-icons.bst
 
 variables:
   cmake-local: >-
