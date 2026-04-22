@@ -22,6 +22,7 @@ variables:
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DBUILD_QT5=OFF
 
 sources:
 - kind: git_repo
