@@ -19,6 +19,7 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/kunitconversion.bst
 - kde/frameworks/kholidays.bst
+- kde/plasma/libksysguard.bst
 
 variables:
   cmake-local: >-
@@ -32,6 +33,7 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DCMAKE_DISABLE_FIND_PACKAGE_GPS=ON
 
 sources:
 - kind: git_repo

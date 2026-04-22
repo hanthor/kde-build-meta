@@ -14,6 +14,7 @@ build-depends:
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
 - kde/plasma/libplasma.bst
+- kde/frameworks/kirigami.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/kcrash.bst
 - kde/frameworks/kio.bst
