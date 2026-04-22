@@ -16,6 +16,7 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/solid.bst
 - kde/frameworks/kauth.bst
+- kde/frameworks/kconfigwidgets.bst
 
 variables:
   cmake-local: >-

@@ -9,6 +9,25 @@ build-depends:
 
 - kde/frameworks/purpose.bst
 - kde/frameworks/kitemmodels.bst
+- kde/frameworks/kauth.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kdeclarative.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kholidays.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/knewstuff.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/krunner.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/sonnet.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/kunitconversion.bst
+- kde/frameworks/kxmlgui.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

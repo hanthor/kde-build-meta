@@ -3,6 +3,7 @@ kind: make
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
 - freedesktop-sdk.bst:components/bison.bst
+- freedesktop-sdk.bst:components/flex.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
@@ -11,7 +12,6 @@ variables:
   make-args: >-
     PREFIX="%{prefix}"
     LIBDIR="%{libdir}"
-    BISON=/usr/bin/bison
 
 sources:
 - kind: tar
