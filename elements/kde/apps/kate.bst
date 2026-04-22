@@ -15,6 +15,9 @@ build-depends:
 - kde/frameworks/ktexteditor.bst
 - kde/frameworks/kparts.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcodecs.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:

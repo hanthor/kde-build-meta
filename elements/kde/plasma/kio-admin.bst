@@ -8,6 +8,7 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/ki18n.bst
 - kde/libs/polkit-qt-1.bst
+- freedesktop-sdk.bst:components/polkit.bst
 
 variables:
   cmake-local: >-
