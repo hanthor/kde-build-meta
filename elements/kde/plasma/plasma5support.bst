@@ -42,3 +42,7 @@ sources:
   url: kde:plasma/plasma5support.git
   track: Plasma/6.6
   ref: f1f6ee27dd0175804e53cc322a8d4f0073b360a5
+- kind: patch
+  path: patches/plasma5support/0001-add-source-include-for-fixx11h.patch
+- kind: local
+  path: patches/plasma5support/override

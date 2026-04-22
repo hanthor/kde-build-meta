@@ -15,6 +15,7 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kconfig.bst
+- kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/knotifications.bst

@@ -15,6 +15,7 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/kiconthemes.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kglobalaccel.bst
 - kde/frameworks/kitemviews.bst
