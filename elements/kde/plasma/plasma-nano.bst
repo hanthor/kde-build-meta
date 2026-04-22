@@ -10,6 +10,7 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kitemmodels.bst
+- kde/qt6/qt6-qtsvg.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
