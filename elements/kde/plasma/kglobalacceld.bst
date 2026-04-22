@@ -28,6 +28,8 @@ build-depends:
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/karchive.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
+- freedesktop-sdk.bst:components/util-linux.bst
 
 variables:
   cmake-local: >-

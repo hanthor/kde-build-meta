@@ -63,3 +63,5 @@ sources:
   path: patches/libplasma/0001-guard-kx11extras-with-have-x11.patch
 - kind: patch
   path: patches/libplasma/0002-guard-kx11extras-appletpopup-dialog.patch
+- kind: patch
+  path: patches/libplasma/0003-guard-kx11extras-plasmawindow.patch
