@@ -72,9 +72,9 @@ index 047034c..59c7eb8 100644
  
 @@ -65,12 +69,16 @@ protected:
  
++#ifdef HAVE_X11
      GlobalAccel *globalAccel()
      {
-+#ifdef HAVE_X11
          return m_globalAccel;
      }
 +#endif

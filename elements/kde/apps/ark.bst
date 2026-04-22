@@ -35,6 +35,8 @@ build-depends:
 - kde/frameworks/solid.bst
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/kdoctools.bst
+- freedesktop-sdk.bst:components/docbook-xml.bst
+- freedesktop-sdk.bst:components/docbook-xsl.bst
 - freedesktop-sdk.bst:components/libxslt.bst
 - kde/frameworks/karchive.bst
 - kde/frameworks/knotifications.bst
