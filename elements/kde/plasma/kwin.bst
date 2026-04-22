@@ -54,7 +54,11 @@ build-depends:
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/knotifications.bst
+- kde/libs/libqaccessibilityclient.bst
 - kde/plasma/libkscreen.bst
+- kde/plasma/aurorae.bst
+- kde/plasma/breeze.bst
+- kde/plasma/knighttime.bst
 # XCB extras needed by kwin's X11 integration
 - freedesktop-sdk.bst:components/xcb-util-cursor.bst
 - freedesktop-sdk.bst:components/xcb-util-wm.bst
