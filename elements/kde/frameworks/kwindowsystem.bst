@@ -14,6 +14,7 @@ build-depends:
 - kde/qt6/qt6-qtwayland.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xcb-util.bst
 - freedesktop-sdk.bst:components/xcb-util-cursor.bst
