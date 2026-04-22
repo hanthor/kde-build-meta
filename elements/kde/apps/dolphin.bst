@@ -46,6 +46,7 @@ build-depends:
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/sonnet.bst
 - kde/qt6/qt6-qtspeech.bst
+- kde/qt6/qt6-qtmultimedia.bst
 - kde/frameworks/kpackage.bst
 
 variables:
