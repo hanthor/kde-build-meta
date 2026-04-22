@@ -20,6 +20,7 @@ build-depends:
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
 # Plasma inter-deps
 - kde/qt6/qt6-qt5compat.bst
+- kde/qt6/qt6-qtsvg.bst
 - kde/plasma/kdecoration.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/kwayland.bst

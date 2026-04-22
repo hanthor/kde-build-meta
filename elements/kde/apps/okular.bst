@@ -55,6 +55,7 @@ variables:
     -DBUILD_MAN_DOCS=OFF
     -DBUILD_DOC=OFF
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
+    -DFORCE_NOT_REQUIRED_DEPENDENCIES=Freetype;LibSpectre;KExiv2Qt6;DjVuLibre;EPub;QMobipocket6;Discount;KF6Pty
 
 sources:
 - kind: git_repo
