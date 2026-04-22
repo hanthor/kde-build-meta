@@ -8,6 +8,8 @@ build-depends:
 - kde/frameworks/networkmanager-qt.bst
 - kde/plasma/plasma-activities.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kguiaddons.bst
