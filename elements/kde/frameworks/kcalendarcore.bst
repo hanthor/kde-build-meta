@@ -10,6 +10,7 @@ build-depends:
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/libical.bst
+- freedesktop-sdk.bst:components/libical.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
