@@ -2,10 +2,10 @@ diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
 index 1c8fa28..6fa4afb 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -1,6 +1,3 @@
+@@ -1,6 +1,4 @@
 -add_subdirectory(backendlauncher)
 -add_subdirectory(doctor)
--add_subdirectory(libdpms)
+ add_subdirectory(libdpms)
  set(libkscreen_SRCS
      abstractbackend.cpp abstractbackend.h
      backendmanager.cpp
