@@ -29,7 +29,7 @@ build-depends:
 - freedesktop-sdk.bst:components/xcb-util-wm.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DKWINDOWSYSTEM_X11=OFF
 
 sources:
 - kind: git_repo
