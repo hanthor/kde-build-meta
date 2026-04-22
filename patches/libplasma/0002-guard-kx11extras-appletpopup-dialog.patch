@@ -1,23 +1,24 @@
 From 0000000000000000000000000000000000000002 Mon Sep 17 00:00:00 2001
 From: Aurora Build <aurora@tromso>
-Date: Mon, 01 Jan 2024 00:00:00 +0000
-Subject: [PATCH 2/2] Guard KX11Extras/KWindowInfo includes and usages in appletpopup.cpp and dialog.cpp
+Subject: [PATCH 2/2] Guard KX11Extras/KWindowInfo in appletpopup.cpp and dialog.cpp
 
-When building without X11 (HAVE_X11=0), KX11Extras and KWindowInfo are
-not installed by kwindowsystem. Guard all unconditional includes and
-usages of these classes with #if HAVE_X11.
+When building without X11 (HAVE_X11=0), guard all unconditional
+#include <KX11Extras> and #include <KWindowInfo>, plus their usages,
+with #if HAVE_X11 in appletpopup.cpp and dialog.cpp.
 
-diff --git a/src/plasmaquick/appletpopup.cpp b/src/plasmaquick/appletpopup.cpp
---- a/src/plasmaquick/appletpopup.cpp
-+++ b/src/plasmaquick/appletpopup.cpp
-@@ -7,6 +7,7 @@
+---
+--- a/src/plasmaquick/appletpopup.cpp	2026-04-22 08:36:15.875868803 +0530
++++ b/src/plasmaquick/appletpopup.cpp	2026-04-22 08:36:28.387416486 +0530
+@@ -6,6 +6,7 @@
+ 
  #include "appletpopup.h"
  
 +#include "config-plasma.h"
  #include <QGuiApplication>
  #include <QQmlProperty>
  #include <QSize>
-@@ -14,7 +15,9 @@
+@@ -13,7 +14,9 @@
+ 
  #include <KConfigGroup>
  #include <KWindowSystem>
 +#if HAVE_X11
@@ -26,7 +27,8 @@ diff --git a/src/plasmaquick/appletpopup.cpp b/src/plasmaquick/appletpopup.cpp
  
  #include "applet.h"
  #include "appletquickitem.h"
-@@ -63,8 +66,10 @@ AppletPopup::AppletPopup()
+@@ -65,7 +68,9 @@
+     setFlags(flags() | Qt::Dialog);
  
      if (KWindowSystem::isPlatformX11()) {
 +#if HAVE_X11
@@ -35,10 +37,11 @@ diff --git a/src/plasmaquick/appletpopup.cpp b/src/plasmaquick/appletpopup.cpp
      } else {
          PlasmaShellWaylandIntegration::get(this)->setRole(QtWayland::org_kde_plasma_surface::role::role_appletpopup);
          PlasmaShellWaylandIntegration::get(this)->setTakesFocus(true);
-diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
---- a/src/plasmaquick/dialog.cpp
-+++ b/src/plasmaquick/dialog.cpp
-@@ -24,9 +24,11 @@
+
+--- a/src/plasmaquick/dialog.cpp	2026-04-22 08:36:16.654864598 +0530
++++ b/src/plasmaquick/dialog.cpp	2026-04-22 08:36:47.562906116 +0530
+@@ -24,9 +24,13 @@
+ #include <QQuickItem>
  #include <QScreen>
  
 +#if HAVE_X11
@@ -50,7 +53,8 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
 +#endif
  
  #include <KWindowEffects>
-@@ -253,7 +257,11 @@ void DialogPrivate::updateVisibility(bool visible)
+ #include <Plasma/Corona>
+@@ -253,7 +257,11 @@
                                                   theme.backgroundSaturation(),
                                                   mask);
  
@@ -62,7 +66,7 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
              if (hasMask) {
                  hasMask = false;
                  q->setMask(QRegion());
-@@ -749,9 +757,11 @@ void DialogPrivate::applyType()
+@@ -748,6 +756,7 @@
      }
  #endif
  
@@ -70,11 +74,12 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
      if (!wmType && type != Dialog::Normal && KWindowSystem::isPlatformX11()) {
          KX11Extras::setType(q->winId(), static_cast<NET::WindowType>(type));
      }
+@@ -754,3 +763,4 @@
 +#endif
      if (q->flags() & Qt::WindowStaysOnTopHint) {
          // If the AppletPopup type is not explicitly requested, then use the Dock type in this case
          // to avoid bug #454635.
-@@ -812,12 +822,14 @@ void DialogPrivate::applyType()
+@@ -813,6 +823,7 @@
          }
      }
  
@@ -82,7 +87,7 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
      if (KWindowSystem::isPlatformX11()) {
          if (type == Dialog::Dock || type == Dialog::Notification || type == Dialog::OnScreenDisplay || type == Dialog::CriticalNotification) {
              KX11Extras::setOnAllDesktops(q->winId(), true);
-         } else {
+@@ -820,6 +831,7 @@
              KX11Extras::setOnAllDesktops(q->winId(), false);
          }
      }
@@ -90,7 +95,7 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
  
      PlasmaShellWaylandIntegration::get(q)->setTakesFocus(!q->flags().testFlag(Qt::WindowDoesNotAcceptFocus));
  }
-@@ -1081,10 +1093,12 @@ QPoint DialogPrivate::popupPosition(QQuickItem *item, const QSize &size)
+@@ -1081,6 +1093,7 @@
      // if the item is in a window that ignores WM we want to position the popups outside
      bool outsideParentWindow = (item->window()->flags() & Qt::X11BypassWindowManagerHint) && item->window()->mask().isNull();
  
@@ -98,14 +103,14 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
      if (KWindowSystem::isPlatformX11()) {
          // on X11 we also consider windows with the type Dock
          const KWindowInfo winInfo(item->window()->winId(), NET::WMWindowType);
+@@ -1087,5 +1100,6 @@
          outsideParentWindow = outsideParentWindow || (winInfo.windowType(NET::AllTypesMask) == NET::Dock && item->window()->mask().isNull());
      }
 +#endif
  
      QRect parentGeometryBounds;
      if (outsideParentWindow) {
-@@ -1361,9 +1375,11 @@ void Dialog::showEvent(QShowEvent *event)
-     if (d->backgroundHints != Dialog::NoBackground) {
+@@ -1361,6 +1375,7 @@
          DialogShadows::instance()->addWindow(this, d->dialogBackground->enabledBorders());
      }
  
@@ -113,6 +118,8 @@ diff --git a/src/plasmaquick/dialog.cpp b/src/plasmaquick/dialog.cpp
      if (KWindowSystem::isPlatformX11()) {
          KX11Extras::setState(winId(), NET::SkipTaskbar | NET::SkipPager | NET::SkipSwitcher);
      }
+@@ -1367,3 +1382,4 @@
 +#endif
      QQuickWindow::showEvent(event);
  }
+ 
