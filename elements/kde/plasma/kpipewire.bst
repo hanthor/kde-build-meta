@@ -12,6 +12,7 @@ build-depends:
 
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
+- freedesktop-sdk.bst:components/ffmpeg.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
