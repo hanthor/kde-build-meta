@@ -11,6 +11,7 @@ variables:
   make-args: >-
     PREFIX="%{prefix}"
     LIBDIR="%{libdir}"
+    BISON=/usr/bin/bison
 
 sources:
 - kind: tar
