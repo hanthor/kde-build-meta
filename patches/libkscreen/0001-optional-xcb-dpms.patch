@@ -33,7 +33,7 @@ index c674f4a..0428b4c 100644
 diff --git a/src/libdpms/dpms.cpp b/src/libdpms/dpms.cpp
 --- a/src/libdpms/dpms.cpp
 +++ b/src/libdpms/dpms.cpp
-@@ -9,7 +9,6 @@
+@@ -7,7 +7,6 @@
  #include "waylanddpmshelper_p.h"
  #include "xcbdpmshelper_p.h"
  

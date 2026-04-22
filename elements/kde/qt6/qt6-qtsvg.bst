@@ -6,6 +6,9 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
+variables:
+  cmake-local: -DINSTALL_ARCHDATADIR=lib
+
 sources:
 - kind: tar
   url: qt:6.10/6.10.3/submodules/qtsvg-everywhere-src-6.10.3.tar.xz
