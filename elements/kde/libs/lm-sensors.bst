@@ -13,6 +13,7 @@ variables:
   make-args: >-
     PREFIX="%{prefix}"
     LIBDIR="%{libdir}"
+    SBINDIR="%{bindir}"
 
 sources:
 - kind: tar

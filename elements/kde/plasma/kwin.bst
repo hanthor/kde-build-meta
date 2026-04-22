@@ -54,6 +54,10 @@ build-depends:
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/knotifications.bst
 - kde/plasma/libkscreen.bst
+# XCB extras needed by kwin's X11 integration
+- freedesktop-sdk.bst:components/xcb-util-cursor.bst
+- freedesktop-sdk.bst:components/xcb-util-wm.bst
+- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

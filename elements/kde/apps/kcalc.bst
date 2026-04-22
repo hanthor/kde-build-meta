@@ -17,6 +17,8 @@ build-depends:
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kcompletion.bst
 - kde/frameworks/kwidgetsaddons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/gmp.bst
@@ -28,6 +30,7 @@ variables:
     -DBUILD_TESTING=OFF
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DKF_SKIP_PO_PROCESSING=ON
+    -DCMAKE_EXE_LINKER_FLAGS="-Wl,--copy-dt-needed-entries"
 
 sources:
 - kind: git_repo
