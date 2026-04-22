@@ -60,9 +60,8 @@ build-depends:
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 # GPU buffer management and mode computation
 - freedesktop-sdk.bst:components/dummy-gbm.bst
-- freedesktop-sdk.bst:components/xwayland.bst
-# Custom libxcvt stages LAST to override fd-sdk's xorg-lib-xcvt
 - kde/libs/libxcvt.bst
+- freedesktop-sdk.bst:components/xwayland.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
