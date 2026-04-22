@@ -20,6 +20,7 @@ build-depends:
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/knotifications.bst
 - freedesktop-sdk.bst:components/dbus.bst
+- kde/qt6/qt6-qtmultimedia.bst
 
 variables:
   cmake-local: >-

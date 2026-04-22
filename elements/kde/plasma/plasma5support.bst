@@ -8,8 +8,6 @@ build-depends:
 - kde/frameworks/networkmanager-qt.bst
 - kde/plasma/plasma-activities.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
-- freedesktop-sdk.bst:components/xorg-lib-x11.bst
-- freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kguiaddons.bst
@@ -36,13 +34,10 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DCMAKE_DISABLE_FIND_PACKAGE_GPS=ON
+    -DWITH_X11=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/plasma5support.git
   track: Plasma/6.6
   ref: f1f6ee27dd0175804e53cc322a8d4f0073b360a5
-- kind: patch
-  path: patches/plasma5support/0001-add-source-include-for-fixx11h.patch
-- kind: local
-  path: patches/plasma5support/override
