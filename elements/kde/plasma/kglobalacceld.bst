@@ -29,6 +29,7 @@ build-depends:
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/karchive.bst
 - kde/frameworks/knotifications.bst
+- kde/libs/libcanberra.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:components/util-linux.bst
 

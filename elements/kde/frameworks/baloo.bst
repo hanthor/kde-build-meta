@@ -32,6 +32,8 @@ build-depends:
 - kde/frameworks/kiconthemes.bst
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/karchive.bst
+- freedesktop-sdk.bst:components/systemd-libs.bst
+- freedesktop-sdk.bst:components/util-linux.bst
 
 depends:
 - kde/qt6/qt6-qtbase.bst
