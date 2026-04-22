@@ -9,7 +9,6 @@ build-depends:
 - kde/qt6/qt6-qttools.bst
 - kde/qt6/qt6-qtwayland.bst
 - freedesktop-sdk.bst:components/wayland.bst
-- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 
 variables:
   cmake-local: >-
@@ -23,6 +22,7 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DCMAKE_DISABLE_FIND_PACKAGE_XCB=ON
 
 sources:
 - kind: git_repo
