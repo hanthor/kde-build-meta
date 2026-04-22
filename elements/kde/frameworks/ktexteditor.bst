@@ -24,6 +24,8 @@ build-depends:
 - kde/frameworks/kconfig.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/breeze-icons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:
