@@ -9,6 +9,8 @@ build-depends:
 - kde/plasma/libplasma.bst
 
 - kde/frameworks/purpose.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kcodecs.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kauth.bst
 - kde/frameworks/kconfig.bst

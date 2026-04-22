@@ -24,6 +24,7 @@ build-depends:
 - kde/frameworks/ktextwidgets.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/sonnet.bst
+- kde/frameworks/kpty.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kxmlgui.bst
 

@@ -9,6 +9,8 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcodecs.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kiconthemes.bst
 - kde/frameworks/kio.bst

@@ -24,6 +24,9 @@ build-depends:
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/krunner.bst
+- kde/frameworks/kcodecs.bst
 
 variables:
   cmake-local: >-

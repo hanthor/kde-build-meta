@@ -23,6 +23,7 @@ build-depends:
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/libs/polkit-qt-1.bst
 - kde/qt6/qt6-qtdeclarative.bst
+- freedesktop-sdk.bst:components/libxkbcommon.bst
 
 variables:
   cmake-local: >-

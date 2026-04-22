@@ -49,6 +49,7 @@ build-depends:
 - kde/frameworks/kdeclarative.bst
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcodecs.bst
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/knotifications.bst

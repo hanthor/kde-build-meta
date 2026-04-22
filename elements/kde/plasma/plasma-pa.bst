@@ -22,6 +22,8 @@ build-depends:
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/ksvg.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kcodecs.bst
 - kde/frameworks/kdbusaddons.bst
 variables:
   cmake-local: >-

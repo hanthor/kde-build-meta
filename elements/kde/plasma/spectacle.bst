@@ -7,6 +7,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/plasma-wayland-protocols.bst
+- freedesktop-sdk.bst:components/wayland.bst
 
 - kde/frameworks/purpose.bst
 variables:

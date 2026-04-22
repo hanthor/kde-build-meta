@@ -20,6 +20,8 @@ variables:
     -DENABLE_JOURNALD=ON
     -DNO_SYSTEMD=OFF
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+    -DBUILD_WITH_QT6=ON
+    -DQT_MAJOR_VERSION=6
 
 sources:
 - kind: git_repo

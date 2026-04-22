@@ -20,6 +20,8 @@ build-depends:
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kcodecs.bst
 - kde/frameworks/kcrash.bst
 variables:
   cmake-local: >-

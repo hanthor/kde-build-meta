@@ -21,6 +21,7 @@ build-depends:
 - kde/frameworks/solid.bst
 variables:
   cmake-local: >-
+    -DCMAKE_INSTALL_SBINDIR=bin
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF

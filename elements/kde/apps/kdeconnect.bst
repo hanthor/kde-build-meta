@@ -18,6 +18,7 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/knotifications.bst
+- freedesktop-sdk.bst:components/dbus.bst
 
 variables:
   cmake-local: >-

@@ -24,6 +24,7 @@ build-depends:
 - kde/frameworks/kjobwidgets.bst
 - kde/frameworks/kauth.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/kpackage.bst
 - kde/frameworks/solid.bst
 - kde/frameworks/kcrash.bst
 - kde/frameworks/kwindowsystem.bst

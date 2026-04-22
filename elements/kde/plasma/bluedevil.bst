@@ -22,6 +22,8 @@ build-depends:
 - kde/frameworks/kservice.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kpackage.bst
+- freedesktop-sdk.bst:components/shared-mime-info.bst
+- kde/frameworks/kcodecs.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON

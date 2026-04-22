@@ -17,6 +17,8 @@ build-depends:
 - kde/frameworks/solid.bst
 - kde/frameworks/kauth.bst
 - kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcodecs.bst
+- freedesktop-sdk.bst:components/libdrm.bst
 
 variables:
   cmake-local: >-

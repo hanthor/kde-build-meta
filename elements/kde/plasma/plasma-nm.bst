@@ -28,6 +28,10 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/ksvg.bst
+- kde/frameworks/modemmanager-qt.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kcodecs.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
