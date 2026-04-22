@@ -2,6 +2,7 @@ kind: make
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-make.bst
+- freedesktop-sdk.bst:components/bison.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
