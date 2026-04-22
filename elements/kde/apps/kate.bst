@@ -7,6 +7,12 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 - kde/libs/qtkeychain-qt6.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/ktexteditor.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:

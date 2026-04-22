@@ -5,7 +5,26 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtmultimedia.bst
 - kde/frameworks/kdoctools.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/knewstuff.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/knotifyconfig.bst
+- kde/frameworks/kparts.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/ktextwidgets.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kxmlgui.bst
 
 variables:
   cmake-local: >-

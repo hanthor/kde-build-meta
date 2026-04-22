@@ -13,6 +13,8 @@ build-depends:
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kiconthemes.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 variables:

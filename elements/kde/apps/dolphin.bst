@@ -53,6 +53,8 @@ variables:
     -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
 
 sources:
+- kind: patch
+  path: patches/dolphin/0001-optional-x11.patch
 - kind: git_repo
   url: kde:system/dolphin.git
   track: release/25.04
