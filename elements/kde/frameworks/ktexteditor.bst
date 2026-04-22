@@ -17,6 +17,9 @@ build-depends:
 - kde/frameworks/sonnet.bst
 - kde/frameworks/kparts.bst
 - kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/syntax-highlighting.bst
+- kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kauth.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kconfig.bst
 - kde/frameworks/ki18n.bst
