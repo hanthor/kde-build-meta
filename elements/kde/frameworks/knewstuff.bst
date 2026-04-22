@@ -11,6 +11,8 @@ build-depends:
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/ki18n.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/attica.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kconfig.bst
 - kde/qt6/qt6-qtdeclarative.bst
