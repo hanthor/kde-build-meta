@@ -30,3 +30,15 @@ index c674f4a..0428b4c 100644
              backendFilter = QStringLiteral("XRandR");
          } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"))) {
              backendFilter = QStringLiteral("KWayland");
+diff --git a/src/doctor/CMakeLists.txt b/src/doctor/CMakeLists.txt
+index aefb6a2..a71e0ff 100644
+--- a/src/doctor/CMakeLists.txt
++++ b/src/doctor/CMakeLists.txt
+@@ -1,6 +1,6 @@
+ add_executable(kscreen-doctor main.cpp doctor.cpp doctor.h)
+ 
+-target_link_libraries(kscreen-doctor Qt::DBus KF6::Screen KF6::ScreenDpms)
++target_link_libraries(kscreen-doctor Qt::DBus KF6::Screen)
+ install(TARGETS kscreen-doctor ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+ 
+ install(FILES kscreen-doctor.zsh RENAME _kscreen-doctor DESTINATION ${KDE_INSTALL_ZSHAUTOCOMPLETEDIR})
