@@ -9,10 +9,9 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
-- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=OFF
 
 sources:
 - kind: git_repo
