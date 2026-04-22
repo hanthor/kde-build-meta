@@ -1,14 +1,13 @@
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 1c8fa28..6fa4afb 100644
+index 1c8fa28..87c3b2d 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -1,6 +1,4 @@
+@@ -1,5 +1,3 @@
 -add_subdirectory(backendlauncher)
 -add_subdirectory(doctor)
  add_subdirectory(libdpms)
  set(libkscreen_SRCS
      abstractbackend.cpp abstractbackend.h
-     backendmanager.cpp
 diff --git a/src/backendmanager.cpp b/src/backendmanager.cpp
 index c674f4a..0428b4c 100644
 --- a/src/backendmanager.cpp
@@ -31,17 +30,16 @@ index c674f4a..0428b4c 100644
          } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"))) {
              backendFilter = QStringLiteral("KWayland");
 diff --git a/src/libdpms/dpms.cpp b/src/libdpms/dpms.cpp
+index e2ea1c8..532ba00 100644
 --- a/src/libdpms/dpms.cpp
 +++ b/src/libdpms/dpms.cpp
-@@ -7,7 +7,6 @@
- #include "waylanddpmshelper_p.h"
+@@ -8,12 +8,11 @@
  #include "xcbdpmshelper_p.h"
  
--#include <QtGui/private/qtx11extras_p.h>
  #include <QGuiApplication>
+-#include <QtGui/private/qtx11extras_p.h>
  
  KScreen::Dpms::Dpms(QObject *parent)
-@@ -17,7 +16,7 @@ KScreen::Dpms::Dpms(QObject *parent)
      : QObject(parent)
  {
 -    if (QX11Info::isPlatformX11()) {
@@ -50,6 +48,7 @@ diff --git a/src/libdpms/dpms.cpp b/src/libdpms/dpms.cpp
      } else if (QGuiApplication::platformName().startsWith(QLatin1String("wayland"), Qt::CaseInsensitive)) {
          m_helper.reset(new WaylandDpmsHelper);
 diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
+index e6cab45..f36d4e0 100644
 --- a/src/libdpms/xcbdpmshelper.cpp
 +++ b/src/libdpms/xcbdpmshelper.cpp
 @@ -8,7 +8,7 @@
@@ -61,7 +60,7 @@ diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
  
  #include <kscreendpms_debug.h>
  
-@@ -19,7 +19,11 @@ using ScopedCPointer = QScopedPointer<T, QScopedPointerPodDeleter>;
+@@ -20,7 +20,12 @@ using ScopedCPointer = QScopedPointer<T, QScopedPointerPodDeleter>;
  XcbDpmsHelper::XcbDpmsHelper()
      : AbstractDpmsHelper()
  {
@@ -75,7 +74,7 @@ diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
  
      xcb_prefetch_extension_data(c, &xcb_dpms_id);
      auto *extension = xcb_get_extension_data(c, &xcb_dpms_id);
-@@ -31,7 +35,7 @@ XcbDpmsHelper::XcbDpmsHelper()
+@@ -34,7 +39,7 @@ XcbDpmsHelper::XcbDpmsHelper()
      setSupported(capableReply && capableReply->capable);
  
      // Disable a default timeout, if any
@@ -84,7 +83,8 @@ diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
  }
  
  XcbDpmsHelper::~XcbDpmsHelper() = default;
-@@ -40,7 +44,8 @@ void XcbDpmsHelper::trigger(KScreen::Dpms::Mode mode, const QList<QScreen *> &s
+@@ -42,7 +47,8 @@ XcbDpmsHelper::~XcbDpmsHelper() = default;
+ void XcbDpmsHelper::trigger(KScreen::Dpms::Mode mode, const QList<QScreen *> &screens)
  {
      setHasPendingChanges(true);
 -    auto *c = QX11Info::connection();
@@ -92,3 +92,4 @@ diff --git a/src/libdpms/xcbdpmshelper.cpp b/src/libdpms/xcbdpmshelper.cpp
 +    auto *c = x11App ? x11App->connection() : nullptr;
  
      if (screens != qGuiApp->screens()) {
+         qCWarning(KSCREEN_DPMS) << "DPMS actions are applied to all screens on X11";
