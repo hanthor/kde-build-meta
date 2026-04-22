@@ -17,8 +17,12 @@ build-depends:
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/kwayland.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/plasma/kdecoration.bst
+- kde/qt6/qt6-qt5compat.bst
 - kde/qt6/qt6-qtsvg.bst
 - kde/frameworks/frameworkintegration.bst
 variables:
@@ -33,6 +37,7 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DCMAKE_EXE_LINKER_FLAGS="-Wl,--copy-dt-needed-entries"
 
 sources:
 - kind: git_repo
