@@ -1,6 +1,9 @@
 kind: manual
 description: LMDB - Lightning Memory-Mapped Database
 
+build-depends:
+- freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
+
 config:
   build-commands:
   - make -C libraries/liblmdb
