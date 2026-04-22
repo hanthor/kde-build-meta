@@ -42,6 +42,7 @@ build-depends:
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
+    -DWITHOUT_X11=ON
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
