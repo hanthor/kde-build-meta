@@ -23,6 +23,8 @@ build-depends:
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kstatusnotifieritem.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/breeze-icons.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/kdbusaddons.bst
