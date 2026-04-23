@@ -1,10 +1,10 @@
 kind: stack
 
 depends:
-# Must come BEFORE gnomeos-deps/deps.bst to override its conflicting versions
+# Must come BEFORE other configs to override
 - oci/integration/os-release.bst
 - freedesktop-sdk.bst:vm/config/useradd-ostree.bst
-- gnomeos-deps/deps.bst
+# gnomeos-deps/deps.bst disabled: brings in conflicting os-release and useradd configs
 
 # OS-related config
 - gnomeos/fwupd-efi-signed-maybe.bst
