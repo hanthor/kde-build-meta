@@ -43,5 +43,3 @@ sources:
   path: patches/kinfocenter/0001-opengl-helper-without-qt-vulkan.patch
 - kind: patch
   path: patches/kinfocenter/0002-vulkan-helper-without-qt-vulkan.patch
-- kind: patch
-  path: patches/kinfocenter/0003-gpuentry-without-vulkan-types.patch
