@@ -55,4 +55,4 @@ public:
 
     - touch /etc/machine-id
     # Remove non-.ko files from /lib/modules (depmod cleanup)
-    - find /lib/modules -type f ! -name "*.ko" ! -name "*.ko.gz" ! -name "modules.*" -delete
+    - sh -c 'for f in /lib/modules/*/*.json /lib/modules/*/*.so /lib/modules/*/*.a; do rm -f "$f"; done'
