@@ -1,0 +1,27 @@
+diff --git a/kcms/about-distro/src/vulkan-helper/main.cpp b/kcms/about-distro/src/vulkan-helper/main.cpp
+--- a/kcms/about-distro/src/vulkan-helper/main.cpp
++++ b/kcms/about-distro/src/vulkan-helper/main.cpp
+@@ -7,8 +7,11 @@
+ #include <QJsonArray>
+ #include <QJsonDocument>
+ #include <QJsonObject>
++#if __has_include(<QVulkanFunctions>) && __has_include(<QVulkanInstance>)
+ #include <QVulkanFunctions>
+ #include <QVulkanInstance>
++#define KINFOCENTER_HAVE_QT_VULKAN 1
++#endif
+ 
+ using namespace Qt::StringLiterals;
+ 
+@@ -15,6 +18,11 @@
+ int main(int argc, char *argv[])
+ {
+     QGuiApplication app(argc, argv);
++
++#ifndef KINFOCENTER_HAVE_QT_VULKAN
++    std::cout << "[]\n";
++    return 0;
++#endif
+ 
+     QVulkanInstance instance;
+     if (!instance.create()) {

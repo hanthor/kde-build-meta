@@ -40,4 +40,6 @@ sources:
   track: Plasma/6.6
   ref: 4661524934085c1745ed1d2316269e1b74fbe681
 - kind: patch
-  path: patches/kinfocenter/0001-vulkan-helpers-without-qt-vulkan.patch
+  path: patches/kinfocenter/0001-opengl-helper-without-qt-vulkan.patch
+- kind: patch
+  path: patches/kinfocenter/0002-vulkan-helper-without-qt-vulkan.patch
