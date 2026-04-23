@@ -63,3 +63,5 @@ sources:
   url: kde:graphics/okular.git
   track: release/25.04
   ref: 85a264dbd54bebd3bd971d6649e872b178b0e3aa
+- kind: patch
+  path: patches/okular/0001-optional-x11.patch

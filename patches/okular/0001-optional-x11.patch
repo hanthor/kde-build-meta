@@ -1,0 +1,51 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index dbaaf3f7a..54f0c2f90 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -171,7 +171,10 @@ if (BUILD_MOBILE)
+ endif()
+ 
+ if(NOT WIN32 AND NOT ANDROID AND NOT APPLE AND NOT HAIKU)
+-    set(HAVE_X11 TRUE)
++    find_package(X11)
++    if (X11_FOUND)
++        set(HAVE_X11 TRUE)
++    endif()
+ else()
+     set(HAVE_X11 FALSE)
+ endif()
+diff --git a/shell/shell.cpp b/shell/shell.cpp
+index ca12cc32f..de0993d84 100644
+--- a/shell/shell.cpp
++++ b/shell/shell.cpp
+@@ -27,7 +27,7 @@
+ #include <KSharedConfig>
+ #include <KStandardAction>
+-#if !defined(Q_OS_WIN) && !defined(Q_OS_OSX) && !defined(Q_OS_HAIKU)
++#if HAVE_X11 && !defined(Q_OS_WIN) && !defined(Q_OS_OSX) && !defined(Q_OS_HAIKU)
+ #include <KStartupInfo>
+ #include <KWindowInfo>
+ #endif
+@@ -452,7 +452,7 @@ bool Shell::canOpenDocs(int numDocs, int desktop)
+         return false;
+     }
+ 
+-#if !defined(Q_OS_WIN) && !defined(Q_OS_OSX) && !defined(Q_OS_HAIKU)
++#if HAVE_X11 && !defined(Q_OS_WIN) && !defined(Q_OS_OSX) && !defined(Q_OS_HAIKU)
+     const KWindowInfo winfo(window()->effectiveWinId(), NET::WMDesktop);
+     if (winfo.desktop() != desktop) {
+         return false;
+@@ -727,9 +727,13 @@ void Shell::tryRaise(const QString &startupId)
+ {
+ #if !defined(Q_OS_WIN) && !defined(Q_OS_OSX) && !defined(Q_OS_HAIKU)
+     if (KWindowSystem::isPlatformWayland()) {
+         KWindowSystem::setCurrentXdgActivationToken(startupId);
++#if HAVE_X11
+     } else if (KWindowSystem::isPlatformX11()) {
+         KStartupInfo::setNewStartupId(window()->windowHandle(), startupId.toUtf8());
++#endif
++    } else {
++        Q_UNUSED(startupId);
+     }
+ #else
+     Q_UNUSED(startupId);
