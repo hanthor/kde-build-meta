@@ -15,6 +15,9 @@ build-depends:
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kconfig.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/kitemmodels.bst
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kdbusaddons.bst
@@ -34,3 +37,5 @@ sources:
   url: kde:network/kdeconnect-kde.git
   track: release/25.04
   ref: cb53c0cf5e7428e8d7c38d02903e06f371431ae5
+- kind: patch
+  path: patches/kdeconnect/0001-make-kpeople-optional.patch
