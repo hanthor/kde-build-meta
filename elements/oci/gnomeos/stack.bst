@@ -54,3 +54,5 @@ public:
     - ln -s /var/mnt /mnt
 
     - touch /etc/machine-id
+    # Remove non-.ko files from /lib/modules (depmod cleanup)
+    - find /lib/modules -type f ! -name "*.ko" ! -name "*.ko.gz" ! -name "modules.*" -delete
