@@ -17,9 +17,11 @@ build-depends:
 - kde/frameworks/kjobwidgets.bst
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/karchive.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kservice.bst
+- kde/frameworks/breeze-icons.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kpackage.bst
 - freedesktop-sdk.bst:components/shared-mime-info.bst
