@@ -1,8 +1,8 @@
 kind: compose
 
 build-depends:
-- oci/gnomeos/manifest.bst
 - oci/gnomeos/stack.bst
+- oci/gnomeos/manifest.bst
 
 config:
   exclude:
