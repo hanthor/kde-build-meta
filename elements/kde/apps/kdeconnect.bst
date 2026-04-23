@@ -52,3 +52,5 @@ sources:
   path: patches/kdeconnect/0002-gate-smsapp-on-kpeople.patch
 - kind: patch
   path: patches/kdeconnect/0003-fix-pkgconfig-xkbcommon.patch
+- kind: patch
+  path: patches/kdeconnect/0004-notifications-optional-x11.patch
