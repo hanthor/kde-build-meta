@@ -29,7 +29,7 @@ depends:
 # - kde/plasma/plasma-nm.bst  # TODO: add QCA-qt6 support
 # - kde/plasma/plasma-workspace.bst  # TODO: too many X11 dependencies
 - kde/plasma/plasma5support.bst
-- kde/plasma/powerdevil.bst
+# - kde/plasma/powerdevil.bst  # TODO: power mgmt lib
 - kde/plasma/qqc2-breeze-style.bst
 # - kde/plasma/spectacle.bst
 # - kde/plasma/systemsettings.bst
