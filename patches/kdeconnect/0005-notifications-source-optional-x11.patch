@@ -11,12 +11,14 @@ diff --git a/plugins/notifications/notificationsplugin.cpp b/plugins/notificatio
  #include <KStartupInfo>
  #include <private/qtx11extras_p.h>
  #endif
-@@ -143,7 +143,7 @@ void NotificationsPlugin::replyRequested(Notification *noti)
-     SendReplyDialog *dialog = new SendReplyDialog(originalMessage, replyId, appName);
+@@ -145,10 +145,6 @@ void NotificationsPlugin::replyRequested(Notification *noti)
      connect(dialog, &SendReplyDialog::sendReply, this, &NotificationsPlugin::sendReply);
      dialog->show();
--#if !defined(Q_OS_WIN) && !defined(Q_OS_MAC)
-+#if !defined(Q_OS_WIN) && !defined(Q_OS_MAC) && defined(KDECONNECT_NOTIFICATIONS_X11)
-     auto window = qobject_cast<QWindow *>(dialog->windowHandle());
-     if (window && QX11Info::isPlatformX11()) {
-         KStartupInfo::setNewStartupId(window, QX11Info::nextStartupId());
+ #if !defined(Q_OS_WIN) && !defined(Q_OS_MAC)
+-    auto window = qobject_cast<QWindow *>(dialog->windowHandle());
+-    if (window && QX11Info::isPlatformX11()) {
+-        KStartupInfo::setNewStartupId(window, QX11Info::nextStartupId());
+-    }
+ #endif
+     dialog->raise();
+ }
