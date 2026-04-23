@@ -16,7 +16,7 @@ build-depends:
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 # Plasma inter-deps
-- kde/plasma/kwin.bst
+# - kde/plasma/kwin.bst  # Disabled: X11 dependencies
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
