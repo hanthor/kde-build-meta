@@ -26,7 +26,7 @@ depends:
 - kde/plasma/plasma-desktop.bst
 - kde/plasma/plasma-integration.bst
 - kde/plasma/plasma-nano.bst
-- kde/plasma/plasma-nm.bst
+# - kde/plasma/plasma-nm.bst  # TODO: add QCA-qt6 support
 - kde/plasma/plasma-workspace.bst
 - kde/plasma/plasma5support.bst
 - kde/plasma/powerdevil.bst
