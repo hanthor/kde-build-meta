@@ -1,0 +1,22 @@
+diff --git a/src/kded/helpers/requestpin.cpp b/src/kded/helpers/requestpin.cpp
+--- a/src/kded/helpers/requestpin.cpp
++++ b/src/kded/helpers/requestpin.cpp
+@@ -17,7 +17,6 @@
+ 
+ #include <KLocalizedString>
+ #include <KNotification>
+-#include <KX11Extras>
+ #include <KWindowSystem>
+ 
+ RequestPin::RequestPin(BluezQt::DevicePtr device, bool numeric, QObject *parent)
+@@ -84,10 +83,6 @@ void RequestPin::introducePin()
+ 
+     dialog->show();
+ 
+-    if (KWindowSystem::isPlatformX11()) {
+-        KX11Extras::forceActiveWindow(dialog->winId());
+-    }
+- 
+ }
+ 
+ void RequestPin::checkPin(const QString &pin)
