@@ -11,7 +11,7 @@ depends:
 - kde/plasma/kglobalacceld.bst
 - kde/plasma/kinfocenter.bst
 - kde/plasma/knighttime.bst
-- kde/plasma/konsole.bst
+# - kde/plasma/konsole.bst  # TODO: fix D-Bus XML generation issues
 - kde/plasma/kpipewire.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/kwayland.bst
@@ -39,7 +39,7 @@ depends:
 - kde/plasma/kscreen.bst
 - kde/plasma/drkonqi.bst
 - kde/plasma/ksshaskpass.bst
-- kde/plasma/kmenuedit.bst
+# - kde/plasma/kmenuedit.bst  # TODO: fix kdoctools CMake issue
 - kde/plasma/plasma-systemmonitor.bst
 - kde/plasma/xdg-desktop-portal-kde.bst
 - kde/plasma/kio-admin.bst
