@@ -24,6 +24,7 @@ build-depends:
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/kxmlgui.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/qqc2-desktop-style.bst
