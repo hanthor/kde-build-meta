@@ -10,3 +10,18 @@
  
  #include <cerrno>
  #include <csignal>
+@@ -160,12 +162,14 @@
+         return EXIT_FAILURE;
+     }
+ 
++#if defined(Q_OS_LINUX) && !defined(MESA_EGL_NO_X11_HEADERS)
+     xcb_connection_t *connection = xcb_connect(display_string.toLatin1(), nullptr);
+     if (xcb_connection_has_error(connection)) {
+         std::cerr << "xcb connection failed" << std::endl;
+         return EXIT_FAILURE;
+     }
+     xcb_timestamp_t timestamp = parser.value(timestampOption).toULong(&time_ok);
++#endif
+ 
+     return EXIT_FAILURE;
+ }
