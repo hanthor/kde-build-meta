@@ -15,7 +15,7 @@ depends:
 - kde/plasma/kpipewire.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/kwayland.bst
-- kde/plasma/kwin.bst
+# - kde/plasma/kwin.bst  # TODO: fix X11 dependencies
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
 - kde/plasma/libksysguard.bst
@@ -24,8 +24,8 @@ depends:
 - kde/plasma/plasma-activities-stats.bst
 - kde/plasma/plasma-activities.bst
 - kde/plasma/plasma-desktop.bst
-- kde/plasma/plasma-integration.bst
-- kde/plasma/plasma-nano.bst
+# - kde/plasma/plasma-integration.bst  # TODO: fix X11 dependencies
+# - kde/plasma/plasma-nano.bst  # TODO: fix dependencies
 # - kde/plasma/plasma-nm.bst  # TODO: add QCA-qt6 support
 - kde/plasma/plasma-workspace.bst
 - kde/plasma/plasma5support.bst
