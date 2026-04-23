@@ -5,7 +5,7 @@ diff --git a/kcms/about-distro/src/vulkan-helper/main.cpp b/kcms/about-distro/sr
  #include <QJsonArray>
  #include <QJsonDocument>
  #include <QJsonObject>
-+#if __has_include(<QVulkanFunctions>) && __has_include(<QVulkanInstance>)
++#if QT_CONFIG(vulkan)
  #include <QVulkanFunctions>
  #include <QVulkanInstance>
 +#define KINFOCENTER_HAVE_QT_VULKAN 1

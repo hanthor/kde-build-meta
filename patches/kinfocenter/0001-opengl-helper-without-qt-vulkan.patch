@@ -5,7 +5,7 @@ diff --git a/kcms/about-distro/src/opengl-helper/main.cpp b/kcms/about-distro/sr
  #include <QOffscreenSurface>
  #include <QOpenGLContext>
  #include <QOpenGLFunctions>
-+#if __has_include(<QVulkanInstance>)
++#if QT_CONFIG(vulkan)
  #include <QVulkanInstance>
 +#define KINFOCENTER_VK_TYPE_OTHER VK_PHYSICAL_DEVICE_TYPE_OTHER
 +#else
