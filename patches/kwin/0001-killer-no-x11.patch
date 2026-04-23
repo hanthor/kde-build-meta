@@ -1,0 +1,12 @@
+--- a/src/helpers/killer/killer.cpp
++++ b/src/helpers/killer/killer.cpp
+@@ -31,8 +31,10 @@
+ #include <qpa/qplatformwindow_p.h>
+ 
++#if defined(Q_OS_LINUX) && !defined(MESA_EGL_NO_X11_HEADERS)
+ #include <private/qtx11extras_p.h>
+ #include <xcb/xcb.h>
++#endif
+ 
+ #include <cerrno>
+ #include <csignal>
