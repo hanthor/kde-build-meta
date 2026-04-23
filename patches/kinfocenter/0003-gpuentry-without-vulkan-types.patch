@@ -1,0 +1,85 @@
+diff --git a/kcms/about-distro/src/GPUEntry.cpp b/kcms/about-distro/src/GPUEntry.cpp
+--- a/kcms/about-distro/src/GPUEntry.cpp
++++ b/kcms/about-distro/src/GPUEntry.cpp
+@@ -23,13 +23,13 @@ GPUEntry::GPUEntry(std::optional<int> deviceIndex, const Device &device)
+ Hint GPUEntry::localizedHint(Language language) const
+ {
+     switch (m_device.type) {
+-    case VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU:
++    case IntegratedGpu:
+         return {.m_text = localize(ki18nc("@label GPU type", "integrated"), language), .m_color = Hint::Color::One};
+-    case VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU:
++    case DiscreteGpu:
+         return {.m_text = localize(ki18nc("@label GPU type", "discrete"), language), .m_color = Hint::Color::Two};
+-    case VK_PHYSICAL_DEVICE_TYPE_VIRTUAL_GPU:
++    case VirtualGpu:
+         return {.m_text = localize(ki18nc("@label GPU type. GPU of a virtual machine", "virtual"), language), .m_color = Hint::Color::Three};
+-    case VK_PHYSICAL_DEVICE_TYPE_CPU:
+-    case VK_PHYSICAL_DEVICE_TYPE_OTHER:
+-    case VK_PHYSICAL_DEVICE_TYPE_MAX_ENUM:
++    case Cpu:
++    case Other:
++    case MaxEnum:
+         break;
+     }
+      return {};
+diff --git a/kcms/about-distro/src/GPUEntry.h b/kcms/about-distro/src/GPUEntry.h
+--- a/kcms/about-distro/src/GPUEntry.h
++++ b/kcms/about-distro/src/GPUEntry.h
+@@ -7,8 +7,6 @@
+ #ifndef GPUENTRY_H
+ #define GPUENTRY_H
+ 
+-#include <QVulkanInstance>
+-
+ #include "Entry.h"
+ 
+ class GPUEntry : public Entry
+@@ -16,8 +14,17 @@ class GPUEntry : public Entry
+ public:
+     struct Device {
+         QString name;
+-        VkPhysicalDeviceType type;
++        int type;
+      };
++
++    enum PhysicalDeviceType {
++        Other = 0,
++        IntegratedGpu = 1,
++        DiscreteGpu = 2,
++        VirtualGpu = 3,
++        Cpu = 4,
++        MaxEnum = 0x7fffffff,
++    };
+ 
+     GPUEntry(std::optional<int> deviceIndex, const Device &device);
+     [[nodiscard]] Hint localizedHint(Language language = Language::System) const override;
+diff --git a/kcms/about-distro/src/GPUEntryFactory.cpp b/kcms/about-distro/src/GPUEntryFactory.cpp
+--- a/kcms/about-distro/src/GPUEntryFactory.cpp
++++ b/kcms/about-distro/src/GPUEntryFactory.cpp
+@@ -107,10 +107,10 @@ std::vector<GPUEntry::Device> vulkanDevices()
+ {
+      if (qEnvironmentVariableIntValue("KINFOCENTER_SIMULATION") == 1) {
+         return {
+-            {u"AMD Radeon RX 7900 XTX\nMesa 1.2.3 (RADV NAVI31)]"_s, VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU},
+-            {u"AMD Radeon Graphics (RADV RAPHAEL_MENDOCINO)"_s, VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU},
+-            {u"Intel(R) UHD Graphics (CML GT2)"_s, VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU},
+-            {u"llvmpipe (LLVM 18.1.6, 256 bits)"_s, VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU},
++            {u"AMD Radeon RX 7900 XTX\nMesa 1.2.3 (RADV NAVI31)]"_s, GPUEntry::DiscreteGpu},
++            {u"AMD Radeon Graphics (RADV RAPHAEL_MENDOCINO)"_s, GPUEntry::IntegratedGpu},
++            {u"Intel(R) UHD Graphics (CML GT2)"_s, GPUEntry::IntegratedGpu},
++            {u"llvmpipe (LLVM 18.1.6, 256 bits)"_s, GPUEntry::IntegratedGpu},
+ 
+          };
+      }
+@@ -132,8 +132,8 @@ std::vector<GPUEntry::Device> vulkanDevices()
+          if (name.isEmpty()) {
+             qWarning() << "Empty name for device";
+              return {};
+-        const VkPhysicalDeviceType type = static_cast<VkPhysicalDeviceType>(obj.value("type").toInt(VK_PHYSICAL_DEVICE_TYPE_OTHER));
+-        deviceList.emplace_back(GPUEntry::Device{name, type});
++        const int type = obj.value("type").toInt(GPUEntry::Other);
++        deviceList.emplace_back(GPUEntry::Device{name, type});
+      }
+ 
+      return deviceList;
