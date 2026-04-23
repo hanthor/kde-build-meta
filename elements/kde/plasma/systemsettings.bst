@@ -27,6 +27,8 @@ build-depends:
 - kde/frameworks/kirigami.bst
 - kde/frameworks/krunner.bst
 - kde/frameworks/kcodecs.bst
+- kde/plasma/plasma-activities.bst
+- kde/plasma/plasma-activities-stats.bst
 
 variables:
   cmake-local: >-
