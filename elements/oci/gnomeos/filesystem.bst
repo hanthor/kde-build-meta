@@ -11,3 +11,9 @@ config:
   - doc
   - extra
   - static-blocklist
+  overlap-whitelist:
+  - /etc/issue
+  - /etc/issue.net
+  - /etc/os-release
+  - /usr/lib/os-release
+  - /etc/default/useradd
