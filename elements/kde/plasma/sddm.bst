@@ -30,7 +30,5 @@ sources:
   url: github:sddm/sddm.git
   track: master
   ref: cff7df42e6762914358e6e7deaedc15a1c6c7d57
-
-patches:
 - kind: patch
   path: patches/sddm/0001-remove-cmp0043-policy.patch
