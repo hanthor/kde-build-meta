@@ -33,6 +33,8 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DENABLE_OPENGL_BACKEND=ON
+    -DENABLE_VULKAN_BACKEND=OFF
 
 sources:
 - kind: git_repo
