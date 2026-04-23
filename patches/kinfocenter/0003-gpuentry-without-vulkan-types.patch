@@ -22,7 +22,7 @@ diff --git a/kcms/about-distro/src/GPUEntry.cpp b/kcms/about-distro/src/GPUEntry
 +    case MaxEnum:
          break;
      }
-      return {};
+     return {};
 diff --git a/kcms/about-distro/src/GPUEntry.h b/kcms/about-distro/src/GPUEntry.h
 --- a/kcms/about-distro/src/GPUEntry.h
 +++ b/kcms/about-distro/src/GPUEntry.h
@@ -41,7 +41,7 @@ diff --git a/kcms/about-distro/src/GPUEntry.h b/kcms/about-distro/src/GPUEntry.h
          QString name;
 -        VkPhysicalDeviceType type;
 +        int type;
-      };
+     };
 +
 +    enum PhysicalDeviceType {
 +        Other = 0,
@@ -59,7 +59,7 @@ diff --git a/kcms/about-distro/src/GPUEntryFactory.cpp b/kcms/about-distro/src/G
 +++ b/kcms/about-distro/src/GPUEntryFactory.cpp
 @@ -107,10 +107,10 @@ std::vector<GPUEntry::Device> vulkanDevices()
  {
-      if (qEnvironmentVariableIntValue("KINFOCENTER_SIMULATION") == 1) {
+     if (qEnvironmentVariableIntValue("KINFOCENTER_SIMULATION") == 1) {
          return {
 -            {u"AMD Radeon RX 7900 XTX\nMesa 1.2.3 (RADV NAVI31)]"_s, VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU},
 -            {u"AMD Radeon Graphics (RADV RAPHAEL_MENDOCINO)"_s, VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU},
@@ -70,16 +70,16 @@ diff --git a/kcms/about-distro/src/GPUEntryFactory.cpp b/kcms/about-distro/src/G
 +            {u"Intel(R) UHD Graphics (CML GT2)"_s, GPUEntry::IntegratedGpu},
 +            {u"llvmpipe (LLVM 18.1.6, 256 bits)"_s, GPUEntry::IntegratedGpu},
  
-          };
-      }
+         };
+     }
 @@ -132,8 +132,8 @@ std::vector<GPUEntry::Device> vulkanDevices()
-          if (name.isEmpty()) {
+         if (name.isEmpty()) {
              qWarning() << "Empty name for device";
-              return {};
+             return {};
 -        const VkPhysicalDeviceType type = static_cast<VkPhysicalDeviceType>(obj.value("type").toInt(VK_PHYSICAL_DEVICE_TYPE_OTHER));
 -        deviceList.emplace_back(GPUEntry::Device{name, type});
 +        const int type = obj.value("type").toInt(GPUEntry::Other);
 +        deviceList.emplace_back(GPUEntry::Device{name, type});
-      }
+     }
  
-      return deviceList;
+     return deviceList;
