@@ -40,6 +40,6 @@ depends:
 # - kde/plasma/drkonqi.bst  # TODO: fix Python vendoring CMake issue
 - kde/plasma/ksshaskpass.bst
 # - kde/plasma/kmenuedit.bst  # TODO: fix kdoctools CMake issue
-- kde/plasma/plasma-systemmonitor.bst
-- kde/plasma/xdg-desktop-portal-kde.bst
+# - kde/plasma/plasma-systemmonitor.bst
+# - kde/plasma/xdg-desktop-portal-kde.bst
 - kde/plasma/kio-admin.bst
