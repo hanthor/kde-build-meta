@@ -23,11 +23,11 @@ depends:
 - kde/plasma/milou.bst
 - kde/plasma/plasma-activities-stats.bst
 - kde/plasma/plasma-activities.bst
-- kde/plasma/plasma-desktop.bst
+# - kde/plasma/plasma-desktop.bst  # TODO: too many X11 dependencies
 # - kde/plasma/plasma-integration.bst  # TODO: fix X11 dependencies
 # - kde/plasma/plasma-nano.bst  # TODO: fix dependencies
 # - kde/plasma/plasma-nm.bst  # TODO: add QCA-qt6 support
-- kde/plasma/plasma-workspace.bst
+# - kde/plasma/plasma-workspace.bst  # TODO: too many X11 dependencies
 - kde/plasma/plasma5support.bst
 - kde/plasma/powerdevil.bst
 - kde/plasma/qqc2-breeze-style.bst
