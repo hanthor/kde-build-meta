@@ -1,7 +1,9 @@
 kind: stack
 
 depends:
+# Must come BEFORE gnomeos-deps/deps.bst to override its conflicting versions
 - oci/integration/os-release.bst
+- freedesktop-sdk.bst:vm/config/useradd-ostree.bst
 - gnomeos-deps/deps.bst
 
 # OS-related config
@@ -21,7 +23,6 @@ depends:
 - gnomeos-deps/bootc.bst
 
 - oci/integration/bootc-config.bst
-- freedesktop-sdk.bst:vm/config/useradd-ostree.bst
 - freedesktop-sdk.bst:vm/config/sudo-nopasswd.bst
 
 - oci/integration/lvm2-enable-activation.bst
