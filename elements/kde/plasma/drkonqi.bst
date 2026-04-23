@@ -29,6 +29,7 @@ variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
+    -DWITH_PYTHON_MODULES=OFF
 
 sources:
 - kind: git_repo
