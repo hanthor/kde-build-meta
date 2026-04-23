@@ -37,7 +37,7 @@ depends:
 - kde/plasma/bluedevil.bst
 - kde/plasma/plasma-pa.bst
 - kde/plasma/kscreen.bst
-- kde/plasma/drkonqi.bst
+# - kde/plasma/drkonqi.bst  # TODO: fix Python vendoring CMake issue
 - kde/plasma/ksshaskpass.bst
 # - kde/plasma/kmenuedit.bst  # TODO: fix kdoctools CMake issue
 - kde/plasma/plasma-systemmonitor.bst
