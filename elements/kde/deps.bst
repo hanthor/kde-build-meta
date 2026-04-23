@@ -10,7 +10,7 @@ depends:
 - freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/dbus.bst
 - freedesktop-sdk.bst:components/dracut.bst
-- freedesktop-sdk.bst:components/os-release.bst
+# os-release removed: provided by oci/integration/os-release.bst
 - freedesktop-sdk.bst:components/shadow.bst
 - freedesktop-sdk.bst:components/tzdata.bst
 - freedesktop-sdk.bst:components/iproute2.bst
@@ -19,7 +19,7 @@ depends:
 - freedesktop-sdk.bst:vm/config/journald.bst
 - freedesktop-sdk.bst:vm/config/networkd.bst
 - freedesktop-sdk.bst:vm/config/resolved.bst
-- freedesktop-sdk.bst:vm/config/useradd-default.bst
+# useradd-default removed: provided by freedesktop-sdk.bst:vm/config/useradd-ostree.bst
 - freedesktop-sdk.bst:vm/config/flathub.bst
 - freedesktop-sdk.bst:components/usbutils.bst
 - freedesktop-sdk.bst:components/hosts.bst
