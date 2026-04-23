@@ -39,3 +39,5 @@ sources:
   ref: cb53c0cf5e7428e8d7c38d02903e06f371431ae5
 - kind: patch
   path: patches/kdeconnect/0001-make-kpeople-optional.patch
+- kind: patch
+  path: patches/kdeconnect/0002-gate-smsapp-on-kpeople.patch
