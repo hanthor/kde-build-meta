@@ -53,4 +53,6 @@ sources:
 - kind: patch
   path: patches/kdeconnect/0003-fix-pkgconfig-xkbcommon.patch
 - kind: patch
-  path: patches/kdeconnect/0004-notifications-optional-x11.patch
+  path: patches/kdeconnect/0004-notifications-cmake-optional-x11.patch
+- kind: patch
+  path: patches/kdeconnect/0005-notifications-source-optional-x11.patch
