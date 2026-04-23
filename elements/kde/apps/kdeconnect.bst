@@ -3,6 +3,7 @@ description: kdeconnect - KDE Connect device integration
 
 build-depends:
 - freedesktop-sdk.bst:components/wayland-protocols.bst
+- freedesktop-sdk.bst:components/libxkbcommon.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kpackage.bst
@@ -43,3 +44,5 @@ sources:
   path: patches/kdeconnect/0001-make-kpeople-optional.patch
 - kind: patch
   path: patches/kdeconnect/0002-gate-smsapp-on-kpeople.patch
+- kind: patch
+  path: patches/kdeconnect/0003-fix-pkgconfig-xkbcommon.patch
