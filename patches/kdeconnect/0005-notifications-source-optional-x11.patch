@@ -1,8 +1,7 @@
 diff --git a/plugins/notifications/notificationsplugin.cpp b/plugins/notifications/notificationsplugin.cpp
 --- a/plugins/notifications/notificationsplugin.cpp
 +++ b/plugins/notifications/notificationsplugin.cpp
-@@ -9,7 +9,7 @@
- #include "sendreplydialog.h"
+@@ -11,7 +11,7 @@
  #include <dbushelper.h>
  
  #include <KPluginFactory>
@@ -11,8 +10,7 @@ diff --git a/plugins/notifications/notificationsplugin.cpp b/plugins/notificatio
  #include <KStartupInfo>
  #include <private/qtx11extras_p.h>
  #endif
-@@ -140,13 +140,8 @@ void NotificationsPlugin::replyRequested(Notification *noti)
-     QString originalMessage = noti->ticker();
+@@ -152,12 +152,6 @@ void NotificationsPlugin::replyRequested(Notification *noti)
      SendReplyDialog *dialog = new SendReplyDialog(originalMessage, replyId, appName);
      connect(dialog, &SendReplyDialog::sendReply, this, &NotificationsPlugin::sendReply);
      dialog->show();
