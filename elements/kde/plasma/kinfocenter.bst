@@ -35,6 +35,7 @@ variables:
     -DQT_MAJOR_VERSION=6
     -DENABLE_OPENGL_BACKEND=ON
     -DENABLE_VULKAN_BACKEND=OFF
+    -DENABLE_ABOUT_DISTRO=OFF
 
 sources:
 - kind: git_repo
