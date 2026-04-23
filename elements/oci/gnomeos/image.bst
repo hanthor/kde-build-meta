@@ -22,11 +22,10 @@ variables:
 config:
   commands:
   - mkdir /fakecap
-  # Clean up non-.ko files from /lib/modules before depmod runs
+  # Clean up /lib/modules entirely - depmod will rebuild what it needs
   - |
-    for f in /layer/lib/modules/*/*.json /layer/lib/modules/*/*.so /layer/lib/modules/*/*.a; do
-      rm -f "$f"
-    done
+    rm -rf /layer/lib/modules
+    mkdir -p /layer/lib/modules
   - |
     prepare-image.sh \
        --sysroot /layer \
