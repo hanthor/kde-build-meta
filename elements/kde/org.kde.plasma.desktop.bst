@@ -9,7 +9,7 @@ depends:
 - kde/plasma/kdecoration.bst
 - kde/plasma/kdeplasma-addons.bst
 - kde/plasma/kglobalacceld.bst
-- kde/plasma/kinfocenter.bst
+# - kde/plasma/kinfocenter.bst  # TODO: fix about-distro Vulkan dependencies
 - kde/plasma/knighttime.bst
 # - kde/plasma/konsole.bst  # TODO: fix D-Bus XML generation issues
 - kde/plasma/kpipewire.bst
@@ -36,7 +36,7 @@ depends:
 - kde/plasma/sddm.bst
 - kde/plasma/bluedevil.bst
 - kde/plasma/plasma-pa.bst
-- kde/plasma/kscreen.bst
+# - kde/plasma/kscreen.bst  # TODO: add kcoreaddons build-dep
 # - kde/plasma/drkonqi.bst  # TODO: fix Python vendoring CMake issue
 - kde/plasma/ksshaskpass.bst
 # - kde/plasma/kmenuedit.bst  # TODO: fix kdoctools CMake issue
