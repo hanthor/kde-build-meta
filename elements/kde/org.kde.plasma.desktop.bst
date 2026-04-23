@@ -35,7 +35,7 @@ depends:
 - kde/plasma/systemsettings.bst
 # - kde/plasma/sddm.bst  # TODO: fix CMake policy error
 - kde/plasma/bluedevil.bst
-- kde/plasma/plasma-pa.bst
+# - kde/plasma/plasma-pa.bst
 # - kde/plasma/kscreen.bst  # TODO: add kcoreaddons build-dep
 # - kde/plasma/drkonqi.bst  # TODO: fix Python vendoring CMake issue
 - kde/plasma/ksshaskpass.bst
