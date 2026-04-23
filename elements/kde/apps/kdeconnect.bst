@@ -23,6 +23,7 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/knotifications.bst
+- kde/frameworks/qqc2-desktop-style.bst
 - freedesktop-sdk.bst:components/dbus.bst
 - kde/qt6/qt6-qtmultimedia.bst
 
