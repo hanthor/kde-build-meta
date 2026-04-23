@@ -33,7 +33,7 @@ depends:
 - kde/plasma/qqc2-breeze-style.bst
 - kde/plasma/spectacle.bst
 - kde/plasma/systemsettings.bst
-- kde/plasma/sddm.bst
+# - kde/plasma/sddm.bst  # TODO: fix CMake policy error
 - kde/plasma/bluedevil.bst
 - kde/plasma/plasma-pa.bst
 # - kde/plasma/kscreen.bst  # TODO: add kcoreaddons build-dep
