@@ -27,6 +27,8 @@ build-depends:
 - kde/frameworks/kpty.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kdbusaddons.bst
 
 variables:
   cmake-local: >-
