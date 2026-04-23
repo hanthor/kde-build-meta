@@ -9,7 +9,7 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst
-- kde/plasma/plasma-workspace.bst
+# - kde/plasma/plasma-workspace.bst  # Disabled
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libplasma.bst
 - kde/plasma/libkscreen.bst
