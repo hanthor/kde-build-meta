@@ -20,6 +20,7 @@ build-depends:
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/kguiaddons.bst
 - kde/frameworks/kpackage.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kcrash.bst

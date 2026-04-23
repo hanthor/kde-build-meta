@@ -81,6 +81,7 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DKWIN_BUILD_X11=OFF
+    -DBUILD_WINDOW_KILLER=OFF
 
 sources:
 - kind: git_repo
