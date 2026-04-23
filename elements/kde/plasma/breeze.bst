@@ -17,6 +17,9 @@ build-depends:
 - kde/frameworks/kcmutils.bst
 - kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/breeze-icons.bst
+- kde/frameworks/kglobalaccel.bst
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/kpackage.bst
 - kde/frameworks/kxmlgui.bst
