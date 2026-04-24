@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:bootc-dev/bootc.git
   track: v*
-  ref: v1.15.0-0-gd8785c6c380db9afee054d39b54e643b26054b73
+  ref: v1.15.1-0-gbd93a1e5e9475642fe0d0084454e4111ee29fa14
 - kind: cargo2
   ref:
   - kind: registry
