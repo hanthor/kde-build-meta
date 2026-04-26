@@ -10,6 +10,7 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 - kde/libs/qcoro.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtlocation.bst
 # System libs
 - freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
