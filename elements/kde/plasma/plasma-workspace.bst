@@ -76,7 +76,6 @@ build-depends:
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kxmlgui.bst
-- kde/frameworks/baloo.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
@@ -110,3 +109,5 @@ sources:
   path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch
 - kind: patch
   path: patches/plasma-workspace/0004-make-breeze-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0005-make-baloo-optional.patch
