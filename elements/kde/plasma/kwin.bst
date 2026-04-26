@@ -71,6 +71,8 @@ build-depends:
 - freedesktop-sdk.bst:components/dummy-gbm.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcvt.bst
 - freedesktop-sdk.bst:components/xwayland.bst
+# Vulkan support
+- freedesktop-sdk.bst:components/vulkan-headers.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
