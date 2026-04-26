@@ -1,11 +1,11 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -151,7 +151,7 @@ find_package(Fontconfig)
- add_subdirectory(plasmaconfig)
- add_subdirectory(runners)
- add_subdirectory(shell)
+@@ -449,7 +449,8 @@ add_subdirectory(donationmessage)
+
 -add_subdirectory(interactiveconsole)
 +if (KF6TextEditor_FOUND AND KF6TextWidgets_FOUND)
 +  add_subdirectory(interactiveconsole)
 +endif()
- add_subdirectory(toolbox)
+
+ # This ensures pressing the eject button on a CD drive ejects the disc
+ # It listens to the Solid::OpticalDrive::ejectPressed signal that is only
