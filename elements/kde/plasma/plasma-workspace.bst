@@ -84,8 +84,6 @@ variables:
     -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_AppStreamQt=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_KExiv2Qt6=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6TextEditor=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6TextWidgets=ON
     -DWITH_X11=OFF
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
@@ -105,6 +103,8 @@ sources:
   ref: 708f21c169b546edbc30510192eb1d55ff505fdc
 - kind: patch
   path: patches/plasma-workspace/0001-make-qt6location-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
 - kind: patch
   path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch
 - kind: patch

@@ -1,7 +1,6 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -64,11 +64,11 @@ endif()
- find_package(QCoro6 REQUIRED COMPONENTS Core)
+@@ -64,10 +64,10 @@ endif()
  find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
                      Archive Auth CoreAddons Crash DBusAddons Declarative GlobalAccel GuiAddons
                      Holidays I18n IconThemes IdleTime ItemModels KCMUtils KDED KIO NewStuff
@@ -12,4 +11,4 @@
 +                    OPTIONAL_COMPONENTS DocTools TextEditor TextWidgets)
  find_package(Plasma ${PROJECT_DEP_VERSION} REQUIRED)
  find_package(PlasmaQuick ${PROJECT_DEP_VERSION} REQUIRED)
- find_package(KWayland ${PROJECT_DEP_VERSION} REQUIRED)
+ find_package(Breeze ${PROJECT_DEP_VERSION} CONFIG)
