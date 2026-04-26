@@ -85,6 +85,8 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
 
 sources:
 - kind: git_repo
