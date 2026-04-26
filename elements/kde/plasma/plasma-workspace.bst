@@ -111,3 +111,7 @@ sources:
   path: patches/plasma-workspace/0004-make-breeze-optional.patch
 - kind: patch
   path: patches/plasma-workspace/0005-make-baloo-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0006-make-interactiveconsole-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0007-make-shellprivate-textwidgets-optional.patch

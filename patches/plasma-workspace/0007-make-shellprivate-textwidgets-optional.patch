@@ -1,0 +1,14 @@
+--- a/components/shellprivate/CMakeLists.txt
++++ b/components/shellprivate/CMakeLists.txt
+@@ -22,8 +22,6 @@ target_link_libraries(plasmashellprivateplugin PRIVATE
+         KF6::WidgetsAddons
+         KF6::NewStuffWidgets
+         KF6::WindowSystem
+         Plasma::Activities
+-        KF6::TextWidgets
+         KF6::Package
+ )
++
++if (KF6TextWidgets_FOUND)
++    target_link_libraries(plasmashellprivateplugin PRIVATE KF6::TextWidgets)
++endif()
