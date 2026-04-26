@@ -1,5 +1,9 @@
 kind: make
 
+environment:
+  CARGO_NET_GIT_FETCH_WITH_CLI: "true"
+  CARGO_NET_OFFLINE: "false"
+
 sources:
 - kind: git_repo
   url: github:bootc-dev/bootc.git
