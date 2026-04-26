@@ -81,7 +81,7 @@ sources:
     sha: 9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567
   - kind: git
     commit: f4dd05a74ccb54084093c9167317a14356ca53e4
-    repo: https://github.com/bootc-dev/bcvk
+    repo: github:bootc-dev/bcvk
     query:
       rev: f4dd05a74ccb54084093c9167317a14356ca53e4
     name: bcvk-qemu
@@ -180,7 +180,7 @@ sources:
     sha: 613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724
   - kind: git
     commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: 2203e8f
     name: cfsctl
@@ -239,28 +239,28 @@ sources:
     sha: 55b672471b4e9f9e95499ea597ff64941a309b2cdbffcc46f2cc5e2d971fd335
   - kind: git
     commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: 2203e8f
     name: composefs
     version: 0.3.0
   - kind: git
     commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: 2203e8f
     name: composefs-boot
     version: 0.3.0
   - kind: git
     commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: 2203e8f
     name: composefs-ioctls
     version: 0.3.0
   - kind: git
     commit: 2203e8f331cc41afafa0f81e9a2df7d681e9f631
-    repo: https://github.com/composefs/composefs-rs
+    repo: github:composefs/composefs-rs
     query:
       rev: 2203e8f
     name: composefs-oci
