@@ -95,3 +95,5 @@ sources:
   ref: 708f21c169b546edbc30510192eb1d55ff505fdc
 - kind: patch
   path: patches/plasma-workspace/0001-make-qt6location-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
