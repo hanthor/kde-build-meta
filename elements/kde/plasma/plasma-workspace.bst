@@ -108,3 +108,5 @@ sources:
   path: patches/plasma-workspace/0006-make-interactiveconsole-optional.patch
 - kind: patch
   path: patches/plasma-workspace/0007-make-shellprivate-textwidgets-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0008-make-ksmserver-x11-optional.patch
