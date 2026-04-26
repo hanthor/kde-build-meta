@@ -67,8 +67,9 @@ build-depends:
 - kde/frameworks/krunner.bst
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/ksvg.bst
-- kde/frameworks/ktexteditor.bst
-- kde/frameworks/ktextwidgets.bst
+# Removed: ktexteditor and ktextwidgets - disabled via CMAKE_DISABLE flags
+# - kde/frameworks/ktexteditor.bst
+# - kde/frameworks/ktextwidgets.bst
 - kde/frameworks/kwallet.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kconfig.bst
