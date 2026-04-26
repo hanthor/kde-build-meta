@@ -32,6 +32,7 @@ build-depends:
 - kde/plasma/kpipewire.bst
 - kde/plasma/knighttime.bst
 - kde/libs/libcanberra.bst
+- kde/libs/polkit-qt-1.bst
 
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kquickcharts.bst
