@@ -59,7 +59,11 @@ build-depends:
 - kde/plasma/aurorae.bst
 - kde/plasma/breeze.bst
 - kde/plasma/knighttime.bst
-# XCB extras needed by kwin's X11 integration
+# X11 libraries needed by kwin's X11 integration
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
+- freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
+- freedesktop-sdk.bst:components/xcb-util.bst
 - freedesktop-sdk.bst:components/xcb-util-cursor.bst
 - freedesktop-sdk.bst:components/xcb-util-wm.bst
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
@@ -80,7 +84,7 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
-    -DKWIN_BUILD_X11=OFF
+    -DKWIN_BUILD_X11=ON
     -DBUILD_WINDOW_KILLER=OFF
 
 sources:
