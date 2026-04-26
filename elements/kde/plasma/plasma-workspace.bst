@@ -19,7 +19,7 @@ build-depends:
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 # Plasma inter-deps
-- kde/plasma/kwin.bst
+# - kde/plasma/kwin.bst  # Disabled: X11 development headers not available in container
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
@@ -81,6 +81,10 @@ variables:
     -DCMAKE_INSTALL_LIBEXECDIR=lib
     -DGLIBC_LOCALE_GEN=OFF
     -DBUILD_TESTING=OFF
+    -DWITH_X11=OFF
+    -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
 
 sources:
 - kind: git_repo
