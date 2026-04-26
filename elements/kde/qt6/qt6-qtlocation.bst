@@ -8,6 +8,11 @@ build-depends:
 - kde/qt6/qt6-qtdeclarative.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
+variables:
+  cmake-local: >-
+    -DINSTALL_ARCHDATADIR=lib
+    -DQT_DISABLE_RPATH=ON
+
 sources:
 - kind: tar
   url: qt:6.10/6.10.3/submodules/qtlocation-everywhere-src-6.10.3.tar.xz
