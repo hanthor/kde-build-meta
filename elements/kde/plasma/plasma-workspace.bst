@@ -77,6 +77,9 @@ build-depends:
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
+    -DWITH_X11=OFF
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
