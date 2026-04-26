@@ -75,12 +75,15 @@ build-depends:
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/baloo.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_AppStreamQt=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_KExiv2Qt6=ON
     -DWITH_X11=OFF
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
