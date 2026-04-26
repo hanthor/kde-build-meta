@@ -11,6 +11,7 @@ build-depends:
 - kde/libs/qcoro.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtlocation.bst
+- kde/qt6/qt6-qtpositioning.bst
 # System libs
 - freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
