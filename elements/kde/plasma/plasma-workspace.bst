@@ -10,8 +10,7 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 - kde/libs/qcoro.bst
 - kde/qt6/qt6-qtbase.bst
-# Disabled: qt6-qtlocation - CMAKE_DISABLE_FIND_PACKAGE_Qt6Location=ON
-# - kde/qt6/qt6-qtlocation.bst
+- kde/qt6/qt6-qtlocation.bst
 - kde/qt6/qt6-qtpositioning.bst
 - kde/qt6/qt6-qtsvg.bst
 # System libs
@@ -68,9 +67,8 @@ build-depends:
 - kde/frameworks/krunner.bst
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/ksvg.bst
-# Removed: ktexteditor and ktextwidgets - disabled via CMAKE_DISABLE flags
-# - kde/frameworks/ktexteditor.bst
-# - kde/frameworks/ktextwidgets.bst
+- kde/frameworks/ktexteditor.bst
+- kde/frameworks/ktextwidgets.bst
 - kde/frameworks/kwallet.bst
 - kde/frameworks/kcolorscheme.bst
 - kde/frameworks/kconfig.bst
@@ -80,24 +78,10 @@ build-depends:
 - kde/frameworks/kxmlgui.bst
 variables:
   cmake-local: >-
-    -DCMAKE_DISABLE_FIND_PACKAGE_Qt6Location=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6TextEditor=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KF6TextWidgets=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_PackageKitQt6=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_AppStreamQt=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KExiv2Qt6=ON
-    -DWITH_X11=OFF
+    -DCMAKE_INSTALL_LIBEXECDIR=lib
+    -DGLIBC_LOCALE_GEN=OFF
     -DBUILD_TESTING=OFF
-    -DBUILD_HTML_DOCS=OFF
-    -DBUILD_MAN_DOCS=OFF
-    -DBUILD_QTHELP_DOCS=OFF
-    -DBUILD_DOC=OFF
-    -DBUILD_PYTHON_BINDINGS=OFF
-    -DKF_SKIP_PO_PROCESSING=ON
+    -DWITH_X11=OFF
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
