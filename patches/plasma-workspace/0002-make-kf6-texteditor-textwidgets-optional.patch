@@ -1,8 +1,7 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.20)
- project(PlasmaWorkspace VERSION 6.6.0 LANGUAGES CXX)
-
+@@ -64,11 +64,11 @@ endif()
+ find_package(QCoro6 REQUIRED COMPONENTS Core)
  find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
                      Archive Auth CoreAddons Crash DBusAddons Declarative GlobalAccel GuiAddons
                      Holidays I18n IconThemes IdleTime ItemModels KCMUtils KDED KIO NewStuff
