@@ -87,6 +87,7 @@ variables:
     -DQT_MAJOR_VERSION=6
     -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
+    -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
 
 sources:
 - kind: git_repo
