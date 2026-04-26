@@ -100,3 +100,5 @@ sources:
   path: patches/plasma-workspace/0001-make-qt6location-optional.patch
 - kind: patch
   path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
+- kind: patch
+  path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch

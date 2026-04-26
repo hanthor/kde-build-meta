@@ -1,0 +1,18 @@
+--- a/components/keyboardlayout/CMakeLists.txt
++++ b/components/keyboardlayout/CMakeLists.txt
+@@ -4,8 +4,9 @@ ecm_add_qml_module(keyboardlayoutplugin URI "org.kde.plasma.workspace.keyboardl
+ set_source_files_properties(org.kde.KeyboardLayouts.xml
+         PROPERTIES INCLUDE layoutnames.h)
+
+ qt_add_dbus_interface(keyboardlayoutplugin_SRCS "org.kde.KeyboardLayouts.xml" keyboard_layout_interface)
+-qt_add_dbus_interface(keyboardlayoutplugin_SRCS "${KWIN_VIRTUALKEYBOARD_INTERFACE}" virtualkeyboard_interface)
++# KWin virtual keyboard interface skipped on Wayland-only systems (X11 disabled)
++# qt_add_dbus_interface(keyboardlayoutplugin_SRCS "${KWIN_VIRTUALKEYBOARD_INTERFACE}" virtualkeyboard_interface)
+
+ target_sources(keyboardlayoutplugin PRIVATE
+     keyboardlayout.cpp keyboardlayout.h
+     layoutnames.cpp layoutnames.h
+-    virtualkeyboard.cpp virtualkeyboard.h
++    # virtualkeyboard.cpp virtualkeyboard.h  # Disabled: requires KWin interface
+     ${keyboardlayoutplugin_SRCS}
+
