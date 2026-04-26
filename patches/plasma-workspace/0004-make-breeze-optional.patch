@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -67,7 +67,7 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
+                     OPTIONAL_COMPONENTS DocTools TextEditor TextWidgets)
+ find_package(Plasma ${PROJECT_DEP_VERSION} REQUIRED)
+ find_package(PlasmaQuick ${PROJECT_DEP_VERSION} REQUIRED)
+-find_package(Breeze 6.6.4 REQUIRED)
++find_package(Breeze 6.6.4 QUIET)
+ find_package(KWayland ${PROJECT_DEP_VERSION} REQUIRED)
+ find_package(AppStreamQt QUIET)
+ find_package(KExiv2Qt6 QUIET)

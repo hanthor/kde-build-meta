@@ -31,6 +31,7 @@ build-depends:
 - kde/plasma/libksysguard.bst
 - kde/plasma/kpipewire.bst
 - kde/plasma/knighttime.bst
+- kde/plasma/breeze.bst
 - kde/libs/libcanberra.bst
 - kde/libs/polkit-qt-1.bst
 
@@ -107,3 +108,5 @@ sources:
   path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
 - kind: patch
   path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch
+- kind: patch
+  path: patches/plasma-workspace/0004-make-breeze-optional.patch
