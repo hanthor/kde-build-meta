@@ -91,4 +91,4 @@ sources:
   track: Plasma/6.6
   ref: 708f21c169b546edbc30510192eb1d55ff505fdc
 - kind: patch
-  path: 0001-make-qt6location-optional.patch
+  path: kde/plasma/0001-make-qt6location-optional.patch
