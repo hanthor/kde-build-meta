@@ -18,8 +18,22 @@ build-depends:
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
+# X11 support
+- freedesktop-sdk.bst:components/libx11.bst
+- freedesktop-sdk.bst:components/libxext.bst
+- freedesktop-sdk.bst:components/libxfixes.bst
+- freedesktop-sdk.bst:components/libxtst.bst
+- freedesktop-sdk.bst:components/libxau.bst
+- freedesktop-sdk.bst:components/libxcb.bst
+- freedesktop-sdk.bst:components/libice.bst
+- freedesktop-sdk.bst:components/libsm.bst
+- freedesktop-sdk.bst:components/xcb-util.bst
+- freedesktop-sdk.bst:components/xcb-util-cursor.bst
+- freedesktop-sdk.bst:components/xcb-util-image.bst
+- freedesktop-sdk.bst:components/libxcursor.bst
+- freedesktop-sdk.bst:components/libxft.bst
 # Plasma inter-deps
-# - kde/plasma/kwin.bst  # Disabled: X11 development headers not available in container
+- kde/plasma/kwin.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
@@ -81,10 +95,6 @@ variables:
     -DCMAKE_INSTALL_LIBEXECDIR=lib
     -DGLIBC_LOCALE_GEN=OFF
     -DBUILD_TESTING=OFF
-    -DWITH_X11=OFF
-    -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_KWinDBusInterface=ON
-    -DCMAKE_DISABLE_FIND_PACKAGE_ScreenSaverDBusInterface=ON
 
 sources:
 - kind: git_repo
