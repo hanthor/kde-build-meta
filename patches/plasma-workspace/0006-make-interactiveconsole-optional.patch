@@ -1,6 +1,8 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -449,7 +449,8 @@ add_subdirectory(donationmessage)
+@@ -448,7 +448,9 @@
+ add_subdirectory(menu)
+ add_subdirectory(donationmessage)
 
 -add_subdirectory(interactiveconsole)
 +if (KF6TextEditor_FOUND AND KF6TextWidgets_FOUND)
