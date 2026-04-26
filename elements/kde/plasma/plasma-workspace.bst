@@ -105,17 +105,18 @@ sources:
   url: kde:plasma/plasma-workspace.git
   track: Plasma/6.6
   ref: 708f21c169b546edbc30510192eb1d55ff505fdc
-- kind: patch
-  path: patches/plasma-workspace/0001-make-qt6location-optional.patch
-- kind: patch
-  path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
-- kind: patch
-  path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch
-- kind: patch
-  path: patches/plasma-workspace/0004-make-breeze-optional.patch
-- kind: patch
-  path: patches/plasma-workspace/0005-make-baloo-optional.patch
-- kind: patch
-  path: patches/plasma-workspace/0006-make-interactiveconsole-optional.patch
-- kind: patch
-  path: patches/plasma-workspace/0007-make-shellprivate-textwidgets-optional.patch
+# TEMPORARILY DISABLED: Testing without patches to see actual cmake error
+# - kind: patch
+#   path: patches/plasma-workspace/0001-make-qt6location-optional.patch
+# - kind: patch
+#   path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
+# - kind: patch
+#   path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch
+# - kind: patch
+#   path: patches/plasma-workspace/0004-make-breeze-optional.patch
+# - kind: patch
+#   path: patches/plasma-workspace/0005-make-baloo-optional.patch
+# - kind: patch
+#   path: patches/plasma-workspace/0006-make-interactiveconsole-optional.patch
+# - kind: patch
+#   path: patches/plasma-workspace/0007-make-shellprivate-textwidgets-optional.patch
