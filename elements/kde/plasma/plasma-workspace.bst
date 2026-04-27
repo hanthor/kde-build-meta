@@ -13,6 +13,9 @@ build-depends:
 - kde/qt6/qt6-qtlocation.bst
 - kde/qt6/qt6-qtpositioning.bst
 - kde/qt6/qt6-qtsvg.bst
+# X11 libs needed by ksmserver (ICE/SM for session management)
+- freedesktop-sdk.bst:components/xorg-lib-ice.bst
+- freedesktop-sdk.bst:components/xorg-lib-sm.bst
 # System libs
 - freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:components/pipewire-daemon.bst

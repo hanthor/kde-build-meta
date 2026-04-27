@@ -37,5 +37,4 @@ sources:
   url: kde:plasma/bluedevil.git
   track: Plasma/6.6
   ref: 50ebb1cc773182f1e71ff11aaee211434e3635e3
-- kind: patch
-  path: patches/bluedevil/0001-drop-x11-pin-activation.patch
+

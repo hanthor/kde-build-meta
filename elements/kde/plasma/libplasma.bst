@@ -11,6 +11,9 @@ build-depends:
 - kde/qt6/qt6-qtsvg.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
+- freedesktop-sdk.bst:components/xcb-util.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 - kde/plasma/plasma-activities.bst
@@ -56,7 +59,6 @@ depends:
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
-    -DWITHOUT_X11=ON
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
@@ -73,11 +75,4 @@ sources:
   url: kde:plasma/libplasma.git
   track: Plasma/6.6
   ref: d8420e7dd6bd77ed121588318a6096df573df36a
-- kind: patch
-  path: patches/libplasma/0001-guard-kx11extras-with-have-x11.patch
-- kind: patch
-  path: patches/libplasma/0002-guard-kx11extras-appletpopup-dialog.patch
-- kind: patch
-  path: patches/libplasma/0003-guard-kx11extras-plasmawindow.patch
-- kind: patch
-  path: patches/libplasma/0004-guard-kx11extras-windowthumbnail.patch
+

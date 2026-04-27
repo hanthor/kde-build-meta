@@ -59,5 +59,4 @@ sources:
   url: kde:system/dolphin.git
   track: release/25.04
   ref: 3094423b5572c538bbc7e5ed48917c6cdd4b5fab
-- kind: patch
-  path: patches/dolphin/0001-optional-x11.patch
+

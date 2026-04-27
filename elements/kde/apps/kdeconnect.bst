@@ -5,6 +5,11 @@ build-depends:
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 - freedesktop-sdk.bst:components/libxslt.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
+- freedesktop-sdk.bst:components/xorg-lib-xtst.bst
+- freedesktop-sdk.bst:components/libei.bst
+- freedesktop-sdk.bst:components/libevdev.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kpackage.bst
@@ -39,7 +44,7 @@ variables:
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DKF_SKIP_PO_PROCESSING=ON
     -DWITH_PULSEAUDIO=OFF
-    -DWITH_X11=OFF
+
 
 sources:
 - kind: git_repo
@@ -52,7 +57,4 @@ sources:
   path: patches/kdeconnect/0002-gate-smsapp-on-kpeople.patch
 - kind: patch
   path: patches/kdeconnect/0003-fix-pkgconfig-xkbcommon.patch
-- kind: patch
-  path: patches/kdeconnect/0004-notifications-cmake-optional-x11.patch
-- kind: patch
-  path: patches/kdeconnect/0005-notifications-source-optional-x11.patch
+
