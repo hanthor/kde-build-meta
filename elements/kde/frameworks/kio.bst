@@ -36,7 +36,7 @@ build-depends:
 - freedesktop-sdk.bst:components/systemd-libs.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=OFF -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
 
 sources:
 - kind: git_repo

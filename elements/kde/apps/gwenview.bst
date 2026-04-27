@@ -57,7 +57,6 @@ variables:
     -DBUILD_MAN_DOCS=OFF
     -DBUILD_DOC=OFF
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
-    -DWITHOUT_X11=ON
 
 sources:
 - kind: git_repo

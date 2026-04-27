@@ -65,9 +65,6 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DBUILD_KCM_TABLET=OFF
-    -DBUILD_KCM_MOUSE_X11=OFF
-    -DBUILD_KCM_TOUCHPAD_X11=OFF
-    -DWITH_X11=OFF
 
 sources:
 - kind: git_repo

@@ -14,7 +14,7 @@ build-depends:
 - kde/qt6/qt6-qtwayland.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=OFF -DWITH_WAYLAND=ON
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
 
 sources:
 - kind: git_repo

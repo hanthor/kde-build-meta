@@ -34,7 +34,6 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DCMAKE_DISABLE_FIND_PACKAGE_GPS=ON
-    -DWITH_X11=OFF
 
 sources:
 - kind: git_repo

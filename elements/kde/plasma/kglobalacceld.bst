@@ -45,7 +45,6 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
-    -DWITH_X11=OFF
 
 sources:
 - kind: git_repo
