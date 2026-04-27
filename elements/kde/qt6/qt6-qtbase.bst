@@ -3,6 +3,8 @@ description: Qt6 base module
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+
+depends:
 - freedesktop-sdk.bst:components/openssl.bst
 - freedesktop-sdk.bst:components/sqlite.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst

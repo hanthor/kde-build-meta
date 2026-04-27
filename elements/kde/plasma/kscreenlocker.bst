@@ -10,6 +10,8 @@ build-depends:
 - kde/frameworks/kpackage.bst
 - kde/frameworks/kdoctools.bst
 - freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
@@ -34,14 +36,9 @@ build-depends:
 - kde/frameworks/karchive.bst
 - kde/plasma/plasma-activities.bst
 - kde/frameworks/breeze-icons.bst
-- kde/qt6/qt6-qtsvg.bst
-- kde/frameworks/karchive.bst
-- kde/plasma/plasma-activities.bst
-- kde/frameworks/breeze-icons.bst
 
 variables:
   cmake-local: >-
-    -DCMAKE_DISABLE_FIND_PACKAGE_X11=ON
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DBUILD_TESTING=OFF
     -DBUILD_HTML_DOCS=OFF
@@ -65,7 +62,5 @@ sources:
   path: patches/kscreenlocker/0002-fix-x11info-ctor.patch
 - kind: patch
   path: patches/kscreenlocker/0003-add-source-include-for-fixx11h.patch
-- kind: patch
-  path: patches/kscreenlocker/0004-guard-qx11application.patch
 - kind: local
   path: patches/kscreenlocker/override

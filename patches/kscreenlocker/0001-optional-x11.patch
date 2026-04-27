@@ -1,7 +1,8 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 04c97e0..056f260 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -168,8 +168,6 @@
+@@ -168,8 +168,6 @@ set(ksld_SRCS
     abstractlocker.cpp
     ksldapp.cpp
     interface.cpp
@@ -10,7 +11,7 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
     waylandlocker.cpp
     logind.cpp
     waylandserver.cpp
-@@ -177,8 +175,6 @@
+@@ -177,8 +175,6 @@ set(ksld_SRCS
     abstractlocker.h
     ksldapp.h
     interface.h
@@ -19,20 +20,20 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
     waylandlocker.h
     logind.h
     waylandserver.h
-@@ -204,6 +200,12 @@
- )
+@@ -205,6 +201,12 @@ ecm_add_wayland_server_protocol(ksld_SRCS
  
  add_library(KScreenLocker SHARED ${ksld_SRCS})
-+
+ 
 +if (X11_FOUND)
 +    target_sources(KScreenLocker PRIVATE globalaccel.cpp x11locker.cpp)
 +    target_compile_definitions(KScreenLocker PRIVATE HAVE_X11)
 +    target_link_libraries(KScreenLocker PRIVATE X11::X11 XCB::XCB XCB::KEYSYMS)
 +endif()
- 
++
  target_link_libraries(KScreenLocker
  PUBLIC
-@@ -219,9 +221,6 @@
+    Qt::Core
+@@ -219,9 +221,6 @@ PRIVATE
     KF6::ConfigGui
     KF6::Package
     KF6::WindowSystem
@@ -42,30 +43,11 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
     Wayland::Server
  )
  
-
-diff --git a/greeter/CMakeLists.txt b/greeter/CMakeLists.txt
---- a/greeter/CMakeLists.txt
-+++ b/greeter/CMakeLists.txt
-@@ -60,11 +60,13 @@
-     Plasma::PlasmaQuick
-     Qt::Quick
-     Qt::Qml
--    X11::X11
-     Wayland::Client
-     LayerShellQt::Interface
-     KF6::ScreenDpms
- )
-+if(X11_FOUND)
-+    target_link_libraries(kscreenlocker_greet X11::X11)
-+endif()
- 
- # KSCREENLOCKER_PAM_SERVICE, if defined, will already have been
- # enclosed in double quotes by the define_pam_service macro.
-
 diff --git a/abstractlocker.h b/abstractlocker.h
+index 047034c..fc65f9a 100644
 --- a/abstractlocker.h
 +++ b/abstractlocker.h
-@@ -14,7 +14,9 @@
+@@ -14,7 +14,9 @@ SPDX-License-Identifier: GPL-2.0-or-later
  #include <QObject>
  #include <QRasterWindow>
  
@@ -75,7 +57,7 @@ diff --git a/abstractlocker.h b/abstractlocker.h
  
  namespace ScreenLocker
  {
-@@ -49,10 +51,12 @@
+@@ -49,10 +51,12 @@ public:
  
      virtual void addAllowedWindow(quint32 window);
  
@@ -88,7 +70,7 @@ diff --git a/abstractlocker.h b/abstractlocker.h
  
      void emergencyShow();
  
-@@ -63,14 +67,18 @@
+@@ -63,14 +67,18 @@ Q_SIGNALS:
  protected:
      virtual void stayOnTop() = 0;
  
@@ -107,84 +89,43 @@ diff --git a/abstractlocker.h b/abstractlocker.h
  
      friend class BackgroundWindow;
  };
-
-diff --git a/x11info.h b/x11info.h
---- a/x11info.h
-+++ b/x11info.h
-@@ -6,7 +6,9 @@
+diff --git a/greeter/CMakeLists.txt b/greeter/CMakeLists.txt
+index 7c31624..79c4315 100644
+--- a/greeter/CMakeLists.txt
++++ b/greeter/CMakeLists.txt
+@@ -60,11 +60,13 @@ target_link_libraries(kscreenlocker_greet
+     Plasma::PlasmaQuick
+     Qt::Quick
+     Qt::Qml
+-    X11::X11
+     Wayland::Client
+     LayerShellQt::Interface
+     KF6::ScreenDpms
+ )
++if(X11_FOUND)
++    target_link_libraries(kscreenlocker_greet X11::X11)
++endif()
  
- #pragma once
- 
+ # KSCREENLOCKER_PAM_SERVICE, if defined, will already have been
+ # enclosed in double quotes by the define_pam_service macro.
+diff --git a/greeter/greeterapp.cpp b/greeter/greeterapp.cpp
+index 004da3e..9e59fa3 100644
+--- a/greeter/greeterapp.cpp
++++ b/greeter/greeterapp.cpp
+@@ -609,9 +609,11 @@ bool UnlockApp::eventFilter(QObject *obj, QEvent *event)
+         }
+         if (view && view->winId() && KWindowSystem::isPlatformX11()) {
+             // showing greeter view window, set property
 +#ifdef HAVE_X11
- #include <X11/Xlib.h>
+             auto x11App = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
+             static Atom tag = XInternAtom(x11App->display(), "_KDE_SCREEN_LOCKER", False);
+             XChangeProperty(x11App->display(), view->winId(), tag, tag, 32, PropModeReplace, nullptr, 0);
 +#endif
- 
- #include <QGuiApplication>
- #include <QString>
-@@ -17,9 +19,14 @@
- {
- [[nodiscard]] inline bool isPlatformX11()
- {
-+#ifdef HAVE_X11
-     return QGuiApplication::platformName() == "xcb"_L1;
-+#else
-+    return false;
-+#endif
- }
- 
-+#ifdef HAVE_X11
- [[nodiscard]] inline auto display()
- {
-     return qGuiApp->nativeInterface<QNativeInterface::QX11Application>()->display();
-@@ -34,4 +41,5 @@
- {
-     return DefaultRootWindow(display());
- }
-+#endif // HAVE_X11
- }
-
-diff --git a/ksldapp.h b/ksldapp.h
---- a/ksldapp.h
-+++ b/ksldapp.h
-@@ -14,7 +14,9 @@
- #include <KScreenLocker/kscreenlocker_export.h>
- 
- // forward declarations
-+#ifdef HAVE_X11
- class GlobalAccel;
-+#endif
- class LogindIntegration;
- class QTimer;
- class KSldTest;
-@@ -291,7 +293,9 @@
-     /**
-      * @brief Initializes the X11 environment for the KSldApp.
-      */
-+#ifdef HAVE_X11
-     void initializeX11();
-+#endif
- 
-     /**
-      * @brief Establishes the grab for keyboard and mouse input.
-@@ -408,12 +412,16 @@
-     /**
-      * @brief Provides handling for global accelerators.
-      */
-+#ifdef HAVE_X11
-     GlobalAccel *m_globalAccel = nullptr;
-+#endif
- 
-     /**
-      * @brief Whether the XInput2 extension is available.
-      */
-+#ifdef HAVE_X11
-     bool m_hasXInput2 = false;
-+#endif
- 
-     /**
-      * @brief Whether software rendering should be forced.
-
+         }
+         // no further processing
+         return false;
 diff --git a/ksldapp.cpp b/ksldapp.cpp
+index 459ba85..702c31b 100644
 --- a/ksldapp.cpp
 +++ b/ksldapp.cpp
 @@ -7,13 +7,17 @@
@@ -205,15 +146,14 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
  
  #include "kscreenlocker_logging.h"
  #include <config-kscreenlocker.h>
-@@ -34,6 +38,7 @@
- #include <QKeyEvent>
+@@ -35,12 +39,14 @@ SPDX-License-Identifier: GPL-2.0-or-later
  #include <QProcess>
  #include <QTimer>
-+#ifdef HAVE_X11
  // X11
++#ifdef HAVE_X11
  #include "x11info.h"
  #include <X11/Xlib.h>
-@@ -41,6 +46,7 @@
+ #include <xcb/xcb.h>
  #if X11_Xinput_FOUND
  #include <X11/extensions/XInput2.h>
  #endif
@@ -221,7 +161,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
  // other
  #include <signal.h>
  #include <unistd.h>
-@@ -116,7 +122,9 @@
+@@ -116,7 +122,9 @@ void KSldApp::cleanUp()
      delete m_lockWindow;
  
      // Restore X screensaver parameters
@@ -231,23 +171,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
  }
  
  static bool s_graceTimeKill = false;
-@@ -148,6 +156,7 @@
- #endif
- }
- 
-+#ifdef HAVE_X11
- void KSldApp::initializeX11()
- {
-     qCDebug(KSCREENLOCKER) << "Initializing X11";
-@@ -162,6 +171,7 @@
-     // user activity.
-     XSetScreenSaver(X11Info::display(), 0, s_XInterval, s_XBlanking, s_XExposures);
- }
-+#endif // HAVE_X11
- 
- void KSldApp::initialize()
- {
-@@ -170,7 +180,9 @@
+@@ -170,7 +178,9 @@ void KSldApp::initialize()
      m_requirePassword = KScreenSaverSettings::requirePassword();
  
      if (m_isX11) {
@@ -257,7 +181,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
      }
  
      // Global keys
-@@ -354,9 +366,11 @@
+@@ -354,9 +364,11 @@ void KSldApp::initialize()
          }
      });
  
@@ -269,23 +193,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
  
      // fallback for non-logind systems:
      // connect to signal emitted by Solid. This is emitted unconditionally also on logind enabled systems
-@@ -470,6 +484,7 @@
- static bool grabKeyboard();
- static bool grabMouse();
- 
-+#ifdef HAVE_X11
- class XServerGrabber
- {
- public:
-@@ -483,6 +498,7 @@
-         xcb_flush(X11Info::connection());
-     }
- };
-+#endif // HAVE_X11
- 
- bool KSldApp::establishGrab()
- {
-@@ -494,6 +510,7 @@
+@@ -492,6 +504,7 @@ bool KSldApp::establishGrab()
      if (!m_isX11) {
          return true;
      }
@@ -293,32 +201,31 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
      XSync(X11Info::display(), False);
      XServerGrabber serverGrabber;
      if (!grabKeyboard()) {
-@@ -561,8 +578,11 @@
- #endif
- 
-     return true;
--}
+@@ -556,11 +569,11 @@ bool KSldApp::establishGrab()
+         XFlush(dpy);
+         return success;
+     }
+-#endif
 -
 +#endif // HAVE_X11
-+    return true;
-+}
-+
+     return true;
+ }
+ 
 +#ifdef HAVE_X11
  static bool grabKeyboard()
  {
      qCDebug(KSCREENLOCKER) << "Grabbing keyboard";
-@@ -571,7 +591,9 @@
+@@ -569,7 +582,9 @@ static bool grabKeyboard()
  
      return (rv == GrabSuccess);
  }
--
 +#endif // HAVE_X11
-+
+ 
 +#ifdef HAVE_X11
  static bool grabMouse()
  {
      qCDebug(KSCREENLOCKER) << "Grabbing mouse";
-@@ -582,12 +604,14 @@
+@@ -580,12 +595,14 @@ static bool grabMouse()
  
      return (rv == GrabSuccess);
  }
@@ -333,15 +240,16 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
          xcb_connection_t *c = X11Info::connection();
          xcb_ungrab_keyboard(c, XCB_CURRENT_TIME);
          xcb_ungrab_pointer(c, XCB_CURRENT_TIME);
-@@ -606,6 +630,7 @@
+@@ -603,7 +620,7 @@ void KSldApp::doUnlock()
+             XIFreeDeviceInfo(masters);
              XFlush(dpy);
          }
- #endif
+-#endif
 +#endif // HAVE_X11
      }
      hideLockWindow();
      // delete the window again, to get rid of event filter
-@@ -710,6 +735,7 @@
+@@ -708,6 +725,7 @@ void KSldApp::showLockWindow()
          qCDebug(KSCREENLOCKER) << "Creating lock window";
  
          if (m_isX11) {
@@ -349,7 +257,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
              m_lockWindow = new X11Locker(this);
  
              connect(
-@@ -722,6 +748,7 @@
+@@ -720,6 +738,7 @@ void KSldApp::showLockWindow()
                      }
                  },
                  Qt::QueuedConnection);
@@ -357,7 +265,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
          }
  
          if (m_isWayland) {
-@@ -730,7 +757,9 @@
+@@ -728,7 +747,9 @@ void KSldApp::showLockWindow()
          if (!m_lockWindow) {
              return;
          }
@@ -367,7 +275,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
  
          connect(m_lockWindow, &AbstractLocker::lockWindowShown, this, &KSldApp::lockScreenShown);
  
-@@ -738,7 +767,9 @@
+@@ -736,7 +757,9 @@ void KSldApp::showLockWindow()
      }
      m_lockWindow->showLockWindow();
      if (m_isX11) {
@@ -377,7 +285,7 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
      }
  }
  
-@@ -860,11 +891,13 @@
+@@ -858,11 +881,13 @@ bool KSldApp::event(QEvent *event)
  {
      qCDebug(KSCREENLOCKER) << "Event received";
  
@@ -391,3 +299,85 @@ diff --git a/ksldapp.cpp b/ksldapp.cpp
      return false;
  }
  
+diff --git a/ksldapp.h b/ksldapp.h
+index bcc711c..8f34c9b 100644
+--- a/ksldapp.h
++++ b/ksldapp.h
+@@ -14,7 +14,9 @@ SPDX-License-Identifier: GPL-2.0-or-later
+ #include <KScreenLocker/kscreenlocker_export.h>
+ 
+ // forward declarations
++#ifdef HAVE_X11
+ class GlobalAccel;
++#endif
+ class LogindIntegration;
+ class QTimer;
+ class KSldTest;
+@@ -291,10 +293,12 @@ public Q_SLOTS:
+     void lockScreenShown();
+ 
+ private:
++#ifdef HAVE_X11
+     /**
+      * @brief Initializes the X11 environment for the KSldApp.
+      */
+     void initializeX11();
++#endif
+ 
+     /**
+      * @brief Establishes the grab for keyboard and mouse input.
+@@ -408,15 +412,19 @@ private:
+      */
+     LogindIntegration *m_logind;
+ 
++#ifdef HAVE_X11
+     /**
+      * @brief Provides handling for global accelerators.
+      */
+     GlobalAccel *m_globalAccel = nullptr;
++#endif
+ 
++#ifdef HAVE_X11
+     /**
+      * @brief Whether the XInput2 extension is available.
+      */
+     bool m_hasXInput2 = false;
++#endif
+ 
+     /**
+      * @brief Whether software rendering should be forced.
+diff --git a/x11info.h b/x11info.h
+index f1e68dc..d1da067 100644
+--- a/x11info.h
++++ b/x11info.h
+@@ -6,7 +6,9 @@
+ 
+ #pragma once
+ 
++#ifdef HAVE_X11
+ #include <X11/Xlib.h>
++#endif
+ 
+ #include <QGuiApplication>
+ #include <QString>
+@@ -17,9 +19,14 @@ namespace X11Info
+ {
+ [[nodiscard]] inline bool isPlatformX11()
+ {
++#ifdef HAVE_X11
+     return QGuiApplication::platformName() == "xcb"_L1;
++#else
++    return false;
++#endif
+ }
+ 
++#ifdef HAVE_X11
+ [[nodiscard]] inline auto display()
+ {
+     return qGuiApp->nativeInterface<QNativeInterface::QX11Application>()->display();
+@@ -34,4 +41,5 @@ namespace X11Info
+ {
+     return DefaultRootWindow(display());
+ }
++#endif // HAVE_X11
+ }
