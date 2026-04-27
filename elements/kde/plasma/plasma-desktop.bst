@@ -60,6 +60,9 @@ build-depends:
 - kde/frameworks/kjobwidgets.bst
 
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xi.bst
+- freedesktop-sdk.bst:components/libinput.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
