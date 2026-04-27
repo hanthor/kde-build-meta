@@ -11,7 +11,7 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 - freedesktop-sdk.bst:components/libpulse.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
-# - kde/plasma/kwin.bst  # Disabled: X11 dependencies
+- kde/plasma/kwin.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/plasma-workspace.bst
 - kde/plasma/libplasma.bst
