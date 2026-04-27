@@ -59,6 +59,7 @@ build-depends:
 - kde/frameworks/kholidays.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kiconthemes.bst
+- kde/frameworks/breeze-icons.bst
 - kde/frameworks/kidletime.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kcmutils.bst
