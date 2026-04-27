@@ -63,6 +63,7 @@ build-depends:
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xi.bst
 - freedesktop-sdk.bst:components/libinput.bst
+- core-deps/xvfb.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
@@ -77,10 +78,11 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DBUILD_KCM_TABLET=OFF
-    -DBUILD_KCM_MOUSE_X11=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-desktop.git
   track: Plasma/6.6
   ref: 304d1725320facc693f6e102c730a0e8e40c757b
+- kind: patch
+  path: patches/plasma-desktop/0001-fix-libinput-pkgconfig.patch
