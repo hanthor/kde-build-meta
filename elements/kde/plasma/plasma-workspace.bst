@@ -21,6 +21,7 @@ build-depends:
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
+- freedesktop-sdk.bst:components/libxslt.bst
 # Plasma inter-deps (kwin brings X11 support via its dependencies)
 - kde/plasma/kwin.bst
 - kde/plasma/kscreenlocker.bst
