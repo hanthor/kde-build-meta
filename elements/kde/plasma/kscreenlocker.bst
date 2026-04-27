@@ -56,11 +56,3 @@ sources:
   url: kde:plasma/kscreenlocker.git
   track: Plasma/6.6
   ref: 093598fdf00d069e251cd891e26998df933cbfed
-- kind: patch
-  path: patches/kscreenlocker/0001-optional-x11.patch
-- kind: patch
-  path: patches/kscreenlocker/0002-fix-x11info-ctor.patch
-- kind: patch
-  path: patches/kscreenlocker/0003-add-source-include-for-fixx11h.patch
-- kind: local
-  path: patches/kscreenlocker/override
