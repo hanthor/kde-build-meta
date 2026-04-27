@@ -2,6 +2,8 @@ kind: cmake
 description: kwindowsystem
 
 depends:
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
 - freedesktop-sdk.bst:components/xcb-util.bst
 - freedesktop-sdk.bst:components/xcb-util-cursor.bst
@@ -20,16 +22,9 @@ build-depends:
 - kde/frameworks/plasma-wayland-protocols.bst
 - kde/qt6/qt6-qtwayland.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
-- freedesktop-sdk.bst:components/xorg-lib-x11.bst
-- freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
-- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
-- freedesktop-sdk.bst:components/xcb-util.bst
-- freedesktop-sdk.bst:components/xcb-util-cursor.bst
-- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
-- freedesktop-sdk.bst:components/xcb-util-wm.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DKWINDOWSYSTEM_X11=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DKWINDOWSYSTEM_X11=ON
 
 sources:
 - kind: git_repo
