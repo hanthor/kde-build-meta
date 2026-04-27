@@ -10,6 +10,7 @@ build-depends:
 - freedesktop-sdk.bst:components/xorg-lib-xtst.bst
 - freedesktop-sdk.bst:components/libei.bst
 - freedesktop-sdk.bst:components/libevdev.bst
+- core-deps/libfakekey.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kpackage.bst
