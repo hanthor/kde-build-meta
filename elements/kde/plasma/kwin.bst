@@ -54,6 +54,9 @@ build-depends:
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/knotifications.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/breeze-icons.bst
 - kde/libs/libqaccessibilityclient.bst
 - kde/plasma/libkscreen.bst
 - kde/plasma/aurorae.bst
