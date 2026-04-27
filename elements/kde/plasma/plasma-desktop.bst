@@ -51,6 +51,13 @@ build-depends:
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/ksvg.bst
 - kde/frameworks/kcolorscheme.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kdeclarative.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kbookmarks.bst
+- kde/frameworks/kcompletion.bst
+- kde/frameworks/kitemviews.bst
+- kde/frameworks/kjobwidgets.bst
 
 - freedesktop-sdk.bst:components/mesa-headers.bst
 variables:
