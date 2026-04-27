@@ -61,8 +61,16 @@ build-depends:
 
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcursor.bst
+- freedesktop-sdk.bst:components/xorg-lib-xext.bst
 - freedesktop-sdk.bst:components/xorg-lib-xi.bst
+- freedesktop-sdk.bst:components/xorg-lib-xkbfile.bst
 - freedesktop-sdk.bst:components/libinput.bst
+- freedesktop-sdk.bst:components/libwacom.bst
+- freedesktop-sdk.bst:components/libibus.bst
+- freedesktop-sdk.bst:components/xcb-util-keysyms.bst
+- freedesktop-sdk.bst:components/xdg-user-dirs.bst
 - core-deps/xvfb.bst
 variables:
   cmake-local: >-
