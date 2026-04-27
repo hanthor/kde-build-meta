@@ -22,6 +22,8 @@ build-depends:
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
 - freedesktop-sdk.bst:components/libxslt.bst
+- freedesktop-sdk.bst:components/docbook-xml.bst
+- freedesktop-sdk.bst:components/docbook-xsl.bst
 # Plasma inter-deps (kwin brings X11 support via its dependencies)
 - kde/plasma/kwin.bst
 - kde/plasma/kscreenlocker.bst
@@ -85,6 +87,8 @@ variables:
     -DCMAKE_INSTALL_LIBEXECDIR=lib
     -DGLIBC_LOCALE_GEN=OFF
     -DBUILD_TESTING=OFF
+    -DDocBookXML4_DTD_DIR=/usr/share/xml/docbook/xml-dtd/4.5
+    -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets
 
 sources:
 - kind: git_repo
