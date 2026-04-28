@@ -3,6 +3,7 @@ description: plasma-desktop
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- freedesktop-sdk.bst:components/libinput.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtsvg.bst
@@ -11,6 +12,8 @@ build-depends:
 - kde/frameworks/kdoctools.bst
 - freedesktop-sdk.bst:components/libpulse.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
+- freedesktop-sdk.bst:components/xorg-lib-xkbfile.bst
+- freedesktop-sdk.bst:components/libwacom.bst
 - kde/plasma/kwin.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/plasma-workspace.bst
@@ -19,7 +22,10 @@ build-depends:
 - kde/plasma/plasma-activities-stats.bst
 - kde/plasma/plasma5support.bst
 - kde/plasma/libksysguard.bst
+- kde/plasma/powerdevil.bst
+- kde/plasma/systemsettings.bst
 - kde/libs/libcanberra.bst
+- kde/frameworks/solid.bst
 
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kitemmodels.bst
@@ -63,12 +69,7 @@ build-depends:
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcursor.bst
-- freedesktop-sdk.bst:components/xorg-lib-xext.bst
 - freedesktop-sdk.bst:components/xorg-lib-xi.bst
-- freedesktop-sdk.bst:components/xorg-lib-xkbfile.bst
-- freedesktop-sdk.bst:components/libinput.bst
-- freedesktop-sdk.bst:components/libwacom.bst
-- freedesktop-sdk.bst:components/libibus.bst
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
 - freedesktop-sdk.bst:components/xdg-user-dirs.bst
 - core-deps/xvfb.bst
@@ -85,6 +86,8 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DBUILD_KCM_MOUSE_X11=OFF
+    -DBUILD_KCM_TOUCHPAD_X11=OFF
     -DBUILD_KCM_TABLET=OFF
 
 sources:
