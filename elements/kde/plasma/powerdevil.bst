@@ -4,33 +4,36 @@ description: powerdevil
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
-- kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
+- kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtdeclarative.bst
+- kde/qt6/qt6-qtsvg.bst
+- kde/libs/qcoro.bst
+- kde/plasma/plasma-workspace.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kpackage.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/ksvg.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland.bst
 - freedesktop-sdk.bst:components/systemd-libs.bst
-# - kde/plasma/plasma-workspace.bst  # Disabled
-- kde/plasma/layer-shell-qt.bst
-- kde/plasma/libplasma.bst
-- kde/plasma/libkscreen.bst
-- kde/plasma/plasma-activities.bst
-- freedesktop-sdk.bst:components/mesa-headers.bst
-- kde/frameworks/kauth.bst
+- kde/frameworks/kcmutils.bst
+- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/kconfig.bst
-- kde/frameworks/kcrash.bst
-- kde/frameworks/kdbusaddons.bst
-- kde/frameworks/ki18n.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/krunner.bst
+- kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kidletime.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kglobalaccel.bst
-- kde/frameworks/kio.bst
 - kde/frameworks/kirigami.bst
-- kde/frameworks/kcmutils.bst
-- kde/frameworks/kconfigwidgets.bst
 - kde/frameworks/knotifications.bst
-- kde/frameworks/krunner.bst
+- kde/frameworks/breeze-icons.bst
+- kde/plasma/libkscreen.bst
+- kde/plasma/libplasma.bst
+- kde/plasma/plasma-activities.bst
 - kde/frameworks/solid.bst
-- kde/frameworks/kwindowsystem.bst
 
 variables:
   cmake-local: >-
