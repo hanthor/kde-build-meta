@@ -17,6 +17,9 @@ build-depends:
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/kxmlgui.bst
 - kde/frameworks/kstatusnotifieritem.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcursor.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xcb-util.bst
 
 variables:
   cmake-local: >-
@@ -35,5 +38,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-integration.git
-  track: Plasma/6.6
-  ref: 9588bd0ea75a7a166352cb27f9e284f5902adcfa
+  track: master
+  ref: v6.5.90-36-gb49256f383ebc7c60b7b9fd2df2d565b19e348d0

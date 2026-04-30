@@ -7,6 +7,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
 - freedesktop-sdk.bst:components/libpulse.bst
+- kde/libs/pulseaudio-qt.bst
 - kde/plasma/libplasma.bst
 - kde/libs/libcanberra.bst
 
@@ -35,5 +36,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-pa.git
-  track: Plasma/6.6
-  ref: 111fa0e6089aca84fe4e75d2cbebbc60fb811ea3
+  track: master
+  ref: v6.5.90-68-g91311215bf1d33c85d6643d922463cc24e5e3867
