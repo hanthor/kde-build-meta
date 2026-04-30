@@ -9,13 +9,12 @@ depends:
 - kde/plasma/kdecoration.bst
 - kde/plasma/kdeplasma-addons.bst
 - kde/plasma/kglobalacceld.bst
-# - kde/plasma/kinfocenter.bst  # TODO: fix about-distro Vulkan dependencies
 - kde/plasma/knighttime.bst
-# - kde/plasma/konsole.bst  # TODO: fix D-Bus XML generation issues
+- kde/plasma/konsole.bst
 - kde/plasma/kpipewire.bst
 - kde/plasma/kscreenlocker.bst
 - kde/plasma/kwayland.bst
-# - kde/plasma/kwin.bst  # TODO: fix X11 dependencies
+- kde/plasma/kwin.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/plasma/libkscreen.bst
 - kde/plasma/libksysguard.bst
@@ -23,23 +22,21 @@ depends:
 - kde/plasma/milou.bst
 - kde/plasma/plasma-activities-stats.bst
 - kde/plasma/plasma-activities.bst
-# - kde/plasma/plasma-desktop.bst  # TODO: too many X11 dependencies
-# - kde/plasma/plasma-integration.bst  # TODO: fix X11 dependencies
-# - kde/plasma/plasma-nano.bst  # TODO: fix dependencies
-# - kde/plasma/plasma-nm.bst  # TODO: add QCA-qt6 support
-# - kde/plasma/plasma-workspace.bst  # TODO: too many X11 dependencies
+- kde/plasma/plasma-desktop.bst
+- kde/plasma/plasma-integration.bst
+- kde/plasma/plasma-nm.bst
+- kde/plasma/plasma-workspace.bst
 - kde/plasma/plasma5support.bst
-# - kde/plasma/powerdevil.bst  # TODO: power mgmt lib
+- kde/plasma/powerdevil.bst
 - kde/plasma/qqc2-breeze-style.bst
-# - kde/plasma/spectacle.bst
-# - kde/plasma/systemsettings.bst
-# - kde/plasma/sddm.bst  # TODO: fix CMake policy error
+- kde/plasma/spectacle.bst
+- kde/plasma/systemsettings.bst
 - kde/plasma/bluedevil.bst
-# - kde/plasma/plasma-pa.bst
-# - kde/plasma/kscreen.bst  # TODO: add kcoreaddons build-dep
-# - kde/plasma/drkonqi.bst  # TODO: fix Python vendoring CMake issue
+- kde/plasma/plasma-pa.bst
+- kde/plasma/kscreen.bst
 - kde/plasma/ksshaskpass.bst
-# - kde/plasma/kmenuedit.bst  # TODO: fix kdoctools CMake issue
-# - kde/plasma/plasma-systemmonitor.bst
-# - kde/plasma/xdg-desktop-portal-kde.bst
+- kde/plasma/kmenuedit.bst
+- kde/plasma/plasma-systemmonitor.bst
+- kde/plasma/xdg-desktop-portal-kde.bst
 - kde/plasma/kio-admin.bst
+- kde/plasma/kinfocenter.bst

@@ -14,6 +14,7 @@ build-depends:
 - kde/frameworks/kimageformats.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/kconfig.bst
+- kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcmutils.bst
@@ -24,6 +25,13 @@ build-depends:
 - kde/frameworks/kpackage.bst
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kcrash.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/plasma/plasma5support.bst
+- freedesktop-sdk.bst:components/xorg-lib-x11.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcb.bst
+- freedesktop-sdk.bst:components/xorg-lib-xi.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
@@ -32,5 +40,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/kscreen.git
-  track: Plasma/6.6
-  ref: dafe40feb429d3aba4e8d5db8625de3e373884c9
+  track: master
+  ref: v6.5.90-65-gf1ea5ff40d1156962b7ef0a021894905d0c1d92b

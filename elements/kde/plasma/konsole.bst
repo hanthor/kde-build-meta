@@ -48,4 +48,4 @@ sources:
 - kind: git_repo
   url: kde:kde/konsole.git
   track: master
-  ref: 915a038217b2acdb167fb2a7178c42c919ce6325
+  ref: v25.04.3-0-gbc359b16a01fc093835e36f21c22f691fea31b32
