@@ -28,7 +28,13 @@ build-depends:
 - kde/frameworks/kirigami.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/breeze-icons.bst
+- kde/plasma/plasma-activities.bst
 - kde/plasma/plasma5support.bst
+- kde/qt6/qt6-qtsvg.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xorg-lib-xi.bst

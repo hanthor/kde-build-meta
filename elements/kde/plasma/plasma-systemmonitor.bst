@@ -7,6 +7,7 @@ build-depends:
 - kde/qt6/qt6-qtbase.bst
 
 - kde/frameworks/kirigami.bst
+- kde/libs/kirigami-addons.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kconfig.bst
@@ -28,5 +29,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-systemmonitor.git
-  track: Plasma/6.6
-  ref: 72c0618fe230d301a6b0eb7b6ada9ef639c1ced9
+  track: master
+  ref: v6.5.90-66-g308eba64d627c14001c9087dcbe0ef65e82d6e43
