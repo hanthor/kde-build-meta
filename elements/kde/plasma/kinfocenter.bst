@@ -12,6 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/libusb.bst
 - freedesktop-sdk.bst:components/linux-pam-base.bst
 - freedesktop-sdk.bst:components/libpulse.bst
+- freedesktop-sdk.bst:components/vulkan-headers.bst
 
 - kde/frameworks/kconfig.bst
 - kde/frameworks/kcoreaddons.bst

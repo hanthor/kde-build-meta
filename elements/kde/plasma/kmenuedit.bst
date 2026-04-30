@@ -6,6 +6,8 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/libxslt.bst
+- freedesktop-sdk.bst:components/docbook-xml.bst
+- freedesktop-sdk.bst:components/docbook-xsl.bst
 - kde/frameworks/karchive.bst
 - kde/frameworks/kdoctools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
