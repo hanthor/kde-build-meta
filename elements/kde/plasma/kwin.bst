@@ -95,6 +95,6 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/kwin.git
-  track: Plasma/6.6
-  ref: c37c08841aa187a995bcba0fc7352da19238bf87
+  track: master
+  ref: v6.5.90-429-g36a51bdf68aa263a4871d9128ff976ea04e7e70f
 
