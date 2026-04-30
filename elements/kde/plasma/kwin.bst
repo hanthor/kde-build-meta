@@ -5,6 +5,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtsensors.bst
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/krunner.bst
@@ -19,6 +20,8 @@ build-depends:
 - freedesktop-sdk.bst:components/systemd-libs.bst
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
 - core-deps/libdisplay-info.bst
+- freedesktop-sdk.bst:components/libepoxy.bst
+- freedesktop-sdk.bst:components/libevdev.bst
 # Plasma inter-deps
 - kde/qt6/qt6-qt5compat.bst
 - kde/qt6/qt6-qtsvg.bst
@@ -28,6 +31,10 @@ build-depends:
 - kde/plasma/libplasma.bst
 - kde/plasma/plasma-activities.bst
 - kde/plasma/kglobalacceld.bst
+- kde/plasma/libkscreen.bst
+- kde/plasma/aurorae.bst
+- kde/plasma/breeze.bst
+- kde/plasma/knighttime.bst
 
 - kde/frameworks/kirigami.bst
 - kde/qt6/qt6-qtdeclarative.bst
@@ -58,11 +65,8 @@ build-depends:
 - kde/frameworks/kio.bst
 - kde/frameworks/breeze-icons.bst
 - kde/libs/libqaccessibilityclient.bst
-- kde/plasma/libkscreen.bst
-- kde/plasma/aurorae.bst
-- kde/plasma/breeze.bst
-- kde/plasma/knighttime.bst
-# X11 libraries needed by kwin's X11 integration
+
+# X11 libraries
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xorg-lib-xfixes.bst
@@ -70,12 +74,16 @@ build-depends:
 - freedesktop-sdk.bst:components/xcb-util-cursor.bst
 - freedesktop-sdk.bst:components/xcb-util-wm.bst
 - freedesktop-sdk.bst:components/xcb-util-keysyms.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcursor.bst
+- freedesktop-sdk.bst:components/xorg-lib-xi.bst
+
 # GPU buffer management and mode computation
 - freedesktop-sdk.bst:components/dummy-gbm.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcvt.bst
 - freedesktop-sdk.bst:components/xwayland.bst
 # Vulkan support
 - freedesktop-sdk.bst:components/vulkan-headers.bst
+- freedesktop-sdk.bst:components/vulkan-icd-loader.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
@@ -89,12 +97,13 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
-    -DKWIN_BUILD_X11=ON
+    -DKWIN_BUILD_X11=OFF
     -DBUILD_WINDOW_KILLER=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/kwin.git
-  track: Plasma/6.6
-  ref: c37c08841aa187a995bcba0fc7352da19238bf87
-
+  track: master
+  ref: v6.5.90-647-g4729b0bb8b51af77181df7aae6ce2ae81a128784
+- kind: patch
+  path: patches/kwin/fix-gcc15.patch
