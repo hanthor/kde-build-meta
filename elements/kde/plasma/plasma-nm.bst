@@ -32,6 +32,7 @@ build-depends:
 - kde/frameworks/modemmanager-qt.bst
 - kde/frameworks/kpackage.bst
 - kde/frameworks/kcodecs.bst
+- kde/frameworks/kdeclarative.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF

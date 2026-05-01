@@ -20,10 +20,14 @@ build-depends:
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kpackage.bst
+- kde/frameworks/kiconthemes.bst
+- kde/frameworks/kquickcharts.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kdeclarative.bst
+- kde/plasma/libksysguard.bst
 variables:
   cmake-local: >-
     -DBUILD_TESTING=OFF
-    -DCMAKE_DISABLE_FIND_PACKAGE_ksystemstats=ON
     -DKF_SKIP_PO_PROCESSING=ON
 
 sources:
