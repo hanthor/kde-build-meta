@@ -35,6 +35,8 @@ config:
   - ukify
   - kernel-install
 
+  include-orphans: True
+
 public:
   bst:
     split-rules:

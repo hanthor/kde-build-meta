@@ -11,11 +11,13 @@ depends:
 - gnomeos/import-deployment-pub-key.bst
 - gnomeos/public-keys.bst
 - gnomeos/reload-sysext.bst
-- gnomeos/replace-signed-systemd-boot.bst
+# replace-signed-systemd-boot.bst dropped: local stripped-down version
+# (no signing) duplicates files already provided by core-deps/systemd.bst
 - gnomeos/systemd-pcrlock-workaround.bst
 
 # Add the kernel
 - freedesktop-sdk.bst:components/linux-firmware.bst
+- freedesktop-sdk.bst:bootstrap/libselinux.bst
 - gnomeos/initramfs/signed-modules.bst
 - oci/initramfs.bst
 

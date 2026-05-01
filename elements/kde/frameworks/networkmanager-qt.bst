@@ -12,7 +12,7 @@ build-depends:
 - sdk/glib.bst
 
 depends:
-- freedesktop-sdk.bst:components/networkmanager.bst
+- core-deps/NetworkManager.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_NMQT_STATIC=OFF
@@ -20,5 +20,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/networkmanager-qt.git
-  track: v6.22.0
-  ref: b3d506192606ba7e98935c43f7717d1f09002bca
+  track: master
+  ref: v6.25.0-rc1-1-g0d82c49f01cf34cd4c654b2f56139fcf1db2cd92

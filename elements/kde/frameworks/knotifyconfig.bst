@@ -22,5 +22,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/knotifyconfig.git
-  track: v6.22.0
-  ref: 8f322639919f565da251b45d338181a8239d9574
+  track: master
+  ref: v6.25.0-rc1-2-gac2ecf3c0bbe8d561218176f54b201dbbeba8257

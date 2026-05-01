@@ -49,5 +49,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/milou.git
-  track: Plasma/6.6
-  ref: 0db244db885d51b16fd6e19eef9c9685f054d0d5
+  track: master
+  ref: v6.5.90-19-gabdfef7f0e42d738e6839f5a8df07436fd15bbf7

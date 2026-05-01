@@ -88,14 +88,15 @@ variables:
     -DCMAKE_INSTALL_LIBEXECDIR=lib
     -DGLIBC_LOCALE_GEN=OFF
     -DBUILD_TESTING=OFF
+    -DBUILD_X11=OFF
     -DDocBookXML4_DTD_DIR=/usr/share/xml/docbook/xml-dtd/4.5
     -DDocBookXSL_DIR=/usr/share/xml/docbook/xml/xsl-stylesheets
 
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-workspace.git
-  track: Plasma/6.6
-  ref: 708f21c169b546edbc30510192eb1d55ff505fdc
+  track: master
+  ref: v6.5.90-473-g851b49ff898ed108d5890af42d0f6e2be50a8ac4
 - kind: patch
   path: patches/plasma-workspace/0001-make-qt6location-optional.patch
 - kind: patch

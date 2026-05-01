@@ -20,5 +20,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kcolorscheme.git
-  track: v6.22.0
-  ref: 7972879c36f6ce07cfdda04b01d258185f6d044b
+  track: master
+  ref: v6.25.0-rc1-1-gc8474b10f5d5be2cbade6d3e633e9934753abe9f

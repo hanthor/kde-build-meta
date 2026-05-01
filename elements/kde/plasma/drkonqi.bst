@@ -34,5 +34,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/drkonqi.git
-  track: Plasma/6.6
-  ref: b4c1e9ccab90b2cf51edf4c0026cc8715fd1ac19
+  track: master
+  ref: v6.5.90-32-g4e74051a9a4f91c2bcbc6822d803f96be55086f0

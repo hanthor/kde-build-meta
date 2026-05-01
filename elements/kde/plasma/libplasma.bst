@@ -9,8 +9,10 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qtwayland.bst
 - kde/qt6/qt6-qtsvg.bst
+- kde/qt6/qt6-qt5compat.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland.bst
+- freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xcb-util.bst
@@ -69,10 +71,11 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DBUILD_X11=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/libplasma.git
-  track: Plasma/6.6
-  ref: d8420e7dd6bd77ed121588318a6096df573df36a
+  track: master
+  ref: v6.5.90-89-g4ca334ae667b8268ae39527e026805060dae4399
 

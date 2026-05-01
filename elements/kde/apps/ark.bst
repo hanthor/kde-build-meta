@@ -49,5 +49,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:utilities/ark.git
-  track: release/25.04
-  ref: 233870783fad85db275a746226d178b2d2ad5c4b
+  track: master
+  ref: v24.01.90-472-g16a937fa783bd2986b173ddd45d1fb5b5cbb6d8c

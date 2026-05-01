@@ -17,5 +17,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kunitconversion.git
-  track: v6.22.0
-  ref: bcb5524d458e7a7303d3bf7fcb81d77f706df47a
+  track: master
+  ref: v6.25.0-rc1-6-g4cd470981d1098f685c2f79434ffe68a78466d5d

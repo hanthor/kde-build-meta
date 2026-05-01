@@ -25,6 +25,11 @@ UNITS=(
 )
 
 install() {
+    if ! [ -x /usr/bin/plymouth ]; then
+        echo "Plymouth not found, skipping"
+        return 0
+    fi
+
     system=/usr/lib/systemd/system
 
     install_files                               \

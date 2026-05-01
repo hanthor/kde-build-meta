@@ -57,6 +57,6 @@ variables:
 sources:
 - kind: git_repo
   url: kde:system/dolphin.git
-  track: release/25.04
-  ref: 3094423b5572c538bbc7e5ed48917c6cdd4b5fab
+  track: master
+  ref: v24.01.90-1320-g6cbee2ac13d4b414c94c33325e18487683a44b57
 

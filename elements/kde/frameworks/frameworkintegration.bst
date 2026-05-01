@@ -29,5 +29,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/frameworkintegration.git
-  track: v6.22.0
-  ref: ac3d6438eea174f9cadd3e641ce9f938d282ca02
+  track: master
+  ref: v6.25.0-rc1-3-g9cf631d1acdf772e2502c9506454fdb129e444b3

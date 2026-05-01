@@ -4,6 +4,9 @@ description: systemsettings
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/breeze-icons.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/frameworks/kdoctools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
@@ -47,5 +50,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/systemsettings.git
-  track: Plasma/6.6
-  ref: b09d6950b8a2210c3fc2cec346521bb924f1810a
+  track: master
+  ref: v6.5.90-72-g619b5afc32d91974e920f7e4fef6c896e68c2952

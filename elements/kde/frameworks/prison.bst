@@ -13,10 +13,10 @@ build-depends:
 - kde/libs/qrencode.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_DMTX=OFF -DWITH_ZXING=OFF
 
 sources:
 - kind: git_repo
   url: kde:frameworks/prison.git
-  track: v6.22.0
-  ref: 45ea8ed5d66fce0df354de7f3623006aecebd3e4
+  track: master
+  ref: v6.25.0-rc1-1-gc9074e68ec869ff098cf898794983662cdba2637

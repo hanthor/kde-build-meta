@@ -15,6 +15,8 @@ build-depends:
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kiconthemes.bst
+- kde/frameworks/karchive.bst
+- kde/frameworks/breeze-icons.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/knewstuff.bst
 - kde/frameworks/knotifications.bst

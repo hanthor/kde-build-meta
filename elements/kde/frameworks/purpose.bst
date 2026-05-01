@@ -17,6 +17,8 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/prison.bst
+- kde/frameworks/kitemmodels.bst
+- kde/frameworks/kcmutils.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
@@ -24,5 +26,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/purpose.git
-  track: v6.22.0
-  ref: b75acaf23c2c64587590fd35e1fd7942a42196cb
+  track: master
+  ref: v6.25.0-rc1-18-g92e044388f0c246bcc7ad061f4dd5d32ca5783e6

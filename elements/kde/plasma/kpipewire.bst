@@ -31,5 +31,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/kpipewire.git
-  track: Plasma/6.6
-  ref: fb7a5aa740ffef82c57c482546aea9ec3b2c15ef
+  track: master
+  ref: v6.5.90-34-g859a3ce92a1d8858f6789cea8aa136668e179280

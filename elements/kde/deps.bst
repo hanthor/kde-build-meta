@@ -5,7 +5,8 @@ depends:
 # Base OS stack from freedesktop-sdk
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/util-linux-full.bst
-- freedesktop-sdk.bst:components/linux.bst
+# linux: provided by gnomeos/initramfs/signed-modules.bst at install time
+# (matches gnome-build-meta pattern; linux.bst direct dep causes /usr/lib/modules overlap)
 - freedesktop-sdk.bst:components/wireless-regdb-bin.bst
 - freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/dbus.bst
@@ -14,7 +15,7 @@ depends:
 - freedesktop-sdk.bst:components/shadow.bst
 - freedesktop-sdk.bst:components/tzdata.bst
 - freedesktop-sdk.bst:components/iproute2.bst
-- freedesktop-sdk.bst:components/udisks.bst
+# udisks: provided by core-deps/udisks2.bst (newer 2.10.1) via kde/core-os-services.bst
 - freedesktop-sdk.bst:vm/base-filesystem.bst
 - freedesktop-sdk.bst:vm/config/journald.bst
 - freedesktop-sdk.bst:vm/config/networkd.bst
@@ -25,9 +26,14 @@ depends:
 - freedesktop-sdk.bst:components/hosts.bst
 - freedesktop-sdk.bst:components/flatpak.bst
 
+# Core OS Services from upstream (NetworkManager, upower, accounts-daemon, dbus)
+- kde/core-os-services.bst
+
 # KDE Plasma Desktop
 - kde/org.kde.plasma.desktop.bst
 - kde/config/plasma.bst
+- kde/plasma/sddm.bst
+- kde/config/sddm-config.bst
 
 # KDE Applications
 - kde/org.kde.apps.bst
@@ -45,7 +51,8 @@ depends:
 - freedesktop-sdk.bst:components/wireplumber.bst
 
 # Network
-- freedesktop-sdk.bst:components/networkmanager.bst
+# networkmanager.bst removed: provided by core-deps/NetworkManager.bst
+# (newer 1.56.0) via kde/core-os-services.bst
 
 # Security
 - freedesktop-sdk.bst:vm/config/sudo.bst
@@ -93,11 +100,12 @@ depends:
 # Sync
 - freedesktop-sdk.bst:components/rsync.bst
 
-# Hardware
+# Hardware / VM Integrations
 - gnomeos-deps/android-udev-rules.bst
 - gnomeos-deps/iio-sensor-proxy.bst
 - gnomeos-deps/nvme-cli.bst
 - gnomeos-deps/uinput.bst
+- gnomeos-deps/spice-vdagent.bst
 
 # Console
 - gnomeos-deps/kmscon.bst

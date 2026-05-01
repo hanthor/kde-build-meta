@@ -21,5 +21,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kbookmarks.git
-  track: v6.22.0
-  ref: 99622f70fd3d1d1e8c7b159b74f61437de3be337
+  track: master
+  ref: v6.25.0-rc1-4-ge4766b52b0c446ba27a453b26b4dd7018a016568

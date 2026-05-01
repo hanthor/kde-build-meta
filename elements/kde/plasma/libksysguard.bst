@@ -36,5 +36,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/libksysguard.git
-  track: Plasma/6.6
-  ref: c50832633ee1564ccaab18afa401c3b9cf393628
+  track: master
+  ref: v6.5.90-51-gd1fa7c1bb214fbc40f623a4af61bb97e6c7268bf

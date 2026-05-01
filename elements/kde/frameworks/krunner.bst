@@ -23,5 +23,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/krunner.git
-  track: v6.22.0
-  ref: bfe9f124da65472f05514198777d80c53ce8a4e6
+  track: master
+  ref: v6.25.0-rc1-2-g4bf69681d9b459f9a1a0c0548cc01ba6e96c802a

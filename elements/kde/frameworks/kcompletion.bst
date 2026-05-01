@@ -19,5 +19,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kcompletion.git
-  track: v6.22.0
-  ref: 2864a16edec2c4b6ddcbe5cafafa25c834aff3b5
+  track: master
+  ref: v6.25.0-rc1-2-g45320b57f4c082aedc69e756ee9a57dca7b0f381

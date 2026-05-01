@@ -1,16 +1,15 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -101,8 +101,11 @@ if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
-     find_package(Qt6GuiPrivate ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE)
+@@ -127,7 +127,10 @@ if (Qt6Gui_VERSION VERSION_GREATER_EQUAL "6.10.0")
  endif()
- 
- find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS I18n ConfigWidgets DBusAddons IconThemes Notifications
--    KIO KCMUtils Service Solid Kirigami People WindowSystem GuiAddons Crash ItemModels)
-+    KIO KCMUtils Service Solid Kirigami WindowSystem GuiAddons Crash ItemModels)
+
+ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS I18n DBusAddons IconThemes Notifications
+-    KIO ColorScheme Service Solid Kirigami People WindowSystem GuiAddons Crash ItemModels WidgetsAddons)
++    KIO ColorScheme Service Solid Kirigami WindowSystem GuiAddons Crash ItemModels WidgetsAddons)
 +
 +find_package(KF6People ${KF_MIN_VERSION})
 +set_package_properties(KF6People PROPERTIES TYPE OPTIONAL)
- 
- find_package(KF6DocTools ${KF_MIN_VERSION})
- set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
+
+ if (WIN32)
+     get_filename_component(WINDOWS_KITS_DIR

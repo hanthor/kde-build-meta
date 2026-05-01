@@ -25,5 +25,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/kdecoration.git
-  track: Plasma/6.6
-  ref: 9dcde1352027ca1f56f34c3bce178fbb208064d7
+  track: master
+  ref: v6.5.90-29-gf6730382057fcfbccfcc6717b268260dd94da3e3

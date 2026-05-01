@@ -35,6 +35,6 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/bluedevil.git
-  track: Plasma/6.6
-  ref: 50ebb1cc773182f1e71ff11aaee211434e3635e3
+  track: master
+  ref: v6.5.90-50-g555123b0b320f013e35c82207d16cf6567ea1f5c
 

@@ -17,6 +17,7 @@ build-depends:
 - kde/frameworks/kcodecs.bst
 - kde/frameworks/kdbusaddons.bst
 - kde/frameworks/kiconthemes.bst
+- kde/frameworks/breeze-icons.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/sonnet.bst

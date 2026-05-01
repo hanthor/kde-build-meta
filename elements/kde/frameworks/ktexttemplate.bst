@@ -16,5 +16,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/ktexttemplate.git
-  track: v6.22.0
-  ref: ac4e4d389f2016a307f53bfd5579d29ed97eaeb8
+  track: master
+  ref: v6.25.0-rc1-1-g8e7b27ebbbcd67e51dc3fee1c0357ba1c01e7507

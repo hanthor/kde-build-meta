@@ -17,5 +17,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kauth.git
-  track: v6.22.0
-  ref: 4ab64c03de56df3a0ba703596244b1a395ab742a
+  track: master
+  ref: v6.25.0-rc1-1-gfc80b8b5d8e78d9a296fea9ee15151f9d2a084bc

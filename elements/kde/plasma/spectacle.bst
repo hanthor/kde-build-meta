@@ -27,5 +27,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/spectacle.git
-  track: Plasma/6.6
-  ref: ae396f5aab0c0ed39be30595759651a87657b44a
+  track: master
+  ref: v6.5.90-117-gf85ee4a9ba20a2f23aa67da4b19c56fb6aa36b6a

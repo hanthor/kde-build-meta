@@ -24,5 +24,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/ktextwidgets.git
-  track: v6.22.0
-  ref: cadbcf79438e217ff045a15ee9c5573437c4892c
+  track: master
+  ref: v6.25.0-rc1-2-g0ad153af6cc675d04f6325093fc8a266247c10a3

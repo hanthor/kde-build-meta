@@ -49,5 +49,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:multimedia/elisa.git
-  track: release/25.04
-  ref: 0cd8f30422dfe201f6f7b75010fb287eccbcf6fa
+  track: master
+  ref: v24.01.90-876-ga3bf013cfee86b493ce4ac282e60b73808276db1

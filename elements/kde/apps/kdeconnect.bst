@@ -50,8 +50,8 @@ variables:
 sources:
 - kind: git_repo
   url: kde:network/kdeconnect-kde.git
-  track: release/25.04
-  ref: cb53c0cf5e7428e8d7c38d02903e06f371431ae5
+  track: master
+  ref: v24.01.90-1188-gb1562d54001aeb6a0aed4da92dc761aed6320232
 - kind: patch
   path: patches/kdeconnect/0001-make-kpeople-optional.patch
 - kind: patch

@@ -27,5 +27,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-nano.git
-  track: Plasma/6.6
-  ref: 59fc6999efc0d96010438261d3316394a376569c
+  track: master
+  ref: v6.5.90-18-gce48a4a8da0ba3ea5f455418bcda44c7e57e217e

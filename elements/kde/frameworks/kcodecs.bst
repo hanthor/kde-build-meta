@@ -16,5 +16,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kcodecs.git
-  track: v6.22.0
-  ref: 13c53eb2b30c89da3a0c74b9446ec82669036d11
+  track: master
+  ref: v6.25.0-rc1-2-ga84b291444e7e8d9eecf24b6b24aa5acde3447ee

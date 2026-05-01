@@ -49,5 +49,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/baloo.git
-  track: v6.22.0
-  ref: e14a102aaf956030181821bfd93c11ce2981e529
+  track: master
+  ref: v6.25.0-rc1-12-ge177085e31226013ac3aefee5851b81e3c152f18

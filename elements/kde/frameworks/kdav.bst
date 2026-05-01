@@ -18,5 +18,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kdav.git
-  track: v6.22.0
-  ref: 3c58c8197f3cbeb0eccba9bdf57062dd34ee0b87
+  track: master
+  ref: v6.25.0-rc1-20-g83c4bc01da82bc2f453667002be4802caf55d8ef

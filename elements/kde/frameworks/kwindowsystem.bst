@@ -25,9 +25,10 @@ build-depends:
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DKWINDOWSYSTEM_X11=ON
+  strip-binaries: ''
 
 sources:
 - kind: git_repo
   url: kde:frameworks/kwindowsystem.git
-  track: v6.22.0
-  ref: ad68ea2cc4205c524d1766b457a7c5eec2bf9bbf
+  track: master
+  ref: v6.25.0-rc1-2-g7eb2bb0bb9135c1857115701f19d86e2e6c368c6

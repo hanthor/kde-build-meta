@@ -8,6 +8,7 @@ build-depends:
 - kde/frameworks/kuserfeedback.bst
 - kde/libs/qtkeychain-qt6.bst
 - kde/qt6/qt6-qtbase.bst
+- freedesktop-sdk.bst:components/gpgmepp.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kcoreaddons.bst
 - kde/frameworks/kguiaddons.bst
@@ -55,5 +56,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:utilities/kate.git
-  track: release/25.04
-  ref: 9df9b4582936d0b0620c5614d0c0eba4e6c3456a
+  track: master
+  ref: v24.01.90-2477-g159fa1588f6d9045af2acb3ba8a7f47091736902

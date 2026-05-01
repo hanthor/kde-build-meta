@@ -1,17 +1,21 @@
 kind: manual
-
-sources:
-- kind: local
-  path: files/oci
+description: Explicit bootc configuration for Aurora
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
+build-depends:
+- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
+
 variables:
-  strip-binaries: ''
+  strip-binaries: ""
 
 config:
   install-commands:
-  - install -Dm644 -t "%{install-root}%{indep-libdir}/ostree/" prepare-root.conf
-  - install -Dm644 -t "%{install-root}%{indep-libdir}/tmpfiles.d" 10-bootc.conf
-  - "%{install-extra}"
+  - mkdir -p "%{install-root}%{indep-libdir}/bootc/install"
+  - |
+    cat <<BOOT_EOF > 00-aurora.conf
+    [install]
+    root-fs-type = btrfs
+    BOOT_EOF
+    install -Dm644 00-aurora.conf "%{install-root}%{indep-libdir}/bootc/install/00-aurora.conf"

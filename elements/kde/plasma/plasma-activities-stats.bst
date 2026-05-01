@@ -26,5 +26,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-activities-stats.git
-  track: Plasma/6.6
-  ref: 31697530a80a8760970a55efbdd41f6f9a1a5bb7
+  track: master
+  ref: v6.5.90-1-g1c086d136f169e48f579c158926e780f4d907e86

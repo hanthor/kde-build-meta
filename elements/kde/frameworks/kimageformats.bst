@@ -17,5 +17,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kimageformats.git
-  track: v6.22.0
-  ref: 19df8b03a86b24f85c42f1abcef95cb3c0f85c9b
+  track: master
+  ref: v6.25.0-rc1-12-ga936927ec17c68e3238847812817e01b772afa34

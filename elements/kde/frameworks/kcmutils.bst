@@ -33,6 +33,7 @@ build-depends:
 - kde/frameworks/solid.bst
 - kde/frameworks/kjobwidgets.bst
 - kde/frameworks/kauth.bst
+- kde/frameworks/kirigami.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
@@ -40,5 +41,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kcmutils.git
-  track: v6.22.0
-  ref: 7ed6c474f634bc1d080356b24b0381c13d03b94d
+  track: master
+  ref: v6.25.0-rc1-11-gec1fc33312728581580ff3bd36bff61e55b3da3c

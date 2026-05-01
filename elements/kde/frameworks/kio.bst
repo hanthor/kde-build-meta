@@ -36,10 +36,10 @@ build-depends:
 - freedesktop-sdk.bst:components/systemd-libs.bst
 
 variables:
-  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=OFF -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
+  cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF -DWITH_X11=ON -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
 
 sources:
 - kind: git_repo
   url: kde:frameworks/kio.git
-  track: v6.22.0
-  ref: 1f471941c4be1de739322ed302266aea85de68c7
+  track: master
+  ref: v6.25.0-rc1-45-gbc1189a3aef92bbabfeef27f4cacbb6802e92aa3

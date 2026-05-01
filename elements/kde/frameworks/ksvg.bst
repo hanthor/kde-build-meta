@@ -24,5 +24,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/ksvg.git
-  track: v6.22.0
-  ref: c17130897693ca23aace871ae14020979c39ca61
+  track: master
+  ref: v6.25.0-rc1-3-ge8dbd4b884127d23db25c12404764b438106256e

@@ -5,7 +5,7 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
-- freedesktop-sdk.bst:components/networkmanager.bst
+- core-deps/NetworkManager.bst
 - kde/plasma/libplasma.bst
 
 - kde/frameworks/kirigami.bst
@@ -48,5 +48,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-nm.git
-  track: Plasma/6.6
-  ref: c025b3882ff0527bf264706d8252780762fe749c
+  track: master
+  ref: v6.5.90-157-g0389ce3601bf34c2d72e32c462128c7a4c857029

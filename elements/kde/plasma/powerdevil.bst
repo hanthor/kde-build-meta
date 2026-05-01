@@ -52,5 +52,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/powerdevil.git
-  track: Plasma/6.6
-  ref: c3a1709c69f1773e158a08121360fd53b378e789
+  track: master
+  ref: v6.5.90-109-ge5393819c2020d4308974a4781539033eb208623

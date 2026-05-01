@@ -17,5 +17,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/syndication.git
-  track: v6.22.0
-  ref: 6d026ee0d162bf6ff16f621611dea1114a848651
+  track: master
+  ref: v6.25.0-rc1-1-g7963ebf0b43ed4978e20618d3acbf4eb889507f2

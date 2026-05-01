@@ -20,6 +20,7 @@ MODULES=(
     fs/erofs
     fs/exfat
     fs/btrfs
+    fs/xfs
     drivers/nvme
     drivers/scsi
     drivers/pci/controller

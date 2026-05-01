@@ -7,6 +7,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtsvg.bst
+- kde/qt6/qt6-qtmultimedia.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/baloo.bst
 - kde/frameworks/karchive.bst
@@ -53,6 +54,7 @@ variables:
     -DBUILD_TESTING=OFF
     -DKF_SKIP_PO_PROCESSING=ON
     -DGWENVIEW_SEMANTICINFO_BACKEND=None
+    -DGWENVIEW_IMAGEANNOTATOR=OFF
     -DBUILD_HTML_DOCS=OFF
     -DBUILD_MAN_DOCS=OFF
     -DBUILD_DOC=OFF
@@ -61,9 +63,7 @@ variables:
 sources:
 - kind: git_repo
   url: kde:graphics/gwenview.git
-  track: release/25.04
-  ref: 5c5fb0973378eeeb3a7bb075b69523e7d4504a8f
-- kind: patch
-  path: patches/gwenview/0001-make-kimageannotator-optional.patch
+  track: master
+  ref: v24.01.90-503-g20d85fff7a19fcb4f3abb7a9daa7d06a1416fb48
 - kind: patch
   path: patches/gwenview/0002-use-libjpeg62-with-turbo.patch

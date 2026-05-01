@@ -18,5 +18,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kpty.git
-  track: v6.22.0
-  ref: 9b9bb2ea528b39aeafc7fdd51aadc500370696da
+  track: master
+  ref: v6.25.0-rc1-1-g8111b1e8894b11abaf9ef21a0847276ef0c8803a

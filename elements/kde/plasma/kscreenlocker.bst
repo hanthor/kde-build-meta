@@ -50,9 +50,11 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DBUILD_X11=OFF
+    -DKSCREENLOCKER_BUILD_X11=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/kscreenlocker.git
-  track: Plasma/6.6
-  ref: 093598fdf00d069e251cd891e26998df933cbfed
+  track: master
+  ref: v6.5.90-41-ga3a8185a00aadf22f5707de5a41ae17ce5fa9b87

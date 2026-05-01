@@ -9,6 +9,8 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qttools.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/flex.bst
+- freedesktop-sdk.bst:components/bison.bst
 
 variables:
   cmake-local: -DBUILD_TESTING=OFF -DBUILD_PYTHON_BINDINGS=OFF
@@ -16,5 +18,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kholidays.git
-  track: v6.22.0
-  ref: ed0d328a66411635c33046b0c5e52655599c0acb
+  track: master
+  ref: v6.25.0-rc1-25-g7b6522a85d18d1c89c29690dbe5b8756e9387339

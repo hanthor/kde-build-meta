@@ -18,5 +18,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:frameworks/kcrash.git
-  track: v6.22.0
-  ref: 353f34f997a6b83c80126eaa5b3af21c1c1f6d3d
+  track: master
+  ref: v6.25.0-rc1-1-g2f975586fe1438f7084cbfc7d9e722ce9c291589

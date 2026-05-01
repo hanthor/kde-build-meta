@@ -3,6 +3,9 @@ description: sddm - Simple Desktop Display Manager
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- freedesktop-sdk.bst:components/pkg-config.bst
+- freedesktop-sdk.bst:components/shadow.bst
+- freedesktop-sdk.bst:components/systemd.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtdeclarative.bst
@@ -28,7 +31,6 @@ variables:
 sources:
 - kind: git_repo
   url: github:sddm/sddm.git
-  track: master
-  ref: cff7df42e6762914358e6e7deaedc15a1c6c7d57
-- kind: patch
-  path: patches/sddm/0001-remove-cmp0043-policy.patch
+  track: v0.21.0
+  ref: v0.21.0-0-g63780fcd79f1dbf81a30eef48c28c699ab15aded
+
