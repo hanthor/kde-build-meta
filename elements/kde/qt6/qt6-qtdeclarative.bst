@@ -6,6 +6,7 @@ build-depends:
 - freedesktop-sdk.bst:components/python3.bst
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/vulkan-headers.bst
 - kde/qt6/qt6-qtshadertools.bst
 
 sources:
