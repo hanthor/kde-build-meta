@@ -3,6 +3,7 @@ description: Qt6 base module
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- freedesktop-sdk.bst:components/vulkan-headers.bst
 
 depends:
 - freedesktop-sdk.bst:components/openssl.bst
@@ -26,6 +27,7 @@ variables:
     -DBUILD_WITH_PCH=FALSE
     -DQT_FEATURE_openssl_linked=ON
     -DQT_FEATURE_system_sqlite=ON
+    -DQT_FEATURE_vulkan=ON
     -DQT_FEATURE_xcb=ON
     -DQT_FEATURE_xcb_xlib=ON
 

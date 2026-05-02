@@ -22,6 +22,7 @@ build-depends:
 - kde/frameworks/kitemviews.bst
 - kde/frameworks/sonnet.bst
 - kde/frameworks/kglobalaccel.bst
+- kde/frameworks/knotifications.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kcrash.bst
 
