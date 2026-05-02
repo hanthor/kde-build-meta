@@ -57,3 +57,5 @@ public:
     - touch /etc/machine-id
     # Remove non-.ko files from /lib/modules (depmod cleanup)
     - sh -c 'for f in /lib/modules/*/*.json /lib/modules/*/*.so /lib/modules/*/*.a; do rm -f "$f"; done'
+    # Restore sudo setuid bit (lost during composefs layer composition)
+    - chmod u+s /usr/bin/sudo || true

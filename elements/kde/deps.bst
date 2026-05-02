@@ -38,7 +38,8 @@ depends:
 # KDE Applications
 - kde/org.kde.apps.bst
 
-# KDE Qt-adjacent libraries
+# KDE Qt-adjacent libraries and addons
+- kde/libs/kirigami-addons.bst
 - kde/libs/qcoro.bst
 - kde/libs/qtkeychain-qt6.bst
 - kde/libs/poppler-qt6.bst
