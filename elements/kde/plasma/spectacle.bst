@@ -31,6 +31,11 @@ build-depends:
 - kde/frameworks/purpose.bst
 - kde/plasma/kpipewire.bst
 - freedesktop-sdk.bst:components/pipewire.bst
+- freedesktop-sdk.bst:components/ffmpeg.bst
+- freedesktop-sdk.bst:extensions/codecs-extra/ffmpeg.bst
+- freedesktop-sdk.bst:components/dummy-gbm.bst
+- freedesktop-sdk.bst:components/libdrm.bst
+- freedesktop-sdk.bst:components/libva.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/libs/kquickimageeditor.bst
 - kde/qt6/qt6-qtmultimedia.bst
