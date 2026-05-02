@@ -19,6 +19,7 @@ build-depends:
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/ki18n.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/karchive.bst
 - kde/frameworks/kjobwidgets.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kservice.bst
@@ -26,6 +27,7 @@ build-depends:
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kwindowsystem.bst
 - kde/frameworks/kxmlgui.bst
+- kde/frameworks/breeze-icons.bst
 - kde/frameworks/kirigami.bst
 - kde/frameworks/prison.bst
 - kde/frameworks/purpose.bst
