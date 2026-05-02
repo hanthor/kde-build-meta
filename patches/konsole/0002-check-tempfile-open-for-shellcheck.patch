@@ -1,14 +1,3 @@
-From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: Copilot <223556219+Copilot@users.noreply.github.com>
-Date: Sat, 2 May 2026 21:20:00 +0000
-Subject: [PATCH] Check temporary file creation in Quick Commands
-
-Newer Qt marks QTemporaryFile::open() as nodiscard. Handle failures
-explicitly before running shellcheck.
----
- src/plugins/QuickCommands/quickcommandswidget.cpp | 5 +++++
- 1 file changed, 5 insertions(+)
-
 diff --git a/src/plugins/QuickCommands/quickcommandswidget.cpp b/src/plugins/QuickCommands/quickcommandswidget.cpp
 --- a/src/plugins/QuickCommands/quickcommandswidget.cpp
 +++ b/src/plugins/QuickCommands/quickcommandswidget.cpp
@@ -25,5 +14,3 @@ diff --git a/src/plugins/QuickCommands/quickcommandswidget.cpp b/src/plugins/Qui
  
      QTextStream ts(&file);
      ts << "#!/bin/bash\n";
--- 
-2.49.0
