@@ -46,9 +46,12 @@ variables:
     -DBUILD_QT5=OFF
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
+    -DSPECTACLE_ENABLE_OCR=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/spectacle.git
   track: master
   ref: v6.5.90-117-gf85ee4a9ba20a2f23aa67da4b19c56fb6aa36b6a
+- kind: patch
+  path: patches/spectacle/0001-disable-ocr-without-external-deps.patch
