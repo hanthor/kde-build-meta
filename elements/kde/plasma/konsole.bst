@@ -6,6 +6,7 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
 - kde/qt6/qt6-qtmultimedia.bst
+- kde/qt6/qt6-qtspeech.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/kbookmarks.bst
 - kde/frameworks/kconfig.bst
@@ -19,6 +20,7 @@ build-depends:
 - kde/frameworks/breeze-icons.bst
 - kde/frameworks/kio.bst
 - kde/frameworks/knewstuff.bst
+- kde/frameworks/kpackage.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/knotifyconfig.bst
 - kde/frameworks/kparts.bst
