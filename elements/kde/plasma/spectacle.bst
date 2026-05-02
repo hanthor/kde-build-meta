@@ -5,11 +5,33 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtdeclarative.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 - freedesktop-sdk.bst:components/wayland.bst
 
+- kde/frameworks/kconfig.bst
+- kde/frameworks/kconfigwidgets.bst
+- kde/frameworks/kcoreaddons.bst
+- kde/frameworks/kcrash.bst
+- kde/frameworks/kdbusaddons.bst
+- kde/frameworks/kglobalaccel.bst
+- kde/frameworks/kguiaddons.bst
+- kde/frameworks/ki18n.bst
+- kde/frameworks/kio.bst
+- kde/frameworks/kjobwidgets.bst
+- kde/frameworks/knotifications.bst
+- kde/frameworks/kservice.bst
+- kde/frameworks/kstatusnotifieritem.bst
+- kde/frameworks/kwidgetsaddons.bst
+- kde/frameworks/kwindowsystem.bst
+- kde/frameworks/kxmlgui.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/prison.bst
 - kde/frameworks/purpose.bst
+- kde/plasma/kpipewire.bst
+- kde/plasma/layer-shell-qt.bst
+- kde/libs/kquickimageeditor.bst
 - kde/qt6/qt6-qtmultimedia.bst
 variables:
   cmake-local: >-
