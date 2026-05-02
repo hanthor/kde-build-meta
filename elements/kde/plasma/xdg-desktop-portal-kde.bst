@@ -16,11 +16,13 @@ build-depends:
 - kde/frameworks/kguiaddons.bst
 - kde/frameworks/kglobalaccel.bst
 - kde/frameworks/kio.bst
+- kde/frameworks/karchive.bst
 - kde/frameworks/kirigami.bst
 - kde/frameworks/knotifications.bst
 - kde/frameworks/kservice.bst
 - kde/frameworks/kwidgetsaddons.bst
 - kde/frameworks/kstatusnotifieritem.bst
+- kde/frameworks/breeze-icons.bst
 - kde/libs/polkit-qt-1.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
