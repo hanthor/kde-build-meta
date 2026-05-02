@@ -7,6 +7,7 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
+- freedesktop-sdk.bst:components/vulkan-headers.bst
 
 sources:
 - kind: tar
