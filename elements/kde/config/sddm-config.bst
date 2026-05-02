@@ -1,8 +1,8 @@
 kind: manual
 description: SDDM configuration for Wayland
 
-build-depends:
-- freedesktop-sdk.bst:bootstrap/busybox.bst
+depends:
+- freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 
 sources:
 - kind: local
