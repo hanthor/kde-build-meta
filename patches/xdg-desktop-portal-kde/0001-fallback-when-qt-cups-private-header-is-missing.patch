@@ -1,0 +1,53 @@
+diff --git a/src/print.cpp b/src/print.cpp
+index ea5316e..06be7a3 100644
+--- a/src/print.cpp
++++ b/src/print.cpp
+@@ -24,7 +24,48 @@
+ // #include <QtPrintSupport/private/qprint_p.h>
+ #include <QTemporaryFile>
+ #include <QUrl>
++#if __has_include(<QtPrintSupport/private/qcups_p.h>)
+ #include <QtPrintSupport/private/qcups_p.h>
++#else
++namespace QCUPSSupport
++{
++enum PagesPerSheet {
++    OnePagePerSheet,
++    TwoPagesPerSheet,
++    FourPagesPerSheet,
++    SixPagesPerSheet,
++    NinePagesPerSheet,
++    SixteenPagesPerSheet,
++};
++
++enum PagesPerSheetLayout {
++    LeftToRightTopToBottom,
++    LeftToRightBottomToTop,
++    RightToLeftTopToBottom,
++    RightToLeftBottomToTop,
++    TopToBottomLeftToRight,
++    TopToBottomRightToLeft,
++    BottomToTopLeftToRight,
++    BottomToTopRightToLeft,
++};
++
++enum PageSet {
++    AllPages,
++    EvenPages,
++    OddPages,
++};
++
++inline void setPageSet(QPrinter *, PageSet)
++{
++}
++
++inline void setPagesPerSheetLayout(QPrinter *, PagesPerSheet, PagesPerSheetLayout)
++{
++}
++}
++
++static constexpr auto PPK_CupsOptions = QPrintEngine::PrintEnginePropertyKey(0xfe00);
++#endif
+ 
+ // INFO: code below is copied from Qt as there is no public API for converting key to PageSizeId.
+ // As the Qt comment below notes, this must be re-copied from
