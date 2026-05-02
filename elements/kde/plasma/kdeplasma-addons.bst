@@ -3,9 +3,12 @@ description: kdeplasma-addons
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
+- freedesktop-sdk.bst:components/rust.bst
 - kde/frameworks/extra-cmake-modules.bst
 - kde/libs/corrosion.bst
+- kde/libs/kirigami-addons.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtquick3d.bst
 - kde/frameworks/networkmanager-qt.bst
 - kde/plasma/libplasma.bst
 
