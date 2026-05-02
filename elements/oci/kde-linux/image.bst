@@ -6,7 +6,7 @@ build-depends:
 - freedesktop-sdk.bst:components/oci-builder.bst
 - freedesktop-sdk.bst:vm/prepare-image.bst
 - oci/kde-linux/init-scripts.bst
-- filename: oci/platform/image.bst
+- filename: freedesktop-sdk.bst:oci/platform-oci.bst
   config:
     location: /parent
 - filename: oci/kde-linux/filesystem.bst
