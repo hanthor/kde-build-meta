@@ -12,6 +12,7 @@ build-depends:
 - kde/libs/libcanberra.bst
 
 - kde/frameworks/kirigami.bst
+- kde/libs/kirigami-addons.bst
 - kde/frameworks/kitemmodels.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - kde/frameworks/kconfig.bst
@@ -31,6 +32,8 @@ variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
     -DBUILD_TESTING=OFF
+    -DBUILD_HTML_DOCS=OFF
+    -DBUILD_DOC=OFF
     -DKF_SKIP_PO_PROCESSING=ON
 
 sources:
