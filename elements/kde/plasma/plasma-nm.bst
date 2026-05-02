@@ -9,6 +9,7 @@ build-depends:
 - kde/plasma/libplasma.bst
 
 - kde/frameworks/kirigami.bst
+- kde/libs/qtkeychain-qt6.bst
 - kde/frameworks/prison.bst
 - kde/frameworks/kquickcharts.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst

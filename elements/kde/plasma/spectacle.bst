@@ -10,6 +10,7 @@ build-depends:
 - freedesktop-sdk.bst:components/wayland.bst
 
 - kde/frameworks/purpose.bst
+- kde/qt6/qt6-qtmultimedia.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
