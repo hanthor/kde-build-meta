@@ -30,6 +30,7 @@ build-depends:
 - kde/frameworks/prison.bst
 - kde/frameworks/purpose.bst
 - kde/plasma/kpipewire.bst
+- freedesktop-sdk.bst:components/pipewire.bst
 - kde/plasma/layer-shell-qt.bst
 - kde/libs/kquickimageeditor.bst
 - kde/qt6/qt6-qtmultimedia.bst
