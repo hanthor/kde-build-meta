@@ -302,3 +302,48 @@ index 19eeae3..a00b654 100644
  
  /**
   * @brief Worker class for OCR processing in background thread
+diff --git a/src/Platforms/ImagePlatformKWin.cpp b/src/Platforms/ImagePlatformKWin.cpp
+index 1d93ae3..5f047b1 100644
+--- a/src/Platforms/ImagePlatformKWin.cpp
++++ b/src/Platforms/ImagePlatformKWin.cpp
+@@ -7,7 +7,9 @@
+ #include "ImagePlatformKWin.h"
+ #include "ExportManager.h"
+ #include "Geometry.h"
++#ifndef SPECTACLE_NO_OCR
+ #include "QtCV.h"
++#endif
+ #include "DebugUtils.h"
+ #include "ImageMetaData.h"
+ 
+@@ -103,11 +105,20 @@ QImage combinedImage(const QList<QImage> &images)
+     }
+     // We ceil to the next integer size up so that integer DPR images are always crisp.
+     const auto finalDpr = std::ceil(maxDpr);
++    QImage finalImage{imageRect.size().toSize() * finalDpr, finalFormat};
++    finalImage.fill(Qt::transparent);
++#ifdef SPECTACLE_NO_OCR
++    QPainter painter(&finalImage);
++    painter.setRenderHint(QPainter::SmoothPixmapTransform, true);
++    for (auto &image : images) {
++        const QRectF targetRect(ImageMetaData::logicalXY(image) * finalDpr, image.deviceIndependentSize() * finalDpr);
++        painter.drawImage(targetRect, image);
++    }
++    painter.end();
++#else
+     // An RGBA8888 based format is needed for compatibility with OpenCV.
+     // If we used an ARGB32 based format, we'd need to swap red and blue.
+     // Not sure what to do if we end up having different formats for different screens.
+-    QImage finalImage{imageRect.size().toSize() * finalDpr, finalFormat};
+-    finalImage.fill(Qt::transparent);
+     auto mainMat = QtCV::qImageToMat(finalImage);
+     for (auto &image : images) {
+         // Region Of Interest to put the image in the main image.
+@@ -127,6 +138,7 @@ QImage combinedImage(const QList<QImage> &images)
+         // Will just copy if there's no difference in size
+         cv::resize(mat, mainMat(rect), rect.size(), 0, 0, interpolation);
+     }
++#endif
+     finalImage.setDevicePixelRatio(finalDpr);
+     ImageMetaData::setSubGeometryList(finalImage, geometryList);
+     return finalImage;
