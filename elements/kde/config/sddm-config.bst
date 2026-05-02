@@ -1,6 +1,9 @@
 kind: manual
 description: SDDM configuration for Wayland
 
+build-depends:
+- freedesktop-sdk.bst:bootstrap/busybox.bst
+
 sources:
 - kind: local
   path: files/kde/config/10-sddm-wayland.conf
