@@ -32,16 +32,27 @@ index cac2223..0b8fd04 100644
  set_package_properties(KPipeWire PROPERTIES DESCRIPTION
      "Used to record pipewire streams into a file"
 @@ -108,7 +116,9 @@ set_package_properties(KQuickImageEditor PROPERTIES
-     PURPOSE "Add image editing capability to the screenshots"
- )
+      PURPOSE "Add image editing capability to the screenshots"
+  )
  
--pkg_check_modules(TESSERACT REQUIRED IMPORTED_TARGET tesseract)
-+if(SPECTACLE_ENABLE_OCR)
-+    pkg_check_modules(TESSERACT REQUIRED IMPORTED_TARGET tesseract)
+ -pkg_check_modules(TESSERACT REQUIRED IMPORTED_TARGET tesseract)
+ +if(SPECTACLE_ENABLE_OCR)
+ +    pkg_check_modules(TESSERACT REQUIRED IMPORTED_TARGET tesseract)
+ +endif()
+  
+  # optional components
+  find_package(KF6DocTools ${KF6_MIN_VERSION})
+@@ -154,7 +164,9 @@ add_subdirectory(src)
+ add_subdirectory(dbus)
+ add_subdirectory(desktop)
+ add_subdirectory(icons)
+-add_subdirectory(tests)
++if(BUILD_TESTING)
++    add_subdirectory(tests)
 +endif()
  
- # optional components
- find_package(KF6DocTools ${KF6_MIN_VERSION})
+ if (KF6DocTools_FOUND)
+     add_subdirectory(doc)
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
 index 84adc11..4b2a9f9 100644
 --- a/src/CMakeLists.txt
