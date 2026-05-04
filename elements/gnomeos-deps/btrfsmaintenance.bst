@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:kdave/btrfsmaintenance.git
   track: '[0-9]*.[0-9]*'
-  ref: v0.5.2-0-g2bbdc4e37c3d25b9a2fa9174fc88e26b34e9f66c
+  ref: v0.5.2-0-gbeb9e2d166cbd856297fe8d28e89e8b36961a723
 
 config:
   build-commands: []
