@@ -23,3 +23,9 @@ depends:
 variables:
   conf-local: >-
     --disable-werror
+    --disable-gtk-doc
+
+configure-commands:
+- autoreconf -ivf
+- |
+  %{configure}
