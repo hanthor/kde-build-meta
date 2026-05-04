@@ -1,10 +1,9 @@
 kind: autotools
 
 sources:
-- kind: git_repo
-  url: github:tuxera/ntfs-3g.git
-  track: '[0-9][0-9][0-9][0-9].[0-9]*.[0-9]*'
-  ref: 2022.10.3-0-g4f4ee50dd7a48d5a4c8f0476b019e6a46a0e7de
+- kind: tar
+  url: github_files:tuxera/ntfs-3g/archive/2022.10.3.tar.gz
+  ref: 8bd7749ea9d8534c9f0664d48b576e90b96d45ec8803c9427f6ffaa2f0dde299
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
