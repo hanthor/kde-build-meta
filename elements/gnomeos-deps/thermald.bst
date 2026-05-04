@@ -24,4 +24,6 @@ variables:
   conf-local: >-
     --disable-werror
     --disable-gtk-doc
-  autogen: autoreconf -ivf
+  autogen: |
+    touch gtk-doc.make
+    autoreconf -ivf
