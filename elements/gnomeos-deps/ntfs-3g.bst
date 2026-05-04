@@ -21,9 +21,6 @@ variables:
     --enable-posix-acls
     --enable-xattr-mappings
 
-config:
-  configure-commands:
-  - |
-    export FUSE_CFLAGS="$(pkg-config --cflags fuse3 2>/dev/null || echo '-I/usr/include/fuse3')"
-    export FUSE_LIBS="$(pkg-config --libs fuse3 2>/dev/null || echo '-lfuse3')"
-    %{conf}
+environment:
+  FUSE_CFLAGS: "-D_FILE_OFFSET_BITS=64 -I/usr/include/fuse3"
+  FUSE_LIBS: "-lfuse3"
