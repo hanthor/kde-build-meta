@@ -102,7 +102,7 @@ depends:
 - gnomeos-deps/efibootmgr.bst
 
 # Filesystem support
-- gnomeos-deps/ntfs-3g.bst
+# ntfs-3g omitted: modern kernels have ntfs3 built-in (5.15+)
 - gnomeos-deps/btrfsmaintenance.bst
 
 # Printing and scanning
