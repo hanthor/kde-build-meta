@@ -1,6 +1,11 @@
 kind: cmake
 description: kwin
 
+depends:
+- freedesktop-sdk.bst:components/libinput.bst
+- core-deps/libdisplay-info.bst
+- freedesktop-sdk.bst:components/xorg-lib-xcvt.bst
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
@@ -97,4 +102,3 @@ sources:
   url: kde:plasma/kwin.git
   track: master
   ref: v6.5.90-429-g36a51bdf68aa263a4871d9128ff976ea04e7e70f
-
