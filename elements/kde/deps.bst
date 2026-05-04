@@ -45,8 +45,8 @@ depends:
 - freedesktop-sdk.bst:components/pipewire-daemon.bst
 - freedesktop-sdk.bst:components/wireplumber.bst
 
-# Network
-- freedesktop-sdk.bst:components/networkmanager.bst
+# Network — provided by core-deps/NetworkManager.bst via plasma-nm/networkmanager-qt transitive deps
+# (using freedesktop-sdk version here would cause a duplicate-file overlap)
 
 # Security
 - freedesktop-sdk.bst:vm/config/sudo.bst
