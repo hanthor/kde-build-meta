@@ -32,3 +32,4 @@ variables:
     --disable-nfsdcld
     --disable-nfsdcltrack
     --without-ldap
+    --with-rpcgen=internal
