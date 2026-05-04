@@ -23,7 +23,7 @@ config:
     mkdir -p "%{install-root}%{indep-libdir}/ostree"
     cat <<'OSTREE_EOF' > prepare-root.conf
     [composefs]
-    enabled = yes
+    enabled = maybe
 
     [sysroot]
     readonly = true
