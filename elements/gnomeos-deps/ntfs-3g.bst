@@ -20,3 +20,10 @@ variables:
     --with-fuse=external
     --enable-posix-acls
     --enable-xattr-mappings
+
+config:
+  configure-commands:
+  - |
+    export FUSE_CFLAGS="$(pkg-config --cflags fuse3 2>/dev/null || echo '-I/usr/include/fuse3')"
+    export FUSE_LIBS="$(pkg-config --libs fuse3 2>/dev/null || echo '-lfuse3')"
+    %{conf}
