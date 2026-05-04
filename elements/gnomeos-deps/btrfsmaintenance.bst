@@ -25,3 +25,6 @@ config:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/btrfs-progs.bst
+
+variables:
+  strip-binaries: ''
