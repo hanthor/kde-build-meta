@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:zsh-users/zsh-completions.git
   track: '[0-9]*.[0-9]*.[0-9]*'
-  ref: 0.35.0-0-g685afd177b24e1b19451aa12ce9b62ba74aa3fe1
+  ref: 0.35.0-0-g67921bc12502c1e7b0f156533fbac2cb51f6943d
 
 config:
   build-commands: []
