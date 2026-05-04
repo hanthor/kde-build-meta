@@ -8,7 +8,7 @@ sources:
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 - freedesktop-sdk.bst:components/libgcrypt.bst
-- freedesktop-sdk.bst:components/fuse.bst
+- freedesktop-sdk.bst:components/fuse3.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
