@@ -19,3 +19,13 @@ config:
     root-fs-type = btrfs
     BOOT_EOF
     install -Dm644 00-aurora.conf "%{install-root}%{indep-libdir}/bootc/install/00-aurora.conf"
+  - |
+    mkdir -p "%{install-root}%{indep-libdir}/ostree"
+    cat <<'OSTREE_EOF' > prepare-root.conf
+    [composefs]
+    enabled = yes
+
+    [sysroot]
+    readonly = true
+    OSTREE_EOF
+    install -Dm644 prepare-root.conf "%{install-root}%{indep-libdir}/ostree/prepare-root.conf"
