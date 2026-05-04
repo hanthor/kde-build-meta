@@ -5,7 +5,8 @@ depends:
 # Base OS stack from freedesktop-sdk
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/util-linux-full.bst
-- freedesktop-sdk.bst:components/linux.bst
+# linux.bst omitted: kernel modules come from gnomeos/initramfs/signed-modules.bst
+# (which has linux.bst as a build-dep). Adding it here causes overlap errors.
 - freedesktop-sdk.bst:components/wireless-regdb-bin.bst
 - freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/dbus.bst
