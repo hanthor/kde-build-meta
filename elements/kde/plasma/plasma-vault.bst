@@ -17,7 +17,11 @@ build-depends:
 - kde/frameworks/kstatusnotifieritem.bst
 - kde/frameworks/kitemmodels.bst
 - kde/frameworks/kpackage.bst
+- kde/frameworks/kirigami.bst
+- kde/frameworks/networkmanager-qt.bst
 - kde/plasma/libplasma.bst
+- kde/plasma/plasma-activities.bst
+- kde/plasma/libksysguard.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - freedesktop-sdk.bst:components/libgcrypt.bst
 - freedesktop-sdk.bst:components/libassuan.bst
