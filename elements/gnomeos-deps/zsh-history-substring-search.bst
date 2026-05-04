@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:zsh-users/zsh-history-substring-search.git
   track: 'v*'
-  ref: v1.1.0-0-g87ce96b74b51a28462d3958cfc8e58e09db1bc5f
+  ref: v1.1.0-0-g400e58a87f72ecec14f783fbd29bc6be4ff1641c
 
 config:
   build-commands: []
