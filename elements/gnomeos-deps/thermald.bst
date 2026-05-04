@@ -9,6 +9,7 @@ sources:
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 - freedesktop-sdk.bst:components/pkg-config.bst
+- freedesktop-sdk.bst:components/gtk-doc.bst
 
 depends:
 - gnomeos-deps/upower.bst
@@ -24,6 +25,4 @@ variables:
   conf-local: >-
     --disable-werror
     --disable-gtk-doc
-  autogen: |
-    touch gtk-doc.make
-    autoreconf -ivf
+  autogen: ./autogen.sh
