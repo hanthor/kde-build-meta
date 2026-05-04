@@ -5,8 +5,7 @@ depends:
 # Base OS stack from freedesktop-sdk
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/util-linux-full.bst
-# linux: provided by gnomeos/initramfs/signed-modules.bst at install time
-# (matches gnome-build-meta pattern; linux.bst direct dep causes /usr/lib/modules overlap)
+- freedesktop-sdk.bst:components/linux.bst
 - freedesktop-sdk.bst:components/wireless-regdb-bin.bst
 - freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/dbus.bst
@@ -15,7 +14,7 @@ depends:
 - freedesktop-sdk.bst:components/shadow.bst
 - freedesktop-sdk.bst:components/tzdata.bst
 - freedesktop-sdk.bst:components/iproute2.bst
-# udisks: provided by core-deps/udisks2.bst (newer 2.10.1) via kde/core-os-services.bst
+- freedesktop-sdk.bst:components/udisks.bst
 - freedesktop-sdk.bst:vm/base-filesystem.bst
 - freedesktop-sdk.bst:vm/config/journald.bst
 - freedesktop-sdk.bst:vm/config/networkd.bst
@@ -26,20 +25,14 @@ depends:
 - freedesktop-sdk.bst:components/hosts.bst
 - freedesktop-sdk.bst:components/flatpak.bst
 
-# Core OS Services from upstream (NetworkManager, upower, accounts-daemon, dbus)
-- kde/core-os-services.bst
-
 # KDE Plasma Desktop
 - kde/org.kde.plasma.desktop.bst
 - kde/config/plasma.bst
-- kde/plasma/sddm.bst
-- kde/config/sddm-config.bst
 
 # KDE Applications
 - kde/org.kde.apps.bst
 
-# KDE Qt-adjacent libraries and addons
-- kde/libs/kirigami-addons.bst
+# KDE Qt-adjacent libraries
 - kde/libs/qcoro.bst
 - kde/libs/qtkeychain-qt6.bst
 - kde/libs/poppler-qt6.bst
@@ -52,8 +45,7 @@ depends:
 - freedesktop-sdk.bst:components/wireplumber.bst
 
 # Network
-# networkmanager.bst removed: provided by core-deps/NetworkManager.bst
-# (newer 1.56.0) via kde/core-os-services.bst
+- freedesktop-sdk.bst:components/networkmanager.bst
 
 # Security
 - freedesktop-sdk.bst:vm/config/sudo.bst
@@ -101,18 +93,53 @@ depends:
 # Sync
 - freedesktop-sdk.bst:components/rsync.bst
 
-# Hardware / VM Integrations
+# Hardware
 - gnomeos-deps/android-udev-rules.bst
 - gnomeos-deps/iio-sensor-proxy.bst
 - gnomeos-deps/nvme-cli.bst
 - gnomeos-deps/uinput.bst
+- gnomeos-deps/switcheroo-control.bst
+- gnomeos-deps/efibootmgr.bst
+
+# Filesystem support
+- gnomeos-deps/ntfs-3g.bst
+- gnomeos-deps/btrfsmaintenance.bst
+
+# Printing and scanning
+- gnomeos-deps/sane-backends.bst
+- gnomeos-deps/sane-airscan.bst
+
+# VM support
+- gnomeos-deps/virtiofsd.bst
+- gnomeos-deps/swtpm.bst
 - gnomeos-deps/spice-vdagent.bst
+- freedesktop-sdk.bst:components/unzip.bst
+
+# Network utilities
+- gnomeos-deps/dnsmasq.bst
+- gnomeos-deps/iw.bst
+- gnomeos-deps/nss-mdns.bst
+
+# Wayland utilities
+- gnomeos-deps/wl-clipboard.bst
+
+# Realtime audio privileges
+- gnomeos-deps/realtime-privileges.bst
+
+# Zram swap
+- gnomeos-deps/zram-generator.bst
 
 # Console
 - gnomeos-deps/kmscon.bst
 
 # Shell
 - gnomeos-deps/fish.bst
+
+# Zsh plugins
+- gnomeos-deps/zsh-autosuggestions.bst
+- gnomeos-deps/zsh-syntax-highlighting.bst
+- gnomeos-deps/zsh-history-substring-search.bst
+- gnomeos-deps/zsh-completions.bst
 
 # Flathub
 - gnomeos-deps/flathub-config.bst
@@ -125,8 +152,16 @@ depends:
 # Noise suppression
 - gnomeos-deps/noise-suppression-for-voice.bst
 
+# KDE Plasma extras
+- kde/plasma/plasma-vault.bst
+
 (?):
 - arch == "aarch64":
     depends:
       (>):
       - gnomeos-deps/deps-aarch64.bst
+- arch == "x86_64":
+    depends:
+      (>):
+      - gnomeos-deps/microcode.bst
+      - freedesktop-sdk.bst:components/ovmf.bst
