@@ -156,6 +156,23 @@ depends:
 # KDE Plasma extras
 - kde/plasma/plasma-vault.bst
 
+# Printing
+- freedesktop-sdk.bst:components/cups-daemon.bst
+
+# Network filesystems
+- gnomeos-deps/nfs-utils.bst
+
+# Power management (x86 Intel thermal daemon)
+- gnomeos-deps/upower.bst
+- gnomeos-deps/thermald.bst
+
+# CLI tools (KDE Linux parity)
+- gnomeos-deps/lsof.bst
+- gnomeos-deps/tree.bst
+
+# VM guest integration
+- gnomeos-deps/qemu-guest-agent.bst
+
 (?):
 - arch == "aarch64":
     depends:
