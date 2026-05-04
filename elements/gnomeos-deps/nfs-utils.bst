@@ -35,3 +35,4 @@ variables:
     --disable-nfsdcltrack
     --without-ldap
     --with-rpcgen=internal
+    --with-mounthelperdir=/usr/bin
