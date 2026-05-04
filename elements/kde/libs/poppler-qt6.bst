@@ -21,6 +21,18 @@ variables:
     -DENABLE_UTILS=OFF
     -DENABLE_BOOST=OFF
 
+config:
+  install-commands:
+    (>):
+    - |
+      # Remove base libpoppler files that conflict with FDO's poppler.bst
+      # Only keep Qt6-specific bindings
+      find "%{install-root}" -name "libpoppler.so*" -not -name "libpoppler-qt6*" -delete
+      find "%{install-root}" -name "libpoppler.so*debug*" -not -name "libpoppler-qt6*" -delete
+      rm -f "%{install-root}%{libdir}/pkgconfig/poppler.pc"
+      rm -f "%{install-root}%{libdir}/pkgconfig/poppler-glib.pc"
+      rm -rf "%{install-root}%{includedir}/poppler/glib"
+
 depends:
 - kde/qt6/qt6-qtbase.bst
 - freedesktop-sdk.bst:components/poppler.bst
