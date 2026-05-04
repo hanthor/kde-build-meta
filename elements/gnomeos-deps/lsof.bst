@@ -9,6 +9,7 @@ sources:
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 - freedesktop-sdk.bst:components/pkg-config.bst
+- freedesktop-sdk.bst:components/groff.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
