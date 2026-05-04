@@ -35,4 +35,12 @@ variables:
     --disable-nfsdcltrack
     --without-ldap
     --with-rpcgen=internal
-    --with-mounthelperdir=/usr/bin
+
+install-commands:
+  (>):
+  - |
+    if [ -d "%{install-root}/sbin" ]; then
+      mkdir -p "%{install-root}/usr/bin"
+      find "%{install-root}/sbin" -maxdepth 1 -not -type d -exec mv {} "%{install-root}/usr/bin/" \;
+      rm -rf "%{install-root}/sbin"
+    fi
