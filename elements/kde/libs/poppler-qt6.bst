@@ -23,6 +23,7 @@ variables:
 
 depends:
 - kde/qt6/qt6-qtbase.bst
+- freedesktop-sdk.bst:components/poppler.bst
 
 sources:
 - kind: git_repo
