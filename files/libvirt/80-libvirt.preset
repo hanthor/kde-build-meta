@@ -1,7 +1,8 @@
 disable libvirt-guests.service
 disable libvirtd.service
-disable libvirtd.socket
-disable libvirtd-*.socket
+enable libvirtd.socket
+enable libvirtd-ro.socket
+enable libvirtd-admin.socket
 disable virt*d.service
 disable virt*d.socket
 disable virt*d-*.socket
