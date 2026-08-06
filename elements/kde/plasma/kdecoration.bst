@@ -26,4 +26,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kdecoration.git
   track: master
-  ref: v6.5.90-29-gf6730382057fcfbccfcc6717b268260dd94da3e3
+  ref: v6.6.90-8-g100a70b6655e9edc89646e05e6ae3dd2dbf3bf51

@@ -169,14 +169,15 @@ depends:
 - kde-linux-deps/gutenprint.bst
 - kde-linux-deps/hplip.bst
 
-# VM support
+# VM support (libvirtd + QEMU for VirtManager Flatpak)
+- core-deps/libvirt.bst
 - kde-linux-deps/virtiofsd.bst
 - kde-linux-deps/swtpm.bst
 - kde-linux-deps/spice-vdagent.bst
 - freedesktop-sdk.bst:components/unzip.bst
 
 # Network utilities
-- kde-linux-deps/dnsmasq.bst
+- core-deps/dnsmasq.bst
 - kde-linux-deps/iw.bst
 - kde-linux-deps/nss-mdns.bst
 

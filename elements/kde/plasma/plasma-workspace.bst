@@ -98,13 +98,11 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-workspace.git
   track: master
-  ref: v6.5.90-473-g851b49ff898ed108d5890af42d0f6e2be50a8ac4
+  ref: v6.6.90-253-g4428c031d59d623f81747badceebcc409bd19d67
 - kind: patch
   path: patches/plasma-workspace/0001-make-qt6location-optional.patch
 - kind: patch
   path: patches/plasma-workspace/0002-make-kf6-texteditor-textwidgets-optional.patch
-- kind: patch
-  path: patches/plasma-workspace/0003-skip-kwin-virtualkeyboard-dbus-interface.patch
 - kind: patch
   path: patches/plasma-workspace/0004-make-breeze-optional.patch
 - kind: patch

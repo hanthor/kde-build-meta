@@ -17,4 +17,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kdbusaddons.git
   track: master
-  ref: v6.25.0-rc1-1-g08f4204a5eab0bfedbf7d7adcc3f520cdb403dee
+  ref: v6.27.0-rc1-3-gdd685f1287979fc4b0576b2f4c2864d5ec7c5d4e

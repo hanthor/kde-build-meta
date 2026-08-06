@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtconnectivity-everywhere-src-6.10.3.tar.xz
-  ref: 6f675f3165ca3d06ee7a7bd234e2d58fe72f02e68c1e9c4ccb21fe8b1a93d478
+- kind: git_repo
+  url: github:qt/qtconnectivity.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g933e87d8a0ceda506d384b097276336faf995e9f

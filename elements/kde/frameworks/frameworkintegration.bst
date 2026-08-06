@@ -30,4 +30,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/frameworkintegration.git
   track: master
-  ref: v6.25.0-rc1-3-g9cf631d1acdf772e2502c9506454fdb129e444b3
+  ref: v6.27.0-rc1-4-g573f0a0dda35579042b0a4aced2654eed5a875ab

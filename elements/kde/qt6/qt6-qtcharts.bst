@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtcharts-everywhere-src-6.10.3.tar.xz
-  ref: ab64abd0ff99f90cf290041f5e4283a702f6c2434d30eb460fd3765081e86f15
+- kind: git_repo
+  url: github:qt/qtcharts.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g06039bdd51382982b6ab6eed551455fbcb9574c4

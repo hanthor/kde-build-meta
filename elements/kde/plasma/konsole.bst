@@ -1,6 +1,9 @@
 kind: cmake
 description: konsole
 
+depends:
+- core-deps/libssh.bst
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
@@ -49,12 +52,11 @@ variables:
     -DQT_MAJOR_VERSION=6
     -DUSE_DBUS=OFF
 
+
 sources:
 - kind: git_repo
   url: kde:kde/konsole.git
   track: master
-  ref: v25.04.3-0-gbc359b16a01fc093835e36f21c22f691fea31b32
+  ref: v24.01.90-953-gc5a3b444989136fb439edf6b9eb604a8747afee4
 - kind: patch
   path: patches/konsole/0001-fix-dbus-qlist-double-introspection.patch
-- kind: patch
-  path: patches/konsole/0002-check-tempfile-open-for-shellcheck.patch

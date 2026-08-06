@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtnetworkauth-everywhere-src-6.10.3.tar.xz
-  ref: d88fe0cbce2b336bd34d81b3317732051115b874e9b958961b4b268ccccad594
+- kind: git_repo
+  url: github:qt/qtnetworkauth.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-ga804d2581006e827c8966b7514f98e0bfc599b02

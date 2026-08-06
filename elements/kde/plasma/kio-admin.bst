@@ -20,4 +20,4 @@ sources:
 - kind: git_repo
   url: kde:system/kio-admin.git
   track: master
-  ref: v24.01.90-128-g1f674047fb58e9280f2f6bebda1cd46933ff4910
+  ref: v24.01.90-142-g13d210d331601037c976d8619f50dbd0c8691b5d

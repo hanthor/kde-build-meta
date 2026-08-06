@@ -19,4 +19,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kholidays.git
   track: master
-  ref: v6.25.0-rc1-25-g7b6522a85d18d1c89c29690dbe5b8756e9387339
+  ref: v6.27.0-rc1-8-g9c1f31f4ab6e879e78f26fe6a07a93724d1d6c33

@@ -14,4 +14,4 @@ sources:
 - kind: git_repo
   url: kde:libraries/libqaccessibilityclient.git
   track: master
-  ref: 783ff72b58aceeb788d0ac2a86f5f6da5a8310e7
+  ref: v0.6.0-13-gc80da37136fcacec30078cb586e56a0cbe52ecdc

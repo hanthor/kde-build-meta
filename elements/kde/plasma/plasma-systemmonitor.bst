@@ -35,4 +35,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-systemmonitor.git
   track: master
-  ref: v6.5.90-66-g308eba64d627c14001c9087dcbe0ef65e82d6e43
+  ref: v6.6.90-51-g7b996cc0929c0a040791162c4a2e508c23f9ab89

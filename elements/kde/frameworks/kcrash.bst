@@ -19,4 +19,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kcrash.git
   track: master
-  ref: v6.25.0-rc1-1-g2f975586fe1438f7084cbfc7d9e722ce9c291589
+  ref: v6.27.0-rc1-13-gdfb111fe115d6bb7e7b72a5779cadfc9b3c6c2b2

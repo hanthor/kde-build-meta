@@ -7,6 +7,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qttranslations-everywhere-src-6.10.3.tar.xz
-  ref: 52689984b114d4d34516d5d7bfb0c75857b1c3ff529921042144f09ab2de3a83
+- kind: git_repo
+  url: github:qt/qttranslations.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g79c1b1aad54292fcc595b49f90c9ecd8f43bfa90

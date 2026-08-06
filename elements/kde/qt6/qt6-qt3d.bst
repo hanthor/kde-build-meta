@@ -1,6 +1,9 @@
 kind: cmake
 description: qt6-qt3d
 
+variables:
+  cmake-local: -DQT_FEATURE_qt3d_assimp=OFF
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/qt6/qt6-qtbase.bst
@@ -9,6 +12,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qt3d-everywhere-src-6.10.3.tar.xz
-  ref: f53e47187be2487d8a23ef6fe5ed72f7c3c5fab706de3b61e165b0124c09ecd7
+- kind: git_repo
+  url: github:qt/qt3d.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g1f4c3a7548201bcad21a273a49060c96ad9ff3a9

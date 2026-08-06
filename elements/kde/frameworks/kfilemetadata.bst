@@ -22,4 +22,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kfilemetadata.git
   track: master
-  ref: v6.25.0-rc1-4-gc7f76e2869f94bad6568977c505d4a0a046798d4
+  ref: v6.27.0-rc1-6-gc6268caa142d6f25187f0ad5eac013d6edaf8def

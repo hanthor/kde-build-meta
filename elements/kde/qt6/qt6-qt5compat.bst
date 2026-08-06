@@ -9,6 +9,11 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qt5compat-everywhere-src-6.10.3.tar.xz
-  ref: 60e8980a8eaedd65a6e4092e8acbbec61aa50ce907d0a69a1e52ad256373d3f4
+- kind: git_repo
+  url: github:qt/qt5compat.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-gc1e3fdd994e6d54daeb545c6a9507d3201def264

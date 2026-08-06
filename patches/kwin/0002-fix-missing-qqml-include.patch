@@ -1,0 +1,10 @@
+--- a/src/kcms/xwayland/kcmkwinxwayland.cpp
++++ b/src/kcms/xwayland/kcmkwinxwayland.cpp
+@@ -15,6 +15,7 @@
+ #include <QDBusMessage>
+ #include <QDBusPendingCall>
+ #include <QKeySequence>
++#include <QtQml/qqml.h>
+ 
+ #include <kwinxwaylanddata.h>
+ 

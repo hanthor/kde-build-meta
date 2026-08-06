@@ -53,4 +53,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/powerdevil.git
   track: master
-  ref: v6.5.90-109-ge5393819c2020d4308974a4781539033eb208623
+  ref: v6.6.90-43-g61908b611e03c6daf1a6488efba622d8c36ef77f

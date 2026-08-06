@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtlanguageserver-everywhere-src-6.10.3.tar.xz
-  ref: 94f90484be8e49d3eb3bfcf0ba6cb2d8a170fc831c78de138332feebdf193964
+- kind: git_repo
+  url: github:qt/qtlanguageserver.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g7ef3bccd89cc163a664b46fe80a4bd56084b1983

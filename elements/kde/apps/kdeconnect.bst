@@ -1,6 +1,13 @@
 kind: cmake
 description: kdeconnect - KDE Connect device integration
 
+depends:
+# Runtime input-injection libraries (Arch kdeconnect depends: libei,
+# libevdev, libfakekey). Needed at runtime for remote input.
+- freedesktop-sdk.bst:components/libei.bst
+- freedesktop-sdk.bst:components/libevdev.bst
+- core-deps/libfakekey.bst
+
 build-depends:
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
@@ -51,7 +58,7 @@ sources:
 - kind: git_repo
   url: kde:network/kdeconnect-kde.git
   track: master
-  ref: v24.01.90-1188-gb1562d54001aeb6a0aed4da92dc761aed6320232
+  ref: v24.01.90-1269-g58e52572fb7928985d00f34420ed461cb0c82717
 - kind: patch
   path: patches/kdeconnect/0001-make-kpeople-optional.patch
 - kind: patch

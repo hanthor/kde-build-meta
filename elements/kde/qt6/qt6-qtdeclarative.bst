@@ -10,6 +10,11 @@ build-depends:
 - kde/qt6/qt6-qtshadertools.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtdeclarative-everywhere-src-6.10.3.tar.xz
-  ref: dadf80d43b8e08ca63aa65d46859a42b920a7777cf7e0ecfcb4c4537f9e65c76
+- kind: git_repo
+  url: github:qt/qtdeclarative.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-ga02bed441965ee1f18f856352c7d5ee5ba35d795

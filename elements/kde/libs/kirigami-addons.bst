@@ -24,5 +24,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:libraries/kirigami-addons.git
-  track: v1.12.0
-  ref: v1.12.0-0-gd544a188ac2cac376a3595e3d440586c69a458d9
+  track: master
+  ref: v1.12.1-38-gff691966f2a07828a0c582abc1cc43ab6dea0555

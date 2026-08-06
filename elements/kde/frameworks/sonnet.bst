@@ -23,4 +23,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/sonnet.git
   track: master
-  ref: v6.25.0-rc1-4-g49c0709c76aac3108172c935cd0c7db325687f5c
+  ref: v6.27.0-rc1-6-g44f8c8c6eecbb61323c43d1e75ccc058a23cc2aa

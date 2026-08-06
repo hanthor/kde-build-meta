@@ -1,6 +1,12 @@
 kind: cmake
 description: spectacle
 
+depends:
+# ffmpeg + libva are runtime dependencies for screen recording/encoding
+# (pulled transitively via kpipewire; Arch kpipewire depends: ffmpeg, libva).
+- freedesktop-sdk.bst:components/ffmpeg.bst
+- freedesktop-sdk.bst:components/libva.bst
+
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
 - kde/frameworks/extra-cmake-modules.bst
@@ -60,6 +66,6 @@ sources:
 - kind: git_repo
   url: kde:plasma/spectacle.git
   track: master
-  ref: v6.5.90-117-gf85ee4a9ba20a2f23aa67da4b19c56fb6aa36b6a
+  ref: v6.6.90-41-gfd97f22e20ae923619931ac16f7e234081c91d58
 - kind: patch
   path: patches/spectacle/0001-disable-ocr-without-external-deps.patch

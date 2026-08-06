@@ -20,4 +20,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kuserfeedback.git
   track: master
-  ref: v6.25.0-rc1-3-gfd72d1df55370b9c5ec2d815749aeaec1cfbf1e5
+  ref: v6.27.0-rc1-5-g2611c9b6eba8488c6fd619472ec312b8744f7440

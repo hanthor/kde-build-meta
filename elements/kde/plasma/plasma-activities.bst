@@ -28,4 +28,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-activities.git
   track: master
-  ref: v6.5.90-6-gc5d6a2f2b2a0f0c048df1612e5d317a50ededc83
+  ref: v6.6.90-5-gd07bb43348093fbd401171d11ca777c5acd34396

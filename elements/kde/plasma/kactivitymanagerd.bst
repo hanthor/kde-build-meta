@@ -35,4 +35,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kactivitymanagerd.git
   track: master
-  ref: v6.5.90-17-gfc393cd3816e032bf8cf4806eac7ea4cf41463bd
+  ref: v6.6.90-10-g63c89b8cd14f65502a2b7e1645b6002438cb190b

@@ -20,6 +20,11 @@ variables:
   cmake-local: -DBUILD_TESTING=OFF
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtvirtualkeyboard-everywhere-src-6.10.3.tar.xz
-  ref: 3298e26dfa4fad2363e3dfb2b55079c54fc8115a4a040d9616e5619f095d8fb5
+- kind: git_repo
+  url: github:qt/qtvirtualkeyboard.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g2eb5eda48077645a88609f7e6237cd5598253d8a

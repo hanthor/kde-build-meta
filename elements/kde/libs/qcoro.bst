@@ -18,4 +18,4 @@ sources:
 - kind: git_repo
   url: github:danvratil/qcoro.git
   track: main
-  ref: 720ea7f6322bbba9f5d5aa3888a222397a1f72f1
+  ref: v0.13.0-33-g6f225b97c31825080d4bb34e23e7ffbe0ca9a99d

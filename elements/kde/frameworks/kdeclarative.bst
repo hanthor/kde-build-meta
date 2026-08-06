@@ -39,4 +39,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kdeclarative.git
   track: master
-  ref: v6.25.0-rc1-4-g110100133034f568c5d14041dff867df556a3a92
+  ref: v6.27.0-rc1-8-g44b756a41be6ed756d2de559b3ab5f788c94a381

@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtquickeffectmaker-everywhere-src-6.10.3.tar.xz
-  ref: 5cb68c1195d344f01bca031bbb826b18b66e13bcd8abd97cfa5f059f0cd1a4f6
+- kind: git_repo
+  url: github:qt/qtquickeffectmaker.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-gc8bb84c6eae46674efbdff5e3c34dfe109c20009

@@ -27,4 +27,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/layer-shell-qt.git
   track: master
-  ref: v6.5.90-6-gaac600107ab3959a34178beb7f4425c13006e578
+  ref: v6.6.90-4-g4488263f9432e86cca7234273f6621ce92d19744

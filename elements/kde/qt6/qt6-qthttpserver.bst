@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qthttpserver-everywhere-src-6.10.3.tar.xz
-  ref: cdc9ad1a5b7a3de58a46c065b015f88d4f8ebe7052a346a9aa5465e510ff0deb
+- kind: git_repo
+  url: github:qt/qthttpserver.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-gc80d6aa0d09e937ffd1380148f73918d4f9a92b6

@@ -19,4 +19,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kpty.git
   track: master
-  ref: v6.25.0-rc1-1-g8111b1e8894b11abaf9ef21a0847276ef0c8803a
+  ref: v6.27.0-rc1-6-g2789177fa336a8f6e4e088f791975b8a6b06bbc1

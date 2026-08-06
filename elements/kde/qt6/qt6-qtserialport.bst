@@ -7,6 +7,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtserialport-everywhere-src-6.10.3.tar.xz
-  ref: 3fb30bec133316b6f65b6e03a38087a59c7d337cd9b021486a814a9bc10a31ef
+- kind: git_repo
+  url: github:qt/qtserialport.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g0bede6c85f1e504aa99844e9898289e0f13b7492

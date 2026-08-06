@@ -8,6 +8,9 @@ build-depends:
 - freedesktop-sdk.bst:components/vulkan-headers.bst
 - kde/qt6/qt6-qtdeclarative.bst
 
+variables:
+  cmake-local: -DFEATURE_assistant=OFF
+
 config:
   # qtdiag/qtdiag6 are hard-linked; break them before the freedesktop-sdk
   # stripper runs (it refuses to process files with multiple hard links)
@@ -21,6 +24,11 @@ config:
       done
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qttools-everywhere-src-6.10.3.tar.xz
-  ref: 8f00b9e3d1f80973d81cff67684972b89993183ef19924404d5b8ff0f89675b6
+- kind: git_repo
+  url: github:qt/qttools.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g947c5f152f4abc06f9e135b411c06a6fbe608aed

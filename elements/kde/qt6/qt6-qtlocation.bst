@@ -14,6 +14,11 @@ variables:
     -DQT_DISABLE_RPATH=ON
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtlocation-everywhere-src-6.10.3.tar.xz
-  ref: 1d0abed99f2834a7c684d23c495c5f752611fee14726f286396cf7147376799e
+- kind: git_repo
+  url: github:qt/qtlocation.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g25f12216c53d62c0338dace313c484dd24ee918a

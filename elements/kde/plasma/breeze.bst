@@ -47,4 +47,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/breeze.git
   track: master
-  ref: v6.5.90-76-g57866958833d18a3f252a3321db1444dd44bfa06
+  ref: v6.6.90-31-g987d9ab7e950ddddfcbaf52598e01eaba31abfb2

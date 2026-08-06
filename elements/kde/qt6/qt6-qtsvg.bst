@@ -10,6 +10,11 @@ variables:
   cmake-local: -DINSTALL_ARCHDATADIR=lib
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtsvg-everywhere-src-6.10.3.tar.xz
-  ref: b3223fe005f6a4c7f21f34e4ee6ce0094737cff9503ba15bbb171ac18794f76d
+- kind: git_repo
+  url: github:qt/qtsvg.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g2596f43da2dc72d2afecc084355b0f5f87922a6c

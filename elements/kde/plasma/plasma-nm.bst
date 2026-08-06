@@ -9,6 +9,7 @@ build-depends:
 - kde/plasma/libplasma.bst
 
 - kde/frameworks/kirigami.bst
+- kde/libs/kirigami-addons.bst
 - kde/libs/qtkeychain-qt6.bst
 - kde/libs/qcoro.bst
 - kde/frameworks/prison.bst
@@ -52,4 +53,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/plasma-nm.git
   track: master
-  ref: v6.5.90-157-g0389ce3601bf34c2d72e32c462128c7a4c857029
+  ref: v6.6.90-59-g14715ec9cdf70c6548ac63b6d0e414710bcae9bd

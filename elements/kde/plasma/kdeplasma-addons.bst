@@ -54,7 +54,7 @@ sources:
 - kind: git_repo
   url: kde:plasma/kdeplasma-addons.git
   track: master
-  ref: v6.5.90-117-ga17d754daff8617245da40a3a967af30cd91a3f3
+  ref: v6.6.90-55-g180c2febebbb90e464d44e5a651c51534fb2d25a
 - kind: cargo2
   cargo-lock: kdeds/kameleon/qmk/kameleon-qmk-helper/Cargo.lock
   ref:
@@ -192,8 +192,8 @@ sources:
     sha: 7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70
   - kind: registry
     name: hidapi
-    version: 2.6.5
-    sha: d1b71e1f4791fb9e93b9d7ee03d70b501ab48f6151432fbcadeabc30fe15396e
+    version: 2.6.6
+    sha: c78dadfc12f865bc3fcac3897e64533b930737ceb9ef245c8277de98d0b010e9
   - kind: registry
     name: id-arena
     version: 2.3.0
@@ -288,8 +288,8 @@ sources:
     sha: 8fd00f0bb2e90d81d1044c2b32617f68fcb9fa3bb7640c23e9c748e53fb30934
   - kind: registry
     name: qmk-via-api
-    version: 0.7.0
-    sha: 5114393b1167595ad4610d55da2299ecf6c420dbcf1116f89d0a55da260addd6
+    version: 0.8.0
+    sha: 492fe58a1a12ba701efdaa5e88d20314424fb9b124cba87bc65f0c2b3777d8b6
   - kind: registry
     name: quote
     version: 1.0.45

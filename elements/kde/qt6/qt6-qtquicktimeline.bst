@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtquicktimeline-everywhere-src-6.10.3.tar.xz
-  ref: ca3d32afdbfd01860e0d5ca3010e9d6928ca3d545077edb8f8ce8148f16f62ae
+- kind: git_repo
+  url: github:qt/qtquicktimeline.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g91602245e58d7b69133340ec27595840c5f3168a

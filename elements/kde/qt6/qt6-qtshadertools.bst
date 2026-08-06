@@ -7,6 +7,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtshadertools-everywhere-src-6.10.3.tar.xz
-  ref: c75837e2ea493ec0b9747b227c455d4a12cafe90068abf607992da9a403616c6
+- kind: git_repo
+  url: github:qt/qtshadertools.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-gb3b8537b3c5ab01919e30b87d48d2f1ba1f2a3fe

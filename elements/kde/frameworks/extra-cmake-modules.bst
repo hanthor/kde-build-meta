@@ -23,4 +23,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/extra-cmake-modules.git
   track: master
-  ref: v6.25.0-rc1-5-ga1dac86d6c848473d840b748b82694ef6916a3ca
+  ref: v6.27.0-rc1-4-g01dc9a0c05dd4851b01b93e961c9aa33b1e96056

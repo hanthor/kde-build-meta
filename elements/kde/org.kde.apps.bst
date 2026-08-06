@@ -10,3 +10,8 @@ depends:
 - kde/apps/elisa.bst
 - kde/apps/kcalc.bst
 - kde/apps/kdeconnect.bst
+- kde/apps/discover.bst
+- kde/apps/filelight.bst
+- kde/apps/kwalletmanager.bst
+- kde/apps/kfind.bst
+- kde/apps/kcharselect.bst

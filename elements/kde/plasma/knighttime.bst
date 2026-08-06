@@ -31,4 +31,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/knighttime.git
   track: master
-  ref: v6.5.90-10-gf28f89a00fd7c4961930a8c35b6e41a1ace5e5ea
+  ref: v6.6.90-4-g983723fe45d8ac08ae0295654e16696de14a07a0

@@ -22,4 +22,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kbookmarks.git
   track: master
-  ref: v6.25.0-rc1-4-ge4766b52b0c446ba27a453b26b4dd7018a016568
+  ref: v6.27.0-rc1-4-gf6ea5647e25317642005a239bf783509b857116e

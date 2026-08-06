@@ -41,5 +41,5 @@ variables:
 sources:
 - kind: git_repo
   url: kde:plasma/plasma-vault.git
-  track: Plasma/6.6
-  ref: 32546c0eb00637477f21ca7510ad5bcedfd70933
+  track: master
+  ref: v6.6.90-11-g99323261623ef3cc97af7f57e5c4f9bca498b3b6

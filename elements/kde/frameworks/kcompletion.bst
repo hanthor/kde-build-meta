@@ -20,4 +20,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kcompletion.git
   track: master
-  ref: v6.25.0-rc1-2-g45320b57f4c082aedc69e756ee9a57dca7b0f381
+  ref: v6.27.0-rc1-6-g66abfe4e18a4d6475ad07513e7c3f7c7c47f3278

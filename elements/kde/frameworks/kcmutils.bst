@@ -42,4 +42,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/kcmutils.git
   track: master
-  ref: v6.25.0-rc1-11-gec1fc33312728581580ff3bd36bff61e55b3da3c
+  ref: v6.27.0-rc1-12-gbf9134a413ca9919f3b7ab72d2460b1cd9e398f9

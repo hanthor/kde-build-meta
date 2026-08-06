@@ -9,6 +9,11 @@ build-depends:
 - freedesktop-sdk.bst:components/mesa-headers.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtwebchannel-everywhere-src-6.10.3.tar.xz
-  ref: 9797953a17220b24f531ef09d3f49aa69add369aa6c32b5b2e07f2916a8129b5
+- kind: git_repo
+  url: github:qt/qtwebchannel.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g0c4b668118b29bbf59c9f05bfe147ff67bea9e63

@@ -35,4 +35,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/drkonqi.git
   track: master
-  ref: v6.5.90-32-g4e74051a9a4f91c2bcbc6822d803f96be55086f0
+  ref: v6.6.90-30-gecabf576dd0443a1efa6cf1d63eb729d42822eaa

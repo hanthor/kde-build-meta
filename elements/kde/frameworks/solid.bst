@@ -25,4 +25,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/solid.git
   track: master
-  ref: v6.25.0-rc1-12-gb14223e16316814ebad61c1f1bd88aa28dac36e9
+  ref: v6.27.0-rc1-18-gda90e1c59f42909b3be8d1a2164853a148af846c

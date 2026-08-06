@@ -6,7 +6,7 @@ sources:
   track: "*.*"
   exclude:
   - "*-dev"
-  ref: 1.56.0-0-g56b51b98fbb8627c4c09a483702e18fd8aee7ce1
+  ref: 1.58-rc1-0-g11586c631094cdbc34785e82053e98fadbf36a75
 
 build-depends:
 - sdk/gobject-introspection.bst
@@ -47,6 +47,7 @@ variables:
     -Dlibaudit=no
     -Dnmtui=false
     -Dselinux=false
+    -Dclat=false
     -Dqt=false
     -Dovs=false
     -Dnm_cloud_setup=false

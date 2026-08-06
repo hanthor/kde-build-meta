@@ -7,6 +7,10 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:components/openssl.bst
+- freedesktop-sdk.bst:components/fontconfig.bst
+- freedesktop-sdk.bst:components/freetype.bst
+- freedesktop-sdk.bst:components/harfbuzz.bst
+- freedesktop-sdk.bst:components/libpng.bst
 - freedesktop-sdk.bst:components/sqlite.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/wayland.bst
@@ -35,20 +39,18 @@ config:
   install-commands:
     (>):
     - |
-      # Break hardlinks that confuse freedesktop-sdk-stripper.
-      # Qt installs e.g. qtpaths and qtpaths6 as hardlinks to the same inode.
-      # Re-copy each file through a temp to give it a unique inode.
-      for f in "%{install-root}"/usr/bin/qtpaths6 \
-                "%{install-root}"/usr/bin/androiddeployqt6 \
-                "%{install-root}"/usr/bin/qmake6; do
-        base="${f%6}"
-        if [ -f "$f" ] && [ -f "$base" ]; then
-          cp "$f" "${f}.tmp" && mv "${f}.tmp" "$f"
-          cp "$base" "${base}.tmp" && mv "${base}.tmp" "$base"
-        fi
+      find "%{install-root}" -type f -links +1 | while IFS= read -r f; do
+        tmp=$(mktemp "${f}.XXXXXX")
+        cp -a "$f" "$tmp"
+        mv -f "$tmp" "$f"
       done
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtbase-everywhere-src-6.10.3.tar.xz
-  ref: 383dc907816338f0cba72088a524c07458dfc69ce684ca9132fcc4fe91c24b0b
+- kind: git_repo
+  url: github:qt/qtbase.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g59c81a3c2247b821b9b84b4eb8d939b77e07e276

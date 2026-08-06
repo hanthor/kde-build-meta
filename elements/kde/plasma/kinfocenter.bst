@@ -6,6 +6,8 @@ build-depends:
 - kde/frameworks/extra-cmake-modules.bst
 - kde/frameworks/kdoctools.bst
 - kde/qt6/qt6-qtbase.bst
+- kde/qt6/qt6-qtgraphs.bst
+- kde/qt6/qt6-qtquick3d.bst
 - kde/qt6/qt6-qtdeclarative.bst
 - freedesktop-sdk.bst:components/mesa-headers.bst
 - freedesktop-sdk.bst:components/libdrm.bst
@@ -41,7 +43,6 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DENABLE_OPENGL_BACKEND=OFF
-    -DENABLE_VULKAN_BACKEND=OFF
     -DENABLE_ABOUT_DISTRO=OFF
     -DCMAKE_DISABLE_FIND_PACKAGE_Sensors=ON
 
@@ -49,6 +50,4 @@ sources:
 - kind: git_repo
   url: kde:plasma/kinfocenter.git
   track: master
-  ref: 4661524934085c1745ed1d2316269e1b74fbe681
-- kind: patch
-  path: patches/kinfocenter/0003-disable-vulkan-backend.patch
+  ref: v6.6.90-57-g96a26b747e931532b695994081059465b9a6efc6

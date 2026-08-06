@@ -18,4 +18,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/syndication.git
   track: master
-  ref: v6.25.0-rc1-1-g7963ebf0b43ed4978e20618d3acbf4eb889507f2
+  ref: v6.27.0-rc1-3-gfce6793d862989e4d58d2d046660be666ae45d9a

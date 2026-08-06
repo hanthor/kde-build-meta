@@ -1,6 +1,15 @@
 kind: cmake
 description: gwenview - KDE image viewer
 
+depends:
+# Runtime image-format/codec libraries (Arch gwenview depends: exiv2, lcms2,
+# libjpeg-turbo, libpng, libtiff). Needed at runtime, not just build time.
+- freedesktop-sdk.bst:components/jpeg.bst
+- freedesktop-sdk.bst:components/libpng.bst
+- freedesktop-sdk.bst:components/libtiff.bst
+- freedesktop-sdk.bst:components/lcms.bst
+- core-deps/exiv2.bst
+
 build-depends:
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - freedesktop-sdk.bst:public-stacks/buildsystem-cmake.bst
@@ -60,6 +69,6 @@ sources:
 - kind: git_repo
   url: kde:graphics/gwenview.git
   track: master
-  ref: v24.01.90-503-g20d85fff7a19fcb4f3abb7a9daa7d06a1416fb48
+  ref: v24.01.90-535-g930a324c7d12e4a9449e7bdcc949959ffe19f14f
 - kind: patch
   path: patches/gwenview/0002-use-libjpeg62-with-turbo.patch

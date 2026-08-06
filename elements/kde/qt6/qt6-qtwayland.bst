@@ -12,6 +12,11 @@ build-depends:
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 
 sources:
-- kind: tar
-  url: qt:6.10/6.10.3/submodules/qtwayland-everywhere-src-6.10.3.tar.xz
-  ref: 2e93322a86b562113cfa3a5f0aa8b1e4e185d6284af49b529578d27d52ca85d3
+- kind: git_repo
+  url: github:qt/qtwayland.git
+  track: 'v6.*'
+  exclude:
+  - '*rc*'
+  - '*alpha*'
+  - '*beta*'
+  ref: v6.11.1-0-g23b98e2c05f411365860c3607d611d1dd83bff47

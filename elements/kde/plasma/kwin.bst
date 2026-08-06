@@ -13,6 +13,7 @@ build-depends:
 - freedesktop-sdk.bst:components/wayland-protocols.bst
 - kde/frameworks/kdoctools.bst
 - kde/frameworks/krunner.bst
+- kde/frameworks/kitemmodels.bst
 - kde/frameworks/plasma-wayland-protocols.bst
 # Wayland / graphics / input
 - freedesktop-sdk.bst:components/wayland.bst
@@ -81,6 +82,7 @@ build-depends:
 - freedesktop-sdk.bst:components/xwayland.bst
 # Vulkan support
 - freedesktop-sdk.bst:components/vulkan-headers.bst
+- freedesktop-sdk.bst:components/vulkan-icd-loader.bst
 variables:
   cmake-local: >-
     -DCMAKE_DISABLE_FIND_PACKAGE_KF6DocTools=ON
@@ -95,10 +97,15 @@ variables:
     -DBUILD_WITH_QT6=ON
     -DQT_MAJOR_VERSION=6
     -DKWIN_BUILD_X11=ON
-    -DBUILD_WINDOW_KILLER=OFF
+    -DBUILD_WINDOW_KILLER=OFF -DBUILD_TESTING=OFF
 
 sources:
 - kind: git_repo
   url: kde:plasma/kwin.git
   track: master
-  ref: v6.5.90-429-g36a51bdf68aa263a4871d9128ff976ea04e7e70f
+  ref: v6.6.90-265-g724b573ffb472e47ea284c399e92139c1ec06380
+- kind: patch
+  path: patches/kwin/0001-killer-no-x11.patch
+- kind: patch
+  path: patches/kwin/0002-fix-missing-qqml-include.patch
+

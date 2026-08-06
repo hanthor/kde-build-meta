@@ -18,4 +18,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/syntax-highlighting.git
   track: master
-  ref: v6.25.0-rc1-31-g571ef9c566131da63e2598a9cf83b4320d0ce65d
+  ref: v6.27.0-rc1-22-g956564c23b233d7fa99218745909f823457e763f

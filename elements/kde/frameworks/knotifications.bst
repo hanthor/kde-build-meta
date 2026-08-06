@@ -24,4 +24,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/knotifications.git
   track: master
-  ref: v6.25.0-rc1-3-g616b2954a09cbb464fcaddde027fca26f1395a57
+  ref: v6.27.0-rc1-7-g6e0ff3516eae4d63d7eebed71ee3cc89811c09c3

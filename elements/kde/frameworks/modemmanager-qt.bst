@@ -18,4 +18,4 @@ sources:
 - kind: git_repo
   url: kde:frameworks/modemmanager-qt.git
   track: master
-  ref: v6.25.0-rc1-1-gab14cb1a350d5d28791a0333b956bfc6176b20dd
+  ref: v6.27.0-rc1-2-g60a71ef510c6a65d75c49dd34bb797e157bc51d3
